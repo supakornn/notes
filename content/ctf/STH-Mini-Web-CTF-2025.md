@@ -4,7 +4,6 @@ tags:
   - ctf
   - sth
 created: 2025-10-05
-modified: 2026-02-19
 ---
 
 ![](https://cdn-images-1.medium.com/max/800/0*quSIvw2fwHBmbBJa)
