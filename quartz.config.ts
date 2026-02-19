@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "notes.supakorn.me",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -39,15 +39,12 @@ const config: QuartzConfig = {
           highlight: "rgba(123, 241, 168, 0.22)",
           textHighlight: "rgba(123, 241, 168, 0.55)",
         },
-
         darkMode: {
           light: "#161618",
           lightgray: "#3A383A",
           gray: "#8E8E8E",
           darkgray: "#E0E0E0",
           dark: "#F2F2F3",
-
-          // GREEN ACCENT (dark mode ต้อง dim ลง)
           secondary: "#7BF1A8",
           tertiary: "#4FD18F",
           highlight: "rgba(123, 241, 168, 0.14)",
@@ -64,8 +61,8 @@ const config: QuartzConfig = {
       }),
       Plugin.SyntaxHighlighting({
         theme: {
-          light: "github-light",
-          dark: "github-dark",
+          light: "catppuccin-latte",
+          dark: "catppuccin-mocha",
         },
         keepBackground: false,
       }),
