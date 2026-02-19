@@ -18,7 +18,7 @@ describe("typeguards", () => {
     assert(!path.isSimpleSlug("abc/index"))
     assert(!path.isSimpleSlug("abc#anchor"))
     assert(!path.isSimpleSlug("abc?query=1"))
-    assert(!path.isSimpleSlug("index.md"))
+    assert(!path.isSimpleSlug("_index.md"))
     assert(!path.isSimpleSlug("index.html"))
   })
 
@@ -64,7 +64,7 @@ describe("typeguards", () => {
   })
 
   test("isFilePath", () => {
-    assert(path.isFilePath("content/index.md"))
+    assert(path.isFilePath("content/_index.md"))
     assert(path.isFilePath("content/test.png"))
     assert(!path.isFilePath("../test.pdf"))
     assert(!path.isFilePath("content/test"))
@@ -108,12 +108,12 @@ describe("transforms", () => {
   test("slugifyFilePath", () => {
     asserts(
       [
-        ["content/index.md", "content/index"],
+        ["content/_index.md", "content/index"],
         ["content/index.html", "content/index"],
         ["content/_index.md", "content/index"],
-        ["/content/index.md", "content/index"],
+        ["/content/_index.md", "content/index"],
         ["content/cool.png", "content/cool.png"],
-        ["index.md", "index"],
+        ["_index.md", "index"],
         ["test.mp4", "test.mp4"],
         ["note with spaces.md", "note-with-spaces"],
         ["notes.with.dots.md", "notes.with.dots"],
@@ -136,7 +136,7 @@ describe("transforms", () => {
         ["./index", "./"],
         ["./index#abc", "./#abc"],
         ["./index.html", "./"],
-        ["./index.md", "./"],
+        ["./_index.md", "./"],
         ["./index.css", "./index.css"],
         ["content", "./content"],
         ["content/test.md", "./content/test"],

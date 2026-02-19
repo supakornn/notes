@@ -1,0 +1,14 @@
+---
+created: 2026-01-25
+modified: 2026-02-15
+tags:
+  - books
+  - hobby
+title: Library
+---
+
+| Cover                                    | Title                | Author           | Pages | Rating(5) | Status  |
+| ---------------------------------------- | -------------------- | ---------------- | ----- | --------- | ------- |
+| ![[Pasted image 20260125221744.png\|80]] | Killing Peter Rabbit | Lee Chanyoung    | 248   | ⭐⭐        | Read    |
+| ![[Pasted image 20260125221920.png\|80]] | Clean Architecture   | Robert C. Martin | 238   | ⭐⭐        | Reading |
+|                                          |                      |                  |       |           |         |
