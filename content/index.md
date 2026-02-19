@@ -1,8 +1,6 @@
 ---
 title: Supakorn's Garden
 subtitle: brain dump website
-tags:
-  - recents-exclude
 created: 2025-10-05
 modified: 2026-02-19
 ---
