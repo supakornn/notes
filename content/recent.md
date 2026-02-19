@@ -22,7 +22,7 @@ modified: 2025-12-04
 | File                                                                                              | Folder | Modified     |
 | ------------------------------------------------------------------------------------------------- | ------ | ------------ |
 | [[notes/Using Opencode with Antigravity auth.md\|Using Opencode with Antigravity auth]]           | notes  | Feb 19, 2026 |
-| [[notes/Upgrading a Non-Interactive Shell.md\|Upgrading a Non-Interactive Shell]]                 | notes  | Feb 19, 2026 |
+| [[Upgrading a Non-Interactive Shell\|Upgrading a Non-Interactive Shell]]                 | notes  | Feb 19, 2026 |
 | [[notes/Time and Space Complexity.md\|Time and Space Complexity]]                                 | notes  | Feb 19, 2026 |
 | [[notes/Tailscale to private network VM.md\|Tailscale to private network VM]]                     | notes  | Feb 19, 2026 |
 | [[notes/Spicetify theme for Spotify.md\|Spicetify theme for Spotify]]                             | notes  | Feb 19, 2026 |
@@ -37,7 +37,7 @@ modified: 2025-12-04
 | [[notes/Hacktoberfest 2025.md\|Hacktoberfest 2025]]                                               | notes  | Feb 19, 2026 |
 | [[notes/Graceful Shutdown in Go.md\|Graceful Shutdown in Go]]                                     | notes  | Feb 19, 2026 |
 | [[notes/Find the bundle ID of any macOS app.md\|Find the bundle ID of any macOS app]]             | notes  | Feb 19, 2026 |
-| [[notes/Default 404 Pages.md\|Default 404 Pages]]                                                 | notes  | Feb 19, 2026 |
+| [[ctf/Default 404 Pages.md\|Default 404 Pages]]                                                   | ctf    | Feb 19, 2026 |
 | [[notes/Debug the container restart loop.md\|Debug the container restart loop]]                   | notes  | Feb 19, 2026 |
 | [[notes/Customize VScode UI Fonts.md\|Customize VScode UI Fonts]]                                 | notes  | Feb 19, 2026 |
 | [[notes/Compile Protobuf for Go.md\|Compile Protobuf for Go]]                                     | notes  | Feb 19, 2026 |

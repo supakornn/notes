@@ -2,6 +2,7 @@
 created: 2026-02-08
 tags:
   - ctf
+  - tools
 title: Upgrading a Non-Interactive Shell
 ---
 

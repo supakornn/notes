@@ -2,6 +2,7 @@
 title: STH-Mini-Web-CTF-2025
 tags:
   - ctf
+  - sth
 created: 2025-10-05
 modified: 2026-02-19
 ---

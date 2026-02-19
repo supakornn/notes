@@ -1,9 +1,8 @@
 ---
 created: 2026-01-26
 tags:
-  - fingerprint
   - ctf
-  - security
+  - tools
 title: Default 404 Pages
 ---
 
