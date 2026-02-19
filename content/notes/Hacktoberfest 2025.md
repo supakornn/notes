@@ -1,6 +1,5 @@
 ---
 created: 2026-01-31
-modified: 2026-01-31
 tags:
   - hacktoberfest
 title: Hacktoberfest 2025

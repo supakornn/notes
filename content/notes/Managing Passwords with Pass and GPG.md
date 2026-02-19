@@ -4,7 +4,6 @@ tags:
   - security
   - mac
 created: 2025-11-21
-modified: 2025-12-04
 ---
 
 **Use this when:** You want a simple, CLI-based, GPG-encrypted password manager that works with Git.

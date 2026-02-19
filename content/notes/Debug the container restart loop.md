@@ -4,7 +4,6 @@ tags:
   - docker
   - linux
 created: 2025-12-03
-modified: 2026-01-31
 ---
 
 When container is stuck in a restart loop, you can exec the container shell with this command.

@@ -1,6 +1,5 @@
 ---
 created: 2025-12-18
-modified: 2026-02-18
 tags:
   - concept
   - oop

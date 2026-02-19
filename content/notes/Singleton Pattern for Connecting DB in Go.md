@@ -4,7 +4,6 @@ tags:
   - go
   - dev
 created: 2025-10-05
-modified: 2026-01-26
 ---
 
 Single database connection shared across your app to avoid opening multiple connections.

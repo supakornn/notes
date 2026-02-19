@@ -4,7 +4,6 @@ tags:
   - html
   - dev
 created: 2025-11-21
-modified: 2026-01-26
 ---
 
 Build a Multi-Page App (MPA) in Vite without a JS router.

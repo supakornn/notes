@@ -4,7 +4,6 @@ tags:
   - vscode
   - tools
 created: 2025-10-05
-modified: 2025-12-04
 ---
 
 **Use this when:** You want to change VSCode's UI font (sidebar, tabs, etc.) to match your editor font.

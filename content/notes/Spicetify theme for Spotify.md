@@ -4,7 +4,6 @@ tags:
   - spotify
   - tools
 created: 2025-10-05
-modified: 2025-12-04
 ---
 
 **What is Spicetify?** A CLI tool to customize Spotify client (themes, extensions, plugins).

@@ -4,7 +4,6 @@ tags:
   - tailscale
   - mac
 created: 2025-10-06
-modified: 2026-01-23
 ---
 
 **Use this when:** You want to SSH between your devices without port forwarding or exposing ports to the internet.

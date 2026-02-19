@@ -1,6 +1,5 @@
 ---
 created: 2026-01-26
-modified: 2026-01-28
 tags:
   - fingerprint
   - ctf

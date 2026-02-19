@@ -4,7 +4,6 @@ tags:
   - mac
   - tools
 created: 2025-12-03
-modified: 2026-01-23
 ---
 
 **You’ll need the bundle ID when using automation tools (e.g., Yabai, Aerospace).**

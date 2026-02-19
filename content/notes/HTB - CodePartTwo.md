@@ -1,6 +1,5 @@
 ---
 created: 2026-02-08
-modified: 2026-02-19
 tags:
   - ctf
   - htb
