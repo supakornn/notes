@@ -16,3 +16,5 @@ CF_API_TOKEN=<YOUR_CF_API_TOKEN> CF_ACCOUNT_ID=<ACCOUNT_ID> CF_PAGES_PROJECT_NAM
 - CF_API_TOKEN https://dash.cloudflare.com/ee09391f4ca9100bc4bdaf41b137f879/api-tokens (Permission Edit CF Pages)
 - CF_ACCOUNT_ID (Search for `Copy accout ID` in home page) 
 - CF_PAGES_PROJECT_NAME (Name of your project)
+
+
