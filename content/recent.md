@@ -15,34 +15,34 @@ created: 2025-11-21
 <!-- QueryToSerialize: TABLE file.folder as "Folder", dateformat(file.mtime,"MMM d, yyyy") as "Modified" FROM -"tags" AND -#slurp AND -"private" SORT file.mtime DESC WHERE file.name != this.file.name AND file.name != "index" AND draft != "true" -->
 <!-- SerializedQuery: TABLE file.folder as "Folder", dateformat(file.mtime,"MMM d, yyyy") as "Modified" FROM -"tags" AND -#slurp AND -"private" SORT file.mtime DESC WHERE file.name != this.file.name AND file.name != "index" AND draft != "true" -->
 
-| File                                                                                              | Folder | Modified     |
-| ------------------------------------------------------------------------------------------------- | ------ | ------------ |
-| [[ctf/STH-Mini-Web-CTF-2025.md\|STH-Mini-Web-CTF-2025]]                                           | ctf    | Feb 19, 2026 |
-| [[notes/Delete cf deployment.md\|Delete cf deployment]]                                           | notes  | Feb 19, 2026 |
-| [[ctf/Default 404 Pages.md\|Default 404 Pages]]                                                   | ctf    | Feb 19, 2026 |
-| [[ctf/Upgrading a Non-Interactive Shell.md\|Upgrading a Non-Interactive Shell]]                   | ctf    | Feb 19, 2026 |
-| [[notes/Using Opencode with Antigravity auth.md\|Using Opencode with Antigravity auth]]           | notes  | Feb 19, 2026 |
-| [[notes/Time and Space Complexity.md\|Time and Space Complexity]]                                 | notes  | Feb 19, 2026 |
-| [[notes/Tailscale to private network VM.md\|Tailscale to private network VM]]                     | notes  | Feb 19, 2026 |
-| [[notes/Spicetify theme for Spotify.md\|Spicetify theme for Spotify]]                             | notes  | Feb 19, 2026 |
-| [[notes/Singleton Pattern for Connecting DB in Go.md\|Singleton Pattern for Connecting DB in Go]] | notes  | Feb 19, 2026 |
-| [[notes/P and NP Problem.md\|P and NP Problem]]                                                   | notes  | Feb 19, 2026 |
-| [[notes/MPA in vite(VanilaJS) without Router.md\|MPA in vite(VanilaJS) without Router]]           | notes  | Feb 19, 2026 |
-| [[notes/Managing Passwords with Pass and GPG.md\|Managing Passwords with Pass and GPG]]           | notes  | Feb 19, 2026 |
-| [[notes/Make Obsidian Window Translucent.md\|Make Obsidian Window Translucent]]                   | notes  | Feb 19, 2026 |
-| [[notes/HTB - Penetration Tester Learning Path.md\|HTB - Penetration Tester Learning Path]]       | notes  | Feb 19, 2026 |
-| [[ctf/HTB - CodePartTwo.md\|HTB - CodePartTwo]]                                                   | ctf    | Feb 19, 2026 |
-| [[notes/How JSX works under the hood.md\|How JSX works under the hood]]                           | notes  | Feb 19, 2026 |
-| [[notes/Hacktoberfest 2025.md\|Hacktoberfest 2025]]                                               | notes  | Feb 19, 2026 |
-| [[notes/Graceful Shutdown in Go.md\|Graceful Shutdown in Go]]                                     | notes  | Feb 19, 2026 |
-| [[notes/Find the bundle ID of any macOS app.md\|Find the bundle ID of any macOS app]]             | notes  | Feb 19, 2026 |
-| [[notes/Debug the container restart loop.md\|Debug the container restart loop]]                   | notes  | Feb 19, 2026 |
-| [[notes/Customize VScode UI Fonts.md\|Customize VScode UI Fonts]]                                 | notes  | Feb 19, 2026 |
-| [[notes/Compile Protobuf for Go.md\|Compile Protobuf for Go]]                                     | notes  | Feb 19, 2026 |
-| [[notes/Change Zellij keybinds to be like Tmux.md\|Change Zellij keybinds to be like Tmux]]       | notes  | Feb 19, 2026 |
-| [[notes/Big O notation.md\|Big O notation]]                                                       | notes  | Feb 19, 2026 |
-| [[notes/4 Pillars of Object Oriented Programming.md\|4 Pillars of Object Oriented Programming]]   | notes  | Feb 19, 2026 |
-| [[notes/Library.md\|Library]]                                                                     | notes  | Feb 19, 2026 |
+| File                                                                                                 | Folder   | Modified     |
+| ---------------------------------------------------------------------------------------------------- | -------- | ------------ |
+| [[writting/STH-Mini-Web-CTF-2025.md\|STH-Mini-Web-CTF-2025]]                                         | writting | Feb 19, 2026 |
+| [[thoughts/Delete cf deployment.md\|Delete cf deployment]]                                           | thoughts | Feb 19, 2026 |
+| [[thoughts/Default 404 Pages.md\|Default 404 Pages]]                                                 | thoughts | Feb 19, 2026 |
+| [[thoughts/Upgrading a Non-Interactive Shell.md\|Upgrading a Non-Interactive Shell]]                 | thoughts | Feb 19, 2026 |
+| [[thoughts/Using Opencode with Antigravity auth.md\|Using Opencode with Antigravity auth]]           | thoughts | Feb 19, 2026 |
+| [[thoughts/Time and Space Complexity.md\|Time and Space Complexity]]                                 | thoughts | Feb 19, 2026 |
+| [[thoughts/Tailscale to private network VM.md\|Tailscale to private network VM]]                     | thoughts | Feb 19, 2026 |
+| [[thoughts/Spicetify theme for Spotify.md\|Spicetify theme for Spotify]]                             | thoughts | Feb 19, 2026 |
+| [[thoughts/Singleton Pattern for Connecting DB in Go.md\|Singleton Pattern for Connecting DB in Go]] | thoughts | Feb 19, 2026 |
+| [[thoughts/P and NP Problem.md\|P and NP Problem]]                                                   | thoughts | Feb 19, 2026 |
+| [[thoughts/MPA in vite(VanilaJS) without Router.md\|MPA in vite(VanilaJS) without Router]]           | thoughts | Feb 19, 2026 |
+| [[thoughts/Managing Passwords with Pass and GPG.md\|Managing Passwords with Pass and GPG]]           | thoughts | Feb 19, 2026 |
+| [[thoughts/Make Obsidian Window Translucent.md\|Make Obsidian Window Translucent]]                   | thoughts | Feb 19, 2026 |
+| [[thoughts/HTB - Penetration Tester Learning Path.md\|HTB - Penetration Tester Learning Path]]       | thoughts | Feb 19, 2026 |
+| [[thoughts/HTB - CodePartTwo.md\|HTB - CodePartTwo]]                                                 | thoughts | Feb 19, 2026 |
+| [[thoughts/How JSX works under the hood.md\|How JSX works under the hood]]                           | thoughts | Feb 19, 2026 |
+| [[thoughts/Hacktoberfest 2025.md\|Hacktoberfest 2025]]                                               | thoughts | Feb 19, 2026 |
+| [[thoughts/Graceful Shutdown in Go.md\|Graceful Shutdown in Go]]                                     | thoughts | Feb 19, 2026 |
+| [[thoughts/Find the bundle ID of any macOS app.md\|Find the bundle ID of any macOS app]]             | thoughts | Feb 19, 2026 |
+| [[thoughts/Debug the container restart loop.md\|Debug the container restart loop]]                   | thoughts | Feb 19, 2026 |
+| [[thoughts/Customize VScode UI Fonts.md\|Customize VScode UI Fonts]]                                 | thoughts | Feb 19, 2026 |
+| [[thoughts/Compile Protobuf for Go.md\|Compile Protobuf for Go]]                                     | thoughts | Feb 19, 2026 |
+| [[thoughts/Change Zellij keybinds to be like Tmux.md\|Change Zellij keybinds to be like Tmux]]       | thoughts | Feb 19, 2026 |
+| [[thoughts/Big O notation.md\|Big O notation]]                                                       | thoughts | Feb 19, 2026 |
+| [[thoughts/4 Pillars of Object Oriented Programming.md\|4 Pillars of Object Oriented Programming]]   | thoughts | Feb 19, 2026 |
+| [[thoughts/Library.md\|Library]]                                                                     | thoughts | Feb 19, 2026 |
 <!-- SerializedQuery END -->
 
 %%
