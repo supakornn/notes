@@ -21,21 +21,20 @@ modified: 2025-12-04
 
 | File                                                                                              | Folder | Modified     |
 | ------------------------------------------------------------------------------------------------- | ------ | ------------ |
-| [[notes/HTB - CodePartTwo.md\|HTB - CodePartTwo]]                                                 | notes  | Feb 19, 2026 |
 | [[notes/Using Opencode with Antigravity auth.md\|Using Opencode with Antigravity auth]]           | notes  | Feb 19, 2026 |
-| [[notes/Useful website for illustrations picture.md\|Useful website for illustrations picture]]   | notes  | Feb 19, 2026 |
 | [[notes/Upgrading a Non-Interactive Shell.md\|Upgrading a Non-Interactive Shell]]                 | notes  | Feb 19, 2026 |
 | [[notes/Time and Space Complexity.md\|Time and Space Complexity]]                                 | notes  | Feb 19, 2026 |
 | [[notes/Tailscale to private network VM.md\|Tailscale to private network VM]]                     | notes  | Feb 19, 2026 |
 | [[notes/Spicetify theme for Spotify.md\|Spicetify theme for Spotify]]                             | notes  | Feb 19, 2026 |
 | [[notes/Singleton Pattern for Connecting DB in Go.md\|Singleton Pattern for Connecting DB in Go]] | notes  | Feb 19, 2026 |
 | [[notes/P and NP Problem.md\|P and NP Problem]]                                                   | notes  | Feb 19, 2026 |
+| [[notes/MPA in vite(VanilaJS) without Router.md\|MPA in vite(VanilaJS) without Router]]           | notes  | Feb 19, 2026 |
 | [[notes/Managing Passwords with Pass and GPG.md\|Managing Passwords with Pass and GPG]]           | notes  | Feb 19, 2026 |
 | [[notes/Make Obsidian Window Translucent.md\|Make Obsidian Window Translucent]]                   | notes  | Feb 19, 2026 |
-| [[post/STH-Mini-Web-CTF-2025.md\|STH-Mini-Web-CTF-2025]]                                          | post   | Feb 19, 2026 |
-| [[notes/library.md\|library]]                                                                     | notes  | Feb 19, 2026 |
-| [[notes/MPA in vite(VanilaJS) without Router.md\|MPA in vite(VanilaJS) without Router]]           | notes  | Feb 19, 2026 |
+| [[notes/HTB - Penetration Tester Learning Path.md\|HTB - Penetration Tester Learning Path]]       | notes  | Feb 19, 2026 |
+| [[ctf/HTB - CodePartTwo.md\|HTB - CodePartTwo]]                                                   | ctf    | Feb 19, 2026 |
 | [[notes/How JSX works under the hood.md\|How JSX works under the hood]]                           | notes  | Feb 19, 2026 |
+| [[notes/Hacktoberfest 2025.md\|Hacktoberfest 2025]]                                               | notes  | Feb 19, 2026 |
 | [[notes/Graceful Shutdown in Go.md\|Graceful Shutdown in Go]]                                     | notes  | Feb 19, 2026 |
 | [[notes/Find the bundle ID of any macOS app.md\|Find the bundle ID of any macOS app]]             | notes  | Feb 19, 2026 |
 | [[notes/Default 404 Pages.md\|Default 404 Pages]]                                                 | notes  | Feb 19, 2026 |
@@ -45,8 +44,8 @@ modified: 2025-12-04
 | [[notes/Change Zellij keybinds to be like Tmux.md\|Change Zellij keybinds to be like Tmux]]       | notes  | Feb 19, 2026 |
 | [[notes/Big O notation.md\|Big O notation]]                                                       | notes  | Feb 19, 2026 |
 | [[notes/4 Pillars of Object Oriented Programming.md\|4 Pillars of Object Oriented Programming]]   | notes  | Feb 19, 2026 |
-| [[notes/Hacktoberfest 2025.md\|Hacktoberfest 2025]]                                               | notes  | Feb 19, 2026 |
-| [[notes/HTB - Penetration Tester Learning Path.md\|HTB - Penetration Tester Learning Path]]       | notes  | Feb 19, 2026 |
+| [[notes/Library.md\|Library]]                                                                     | notes  | Feb 19, 2026 |
+| [[ctf/STH-Mini-Web-CTF-2025.md\|STH-Mini-Web-CTF-2025]]                                           | ctf    | Feb 19, 2026 |
 <!-- SerializedQuery END -->
 
 %%
