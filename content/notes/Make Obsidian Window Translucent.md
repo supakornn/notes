@@ -5,7 +5,6 @@ tags:
   - tools
 created: 2025-10-05
 ---
-
 **Use this when:** You want a translucent/glassmorphism look for your Obsidian window.
 
 **Steps:**
