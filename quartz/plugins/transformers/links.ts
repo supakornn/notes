@@ -57,7 +57,7 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
               ) {
                 let dest = node.properties.href as RelativeURL
                 const classes = (node.properties.className ?? []) as string[]
-                const isExternal = isAbsoluteUrl(dest, { httpOnly: false })
+                const isExternal = isAbsoluteUrl(dest)
                 classes.push(isExternal ? "external" : "internal")
 
                 if (isExternal && opts.externalLinkIcon) {
@@ -99,9 +99,7 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                 }
 
                 // don't process external links or intra-document anchors
-                const isInternal = !(
-                  isAbsoluteUrl(dest, { httpOnly: false }) || dest.startsWith("#")
-                )
+                const isInternal = !(isAbsoluteUrl(dest) || dest.startsWith("#"))
                 if (isInternal) {
                   dest = node.properties.href = transformLink(
                     file.data.slug!,
@@ -147,7 +145,7 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
                   node.properties.loading = "lazy"
                 }
 
-                if (!isAbsoluteUrl(node.properties.src, { httpOnly: false })) {
+                if (!isAbsoluteUrl(node.properties.src)) {
                   let dest = node.properties.src as RelativeURL
                   dest = node.properties.src = transformLink(
                     file.data.slug!,

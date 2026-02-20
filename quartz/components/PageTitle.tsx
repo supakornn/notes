@@ -17,7 +17,7 @@ PageTitle.css = `
 .page-title {
   font-size: 1.75rem;
   margin: 0;
-  font-family: var(--titleFont);
+  white-space: nowrap;
 }
 `
 

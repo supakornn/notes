@@ -66,7 +66,7 @@ describe("FileTrie", () => {
       const data = {
         title: "Index",
         slug: "index",
-        filePath: "_index.md",
+        filePath: "index.md",
       }
 
       trie.add(data)
@@ -84,7 +84,7 @@ describe("FileTrie", () => {
       const data2 = {
         title: "Really nested index",
         slug: "a/b/c/index",
-        filePath: "a/b/c/_index.md",
+        filePath: "a/b/c/index.md",
       }
 
       trie.add(data1)
@@ -196,14 +196,14 @@ describe("FileTrie", () => {
   describe("fromEntries", () => {
     test("nested", () => {
       const trie = FileTrieNode.fromEntries([
-        ["index" as FullSlug, { title: "Root", slug: "index", filePath: "_index.md" }],
+        ["index" as FullSlug, { title: "Root", slug: "index", filePath: "index.md" }],
         [
           "folder/file1" as FullSlug,
           { title: "File 1", slug: "folder/file1", filePath: "folder/file1.md" },
         ],
         [
           "folder/index" as FullSlug,
-          { title: "Folder Index", slug: "folder/index", filePath: "folder/_index.md" },
+          { title: "Folder Index", slug: "folder/index", filePath: "folder/index.md" },
         ],
         [
           "folder/file2" as FullSlug,
@@ -214,7 +214,7 @@ describe("FileTrie", () => {
           {
             title: "Subfolder Index",
             slug: "folder/folder2/index",
-            filePath: "folder/folder2/_index.md",
+            filePath: "folder/folder2/index.md",
           },
         ],
       ])
@@ -231,7 +231,7 @@ describe("FileTrie", () => {
 
   describe("findNode", () => {
     test("should find root node with empty path", () => {
-      const data = { title: "Root", slug: "index", filePath: "_index.md" }
+      const data = { title: "Root", slug: "index", filePath: "index.md" }
       trie.add(data)
       const found = trie.findNode([])
       assert.strictEqual(found, trie)
@@ -286,7 +286,7 @@ describe("FileTrie", () => {
       const data1 = {
         title: "Root",
         slug: "index",
-        filePath: "_index.md",
+        filePath: "index.md",
       }
       const data2 = {
         title: "Test",
@@ -296,7 +296,7 @@ describe("FileTrie", () => {
       const data3 = {
         title: "Folder Index",
         slug: "abc/index",
-        filePath: "abc/_index.md",
+        filePath: "abc/index.md",
       }
 
       trie.add(data1)
@@ -333,14 +333,14 @@ describe("FileTrie", () => {
 
   describe("pathToNode", () => {
     test("should return root node for empty path", () => {
-      const data = { title: "Root", slug: "index", filePath: "_index.md" }
+      const data = { title: "Root", slug: "index", filePath: "index.md" }
       trie.add(data)
       const path = trie.ancestryChain([])
       assert.deepStrictEqual(path, [trie])
     })
 
     test("should return root node for index path", () => {
-      const data = { title: "Root", slug: "index", filePath: "_index.md" }
+      const data = { title: "Root", slug: "index", filePath: "index.md" }
       trie.add(data)
       const path = trie.ancestryChain(["index"])
       assert.deepStrictEqual(path, [trie])
@@ -380,7 +380,7 @@ describe("FileTrie", () => {
       const data1 = {
         title: "Root",
         slug: "index",
-        filePath: "_index.md",
+        filePath: "index.md",
       }
       const data2 = {
         title: "Test",
@@ -390,7 +390,7 @@ describe("FileTrie", () => {
       const data3 = {
         title: "Folder Index",
         slug: "folder/index",
-        filePath: "folder/_index.md",
+        filePath: "folder/index.md",
       }
 
       trie.add(data1)

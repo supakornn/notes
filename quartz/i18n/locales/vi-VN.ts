@@ -3,83 +3,85 @@ import { Translation } from "./definition"
 export default {
   propertyDefaults: {
     title: "Không có tiêu đề",
-    description: "Không có mô tả",
+    description: "Không có mô tả được cung cấp",
   },
   components: {
     callout: {
-      note: "Ghi chú",
-      abstract: "Tổng quan",
+      note: "Ghi Chú",
+      abstract: "Tóm Tắt",
       info: "Thông tin",
-      todo: "Cần phải làm",
-      tip: "Gợi ý",
-      success: "Thành công",
-      question: "Câu hỏi",
-      warning: "Cảnh báo",
-      failure: "Thất bại",
-      danger: "Nguy hiểm",
+      todo: "Cần Làm",
+      tip: "Gợi Ý",
+      success: "Thành Công",
+      question: "Nghi Vấn",
+      warning: "Cảnh Báo",
+      failure: "Thất Bại",
+      danger: "Nguy Hiểm",
       bug: "Lỗi",
-      example: "Ví dụ",
-      quote: "Trích dẫn",
+      example: "Ví Dụ",
+      quote: "Trích Dẫn",
     },
     backlinks: {
-      title: "Liên kết ngược",
-      noBacklinksFound: "Không có liên kết ngược nào",
+      title: "Liên Kết Ngược",
+      noBacklinksFound: "Không có liên kết ngược được tìm thấy",
     },
     themeToggle: {
-      lightMode: "Chế độ sáng",
-      darkMode: "Chế độ tối",
+      lightMode: "Sáng",
+      darkMode: "Tối",
     },
     readerMode: {
       title: "Chế độ đọc",
     },
     explorer: {
-      title: "Nội dung",
+      title: "Trong bài này",
     },
     footer: {
-      createdWith: "Được tạo bằng",
+      createdWith: "Được tạo bởi",
     },
     graph: {
-      title: "Sơ đồ",
+      title: "Biểu Đồ",
     },
     recentNotes: {
-      title: "Ghi chú gần đây",
-      seeRemainingMore: ({ remaining }) => `Xem thêm ${remaining} ghi chú →`,
+      title: "Bài viết gần đây",
+      seeRemainingMore: ({ remaining }) => `Xem ${remaining} thêm →`,
     },
     transcludes: {
-      transcludeOf: ({ targetSlug }) => `Trích dẫn toàn bộ từ ${targetSlug}`,
-      linkToOriginal: "Xem trang gốc",
+      transcludeOf: ({ targetSlug }) => `Bao gồm ${targetSlug}`,
+      linkToOriginal: "Liên Kết Gốc",
     },
     search: {
-      title: "Tìm",
+      title: "Tìm Kiếm",
       searchBarPlaceholder: "Tìm kiếm thông tin",
     },
     tableOfContents: {
-      title: "Mục lục",
+      title: "Bảng Nội Dung",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => `${minutes} phút đọc`,
+      readingTime: ({ minutes }) => `đọc ${minutes} phút`,
     },
   },
   pages: {
     rss: {
-      recentNotes: "Ghi chú gần đây",
-      lastFewNotes: ({ count }) => `${count} Trang gần đây`,
+      recentNotes: "Những bài gần đây",
+      lastFewNotes: ({ count }) => `${count} Bài gần đây`,
     },
     error: {
-      title: "Không tìm thấy",
-      notFound: "Trang này riêng tư hoặc không tồn tại.",
-      home: "Về trang chủ",
+      title: "Không Tìm Thấy",
+      notFound: "Trang này được bảo mật hoặc không tồn tại.",
+      home: "Trở về trang chủ",
     },
     folderContent: {
-      folder: "Thư mục",
-      itemsUnderFolder: ({ count }) => `Có ${count} trang trong thư mục này.`,
+      folder: "Thư Mục",
+      itemsUnderFolder: ({ count }) =>
+        count === 1 ? "1 mục trong thư mục này." : `${count} mục trong thư mục này.`,
     },
     tagContent: {
       tag: "Thẻ",
-      tagIndex: "Danh sách thẻ",
-      itemsUnderTag: ({ count }) => `Có ${count} trang gắn thẻ này.`,
-      showingFirst: ({ count }) => `Đang hiển thị ${count} trang đầu tiên.`,
-      totalTags: ({ count }) => `Có tổng cộng ${count} thẻ.`,
+      tagIndex: "Thẻ Mục Lục",
+      itemsUnderTag: ({ count }) =>
+        count === 1 ? "1 mục gắn thẻ này." : `${count} mục gắn thẻ này.`,
+      showingFirst: ({ count }) => `Hiển thị trước ${count} thẻ.`,
+      totalTags: ({ count }) => `Tìm thấy ${count} thẻ tổng cộng.`,
     },
   },
 } as const satisfies Translation

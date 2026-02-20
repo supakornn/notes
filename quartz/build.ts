@@ -143,7 +143,6 @@ async function startWatching(
   }
 
   const watcher = chokidar.watch(".", {
-    awaitWriteFinish: { stabilityThreshold: 250 },
     persistent: true,
     cwd: argv.directory,
     ignoreInitial: true,

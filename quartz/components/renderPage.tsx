@@ -9,7 +9,6 @@ import { visit } from "unist-util-visit"
 import { Root, Element, ElementContent } from "hast"
 import { GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
-import { styleText } from "util"
 
 interface RenderComponents {
   head: QuartzComponent
@@ -69,7 +68,6 @@ function renderTranscludes(
   cfg: GlobalConfiguration,
   slug: FullSlug,
   componentData: QuartzComponentProps,
-  visited: Set<FullSlug>,
 ) {
   // process transcludes in componentData
   visit(root, "element", (node, _index, _parent) => {
@@ -78,30 +76,6 @@ function renderTranscludes(
       if (classNames.includes("transclude")) {
         const inner = node.children[0] as Element
         const transcludeTarget = (inner.properties["data-slug"] ?? slug) as FullSlug
-        if (visited.has(transcludeTarget)) {
-          console.warn(
-            styleText(
-              "yellow",
-              `Warning: Skipping circular transclusion: ${slug} -> ${transcludeTarget}`,
-            ),
-          )
-          node.children = [
-            {
-              type: "element",
-              tagName: "p",
-              properties: { style: "color: var(--secondary);" },
-              children: [
-                {
-                  type: "text",
-                  value: `Circular transclusion detected: ${transcludeTarget}`,
-                },
-              ],
-            },
-          ]
-          return
-        }
-        visited.add(transcludeTarget)
-
         const page = componentData.allFiles.find((f) => f.slug === transcludeTarget)
         if (!page) {
           return
@@ -222,8 +196,7 @@ export function renderPage(
   // make a deep copy of the tree so we don't remove the transclusion references
   // for the file cached in contentMap in build.ts
   const root = clone(componentData.tree) as Root
-  const visited = new Set<FullSlug>([slug])
-  renderTranscludes(root, cfg, slug, componentData, visited)
+  renderTranscludes(root, cfg, slug, componentData)
 
   // set componentData.tree to the edited html that has transclusions rendered
   componentData.tree = root
@@ -263,6 +236,7 @@ export function renderPage(
     <html lang={lang} dir={direction}>
       <Head {...componentData} />
       <body data-slug={slug}>
+        <DappledLight />
         <div id="quartz-root" class="page">
           <Body {...componentData}>
             {LeftComponent}
@@ -274,9 +248,8 @@ export function renderPage(
                   ))}
                 </Header>
                 <div class="popover-hint">
-                  {beforeBody.map((BodyComponent) => (
-                    <BodyComponent {...componentData} />
-                  ))}
+                  {slug !== "index" &&
+                    beforeBody.map((BodyComponent) => <BodyComponent {...componentData} />)}
                 </div>
               </div>
               <Content {...componentData} />
@@ -294,9 +267,56 @@ export function renderPage(
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
-        .map((res) => JSResourceToScriptElement(res, true))}
+        .map((res) => JSResourceToScriptElement(res))}
     </html>
   )
 
   return "<!DOCTYPE html>\n" + render(doc)
+}
+
+function DappledLight() {
+  return (
+    <div id="dappled-light">
+      <div id="glow"></div>
+      <div id="glow-bounce"></div>
+      <div class="perspective">
+        <div id="leaves"></div>
+        <div id="blinds">
+          <div class="shutters">
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+            <div class="shutter"></div>
+          </div>
+          <div class="vertical">
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+      <div id="progressive-blur">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  )
 }

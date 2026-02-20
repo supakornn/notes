@@ -8,8 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Notes",
-    pageTitleSuffix: "",
+    pageTitle: "Supakorn's Notes",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -17,15 +16,18 @@ const config: QuartzConfig = {
     },
     locale: "en-US",
     baseUrl: "notes.supakorn.me",
-    ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    ignorePatterns: ["private", "templates"],
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "jetbrains mono",
+        header: {
+          name: "DM Serif Display",
+          weights: [400],
+        },
+        body: "Bricolage Grotesque",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
@@ -59,23 +61,22 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
       }),
-      Plugin.SyntaxHighlighting({
-        theme: {
-          light: "catppuccin-latte",
-          dark: "catppuccin-mocha",
-        },
-        keepBackground: false,
+      Plugin.Poetry(),
+      Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.SyntaxHighlighting(),
+      Plugin.ObsidianFlavoredMarkdown({
+        enableInHtmlEmbed: false,
+        parseTags: false,
+        mermaid: false,
       }),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
-      Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
+      Plugin.CrawlLinks({ markdownLinkResolution: "absolute", lazyLoad: true }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
-      Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
       Plugin.FolderPage(),
@@ -88,7 +89,7 @@ const config: QuartzConfig = {
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
+      // // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },

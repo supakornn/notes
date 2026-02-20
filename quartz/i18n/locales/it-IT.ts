@@ -8,7 +8,7 @@ export default {
   components: {
     callout: {
       note: "Nota",
-      abstract: "Abstract",
+      abstract: "Astratto",
       info: "Info",
       todo: "Da fare",
       tip: "Consiglio",
@@ -17,7 +17,7 @@ export default {
       warning: "Attenzione",
       failure: "Errore",
       danger: "Pericolo",
-      bug: "Problema",
+      bug: "Bug",
       example: "Esempio",
       quote: "Citazione",
     },
@@ -43,11 +43,10 @@ export default {
     },
     recentNotes: {
       title: "Note recenti",
-      seeRemainingMore: ({ remaining }) =>
-        remaining === 1 ? "Vedi 1 altra →" : `Vedi altre ${remaining} →`,
+      seeRemainingMore: ({ remaining }) => `Vedi ${remaining} altro →`,
     },
     transcludes: {
-      transcludeOf: ({ targetSlug }) => `Inclusione di ${targetSlug}`,
+      transcludeOf: ({ targetSlug }) => `Transclusione di ${targetSlug}`,
       linkToOriginal: "Link all'originale",
     },
     search: {
@@ -55,16 +54,16 @@ export default {
       searchBarPlaceholder: "Cerca qualcosa",
     },
     tableOfContents: {
-      title: "Indice",
+      title: "Tabella dei contenuti",
     },
     contentMeta: {
-      readingTime: ({ minutes }) => (minutes === 1 ? "1 minuto" : `${minutes} minuti`),
+      readingTime: ({ minutes }) => `${minutes} minuti`,
     },
   },
   pages: {
     rss: {
       recentNotes: "Note recenti",
-      lastFewNotes: ({ count }) => (count === 1 ? "Ultima nota" : `Ultime ${count} note`),
+      lastFewNotes: ({ count }) => `Ultime ${count} note`,
     },
     error: {
       title: "Non trovato",
@@ -81,9 +80,8 @@ export default {
       tagIndex: "Indice etichette",
       itemsUnderTag: ({ count }) =>
         count === 1 ? "1 oggetto con questa etichetta." : `${count} oggetti con questa etichetta.`,
-      showingFirst: ({ count }) => (count === 1 ? "Prima etichetta." : `Prime ${count} etichette.`),
-      totalTags: ({ count }) =>
-        count === 1 ? "Trovata 1 etichetta in totale." : `Trovate ${count} etichette totali.`,
+      showingFirst: ({ count }) => `Prime ${count} etichette.`,
+      totalTags: ({ count }) => `Trovate ${count} etichette totali.`,
     },
   },
 } as const satisfies Translation

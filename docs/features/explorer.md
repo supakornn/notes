@@ -148,7 +148,7 @@ Component.Explorer({
 
     // can also use node.slug or by anything on node.data
     // note that node.data is only present for files that exist on disk
-    // (e.g. implicit folder nodes that have no associated _index.md)
+    // (e.g. implicit folder nodes that have no associated index.md)
     return !omit.has(node.displayName.toLowerCase())
   },
 })
@@ -162,7 +162,7 @@ You can access the tags of a file by `node.data.tags`.
 Component.Explorer({
   filterFn: (node) => {
     // exclude files with the tag "explorerexclude"
-    return node.data?.tags?.includes("explorerexclude") !== true
+    return node.data.tags?.includes("explorerexclude") !== true
   },
 })
 ```

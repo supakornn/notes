@@ -115,9 +115,9 @@ async function _navigate(url: URL, isBack: boolean = false) {
   }
 
   // now, patch head, re-executing scripts
-  const elementsToRemove = document.head.querySelectorAll(":not([data-persist])")
+  const elementsToRemove = document.head.querySelectorAll(":not([spa-preserve])")
   elementsToRemove.forEach((el) => el.remove())
-  const elementsToAdd = html.head.querySelectorAll(":not([data-persist])")
+  const elementsToAdd = html.head.querySelectorAll(":not([spa-preserve])")
   elementsToAdd.forEach((el) => document.head.appendChild(el))
 
   // delay setting the url until now

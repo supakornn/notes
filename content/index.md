@@ -4,8 +4,16 @@ subtitle: brain dump website
 created: 2025-10-05
 modified: 2026-02-19
 ---
-I’m a **full-stack developer** and **curious generalist** who spends most of my time learning, experimenting, and chasing answers to how systems and the world work.
 
-Most of what I do comes from pure curiosity. I often go down rabbit holes—not for productivity or trends, but just because I want to know. I believe good technology doesn’t come from knowing everything, but from staying curious and asking questions.
+```poetry
+- Welcome
+```
+I'm supakorn this is my little corner of the internet where I dump all my thoughts and notes. I hope you find something useful here!
 
-Beyond the screen, I try to spend my time thinking and observing the world from different angles. This is my little hypertext garden on the Internet — make yourself at home!
+Currently, I'm interested in a lot of things that relate to technology field, but I also have a lot of random thoughts that I want to share. So, expect a wide variety of topics here!
+
+I'm a curious person and I love learning new things, so I hope this website can be a place where I can share my knowledge and also learn from others.
+
+```poetry
+- jacky :)
+```

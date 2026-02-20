@@ -27,7 +27,7 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
 TagList.css = `
 .tags {
   list-style: none;
-  display: flex;
+  display:flex;
   padding-left: 0;
   gap: 0.4rem;
   margin: 1rem 0;
