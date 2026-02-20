@@ -10,7 +10,9 @@ I'll split down in to two categorize
 
 #### Performance
 
-- VScode is built on top of electron with typescript so it face with some problem about copiling and as you know Javascript is not a good lang
+- VScode is built on top of electron with typescript so it face with some problem about copiling and as you know Javascript is not a good langauge for built a application.
+- It's use very high ram usage and cpu, i dont know why i didnt figure out but Jetbrains also require nearby hardware usage as vscode but it fatter
+- 
 
 #### Useage
 
