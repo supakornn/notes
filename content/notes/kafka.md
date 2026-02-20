@@ -2,8 +2,6 @@
 created: 2026-02-21
 title: Kafka
 ---
-## Gemini บอกว่า
-
 Apache Kafka is a distributed **publish-subscribe** messaging system running over **TCP**. It records state changes as **Events** (or messages/records).
 
 **Main Actors:**
