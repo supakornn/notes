@@ -6,7 +6,7 @@ tags:
 ---
 I’ve been a loyal VS Code user for over four years. It was my go-to tool from the very first line of HTML I wrote. But as my projects grew and my tech stack expanded, I began to feel the limitations of a general-purpose editor.
 
-Today, I’m officially moving to **JetBrains IDEs** as my primary workspace, with **Zed** as my companion for quick edits. Here is why I made the switch.
+Today, I’m officially moving to **[JetBrains IDEs](https://www.jetbrains.com/ides/)** as my primary workspace, with **[Zed](https://zed.dev)** as my companion for quick edits. Here is why I made the switch.
 
 ### 1. The "Extension Hell" vs. Out-of-the-Box Power
 
@@ -18,7 +18,7 @@ As a **polyglot developer**, I don't stick to just one language. On any given da
     
 ### 2. Performance & The Electron Bottleneck
 
-VS Code is built on **Electron (TypeScript/JavaScript)**. While impressive for a web-based desktop app, it has inherent limitations:
+VS Code is built on **[Electron](https://github.com/electron/electron) (TypeScript/JavaScript)**. While impressive for a web-based desktop app, it has inherent limitations:
 
 - **Resource Trade-off:** I noticed that when VS Code is loaded with 50+ extensions, its RAM and CPU usage often rivals that of a full IDE.
     
