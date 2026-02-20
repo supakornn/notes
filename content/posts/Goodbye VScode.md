@@ -16,7 +16,6 @@ As a **polyglot developer**, I don't stick to just one language. On any given da
     
 - **The JetBrains Solution:** JetBrains IDEs come "batteries included." Everything I need—deep code analysis, refactoring tools, and database management—is built-in and works perfectly from day one. It’s a specialized tool for a specialized job.
     
-
 ### 2. Performance & The Electron Bottleneck
 
 VS Code is built on **Electron (TypeScript/JavaScript)**. While impressive for a web-based desktop app, it has inherent limitations:
@@ -24,13 +23,12 @@ VS Code is built on **Electron (TypeScript/JavaScript)**. While impressive for a
 - **Resource Trade-off:** I noticed that when VS Code is loaded with 50+ extensions, its RAM and CPU usage often rivals that of a full IDE.
     
 - **Efficiency:** If I’m going to use that much hardware power anyway, I’d rather give those resources to a JetBrains IDE that offers deeper code intelligence and better native integration.
-    
 
 ### 3. My New Precision Workflow
 
 I’ve realized that "one tool fits all" isn't always the best approach. Instead, I’ve moved to a more specialized setup:
 
-- **IntelliJ IDEA Ultimate:** My powerhouse for Java, Web development, Go, and Python.
+- **IntelliJ IDEA Ultimate:** My powerhouse for Java, Web development, Go, and Python and beyond.
     
 - **JetBrains Rider:** My dedicated environment for **.NET and Game Development**. It’s far superior to VS Code’s C# support.
     
@@ -38,7 +36,6 @@ I’ve realized that "one tool fits all" isn't always the best approach. Instead
     
 - **Zed Editor:** This is my secret weapon. Since it’s built in **Rust**, it’s incredibly fast and lightweight. I use Zed whenever I need to make a "quick edit" or browse a file without waiting for a heavy IDE to index.
     
-
 ### Final Thoughts
 
 VS Code is a masterpiece of software, and it served me well for 4 years. But for my current workflow as a polyglot developer, I need the **depth** of JetBrains and the **speed** of Zed.
