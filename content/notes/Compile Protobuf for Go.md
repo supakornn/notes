@@ -1,7 +1,7 @@
 ---
 title: Compile Protobuf for Go
 tags:
-  - sapling
+  - seed
 created: 2025-10-05
 ---
 

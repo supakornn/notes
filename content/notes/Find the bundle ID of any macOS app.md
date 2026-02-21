@@ -1,7 +1,7 @@
 ---
 title: Find the bundle ID of any macOS app
 tags:
-  - sapling
+  - seed
 created: 2025-12-03
 ---
 

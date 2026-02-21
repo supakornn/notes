@@ -13,4 +13,5 @@ title: Hacktoberfest 2025
 - [tldr-pages/tldr](https://github.com/tldr-pages/tldr/pull/18326)
 
 I got a T-Shirt yayyy!!!!🙌
-![[Pasted image 20260131215206.png | 350]]
+
+![[Pasted image 20260131215206.png | 5000]]

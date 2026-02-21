@@ -2,7 +2,7 @@
 created: 2026-02-19
 title: Delete cf deployment
 tags:
-  - sapling
+  - seed
 ---
 1. Dowloand [delete-all-deployments.zip](https://pub-505c82ba1c844ba788b97b1ed9415e75.r2.dev/delete-all-deployments.zip)
 2. Extract the `delete-all-deployments.zip` file.
