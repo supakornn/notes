@@ -1,5 +1,5 @@
 ---
-title: Supakorn's Notes
+title: Home
 subtitle: brain dump website
 created: 2025-10-05
 ---
