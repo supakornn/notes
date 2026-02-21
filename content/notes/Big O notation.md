@@ -1,7 +1,7 @@
 ---
 created: 2025-12-14
 tags:
-  - seed
+  - evergreen
 title: Big O notation
 ---
 

@@ -1,8 +1,7 @@
 ---
 created: 2026-02-08
 tags:
-  - ctf
-  - htb
+  - sapling
 title: HTB - CodePartTwo
 ---
 

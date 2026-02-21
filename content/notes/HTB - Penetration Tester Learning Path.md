@@ -1,8 +1,7 @@
 ---
 created: 2026-01-31
 tags:
-  - ctf
-  - htb
+  - seed
 ---
 
 https://academy.hackthebox.com/achievement/1467577/path/16

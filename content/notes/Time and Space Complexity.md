@@ -1,8 +1,7 @@
 ---
 created: 2025-12-14
 tags:
-  - dsa
-  - concept
+  - evergreen
 title: Time and Space Complexity
 ---
 

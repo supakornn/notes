@@ -1,8 +1,7 @@
 ---
 created: 2026-01-17
 tags:
-  - dsa
-  - concept
+  - evergreen
 title: P and NP Problem
 ---
 

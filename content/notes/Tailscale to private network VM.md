@@ -1,8 +1,7 @@
 ---
 title: Tailscale to private network VM
 tags:
-  - tailscale
-  - mac
+  - sapling
 created: 2025-10-06
 ---
 

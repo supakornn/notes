@@ -1,8 +1,7 @@
 ---
 title: Graceful Shutdown in Go
 tags:
-  - go
-  - dev
+  - sapling
 created: 2025-10-05
 ---
 

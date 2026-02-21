@@ -1,8 +1,7 @@
 ---
 title: Find the bundle ID of any macOS app
 tags:
-  - mac
-  - tools
+  - sapling
 created: 2025-12-03
 ---
 

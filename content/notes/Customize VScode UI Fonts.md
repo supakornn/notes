@@ -1,7 +1,7 @@
 ---
 title: Customize VScode UI fonts
 tags:
-  - seed
+  - sapling
 created: 2025-10-05
 ---
 

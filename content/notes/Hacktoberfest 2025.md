@@ -1,7 +1,7 @@
 ---
 created: 2026-01-31
 tags:
-  - hacktoberfest
+  - seed
 title: Hacktoberfest 2025
 ---
 

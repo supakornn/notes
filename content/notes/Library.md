@@ -1,8 +1,7 @@
 ---
 created: 2026-01-25
 tags:
-  - books
-  - hobby
+  - seed
 title: Library
 ---
 

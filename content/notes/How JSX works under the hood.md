@@ -1,7 +1,7 @@
 ---
 created: 2026-02-12
 tags:
-  - react
+  - sapling
 title: How jsx works under the hood
 ---
 

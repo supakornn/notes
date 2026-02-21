@@ -1,8 +1,7 @@
 ---
 title: Managing Passwords with Pass and GPG
 tags:
-  - security
-  - mac
+  - sapling
 created: 2025-11-21
 ---
 

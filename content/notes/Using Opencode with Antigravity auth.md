@@ -2,8 +2,7 @@
 created: 2026-01-20
 title: Using Opencode with Antigravity auth
 tags:
-  - opencode
-  - tools
+  - sapling
 ---
 #### 1. Install [OpenCode](https://opencode.ai/)
 

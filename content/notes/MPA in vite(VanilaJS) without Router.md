@@ -1,8 +1,7 @@
 ---
 title: MPA in vite(VanilaJS) without Router
 tags:
-  - html
-  - dev
+  - sapling
 created: 2025-11-21
 ---
 

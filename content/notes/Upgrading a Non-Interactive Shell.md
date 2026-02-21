@@ -1,8 +1,7 @@
 ---
 created: 2026-02-08
 tags:
-  - ctf
-  - tools
+  - seed
 title: Upgrading a Non-Interactive Shell
 ---
 
