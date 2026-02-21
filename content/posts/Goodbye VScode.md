@@ -28,11 +28,11 @@ VS Code is built on **[Electron](https://github.com/electron/electron) (TypeScri
 
 I’ve realized that "one tool fits all" isn't always the best approach. Instead, I’ve moved to a more specialized setup:
 
-- **IntelliJ IDEA Ultimate:** My powerhouse for Java, Web development, Go, and Python and beyond.
+- [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/): My powerhouse for Java, Web development, Go, and Python and beyond.
     
-- **JetBrains Rider:** My dedicated environment for **.NET and Game Development**. It’s far superior to VS Code’s C# support.
+- [Rider](https://www.jetbrains.com/rider/): My dedicated environment for **.NET and Game Development**. It’s far superior to VS Code’s C# support.
     
-- **CLion:** For **low-level work (C/C++, Rust, and Assembly)**. When I’m worrying about pointers and memory, I need the world-class debugger that CLion provides.
+- [CLion](https://www.jetbrains.com/clion/): For **low-level work (C/C++, Rust, and Assembly)**. When I’m worrying about pointers and memory, I need the world-class debugger that CLion provides.
     
 - **Zed Editor:** This is my secret weapon. Since it’s built in **Rust**, it’s incredibly fast and lightweight. I use Zed whenever I need to make a "quick edit" or browse a file without waiting for a heavy IDE to index.
     
