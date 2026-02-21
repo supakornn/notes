@@ -15,7 +15,8 @@ title: Bookshelf
 ## Reading
 
 - Clean Architecture by Robert C. Martin
+
 ## Past
-- Back Hat Go 
+- Back Hat Go by Tom Steele, Chris Patten, Dan Kottmann
 - Killing Peter Rabbit by Lee Chanyoung
 - The Master Algorithm by Predro Domingos
