@@ -9,12 +9,11 @@ title: Milestones
 
 ## 2025
 
-### Hacktoberfest
+- **Hack The Box**: Finished the Penetration Tester Path, mastering offensive security and network exploitation.
+  
+	![[Pasted image 20260221082236.png| 400]]
 
-- **Earned the 2025 Milestone T-Shirt** — Successfully completed 6 Pull Requests and was among the first 10,000 contributors globally. ![[Pasted image 20260221083246.png | 500]]
-    
+- **Hacktoberfest**: Completed the 6PR challenge and earned the limited edition T-shirt.
 
-### Hack The Box
-
-- **Completed the Penetration Tester Path** — Mastered core offensive security skills, covering everything from network exploitation to post-exploitation techniques. ![[Pasted image 20260221082236.png| 500]]
+	![[Pasted image 20260221083246.png | 500]]
 - 
