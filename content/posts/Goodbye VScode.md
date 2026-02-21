@@ -33,8 +33,8 @@ I’ve realized that "one tool fits all" isn't always the best approach. Instead
 - [Rider](https://www.jetbrains.com/rider/): My dedicated environment for **.NET and Game Development**. It’s far superior to VS Code’s C# support.
     
 - [CLion](https://www.jetbrains.com/clion/): For **low-level work (C/C++, Rust, and Assembly)**. When I’m worrying about pointers and memory, I need the world-class debugger that CLion provides.
-    
-- **Zed Editor:** This is my secret weapon. Since it’s built in **Rust**, it’s incredibly fast and lightweight. I use Zed whenever I need to make a "quick edit" or browse a file without waiting for a heavy IDE to index.
+
+- [Zed Editor](https://zed.dev): This is my secret weapon. Since it’s built in **Rust**, it’s incredibly fast and lightweight. I use Zed whenever I need to make a "quick edit" or browse a file without waiting for a heavy IDE to index.
     
 ### Final Thoughts
 
