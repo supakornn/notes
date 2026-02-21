@@ -15,7 +15,7 @@ Events in the DOM don't just happen on a single element; they travel through the
 
 ![[Pasted image 20260221225620.png | 500]]
 
-**Critical Insight: Why Bubbling over Capturing?**
+#### Critical Insight: Why Bubbling over Capturing?
 
 - **Specific-to-General Logic:** It is more intuitive to handle the innermost element (Specific) first before notifying its parents (General).
 - **Safety from Interception:** Using `e.stopPropagation()` in the **Capturing** phase is dangerous because it kills the event before it ever reaches the children (a "top-down dictatorship"). Bubbling allows children to finish their job before the parent takes over.
