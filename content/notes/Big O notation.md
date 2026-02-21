@@ -1,10 +1,9 @@
 ---
 created: 2025-12-14
 tags:
-  - evergreen
+  - sapling
 title: Big O notation
 ---
-
 #### O(1) – Constant Time: same time regardless of input size
 
 - Example: access element by index

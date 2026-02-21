@@ -1,10 +1,9 @@
 ---
 created: 2026-01-17
 tags:
-  - evergreen
+  - sapling
 title: P and NP Problem
 ---
-
 ### P Problem
 
 **P (Polynomial Time) Problems**  
