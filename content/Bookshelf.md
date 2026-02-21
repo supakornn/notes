@@ -2,7 +2,7 @@
 created: 2026-01-25
 tags:
   - seed
-title: Library
+title: Bookshelf
 ---
 
 | Cover                                    | Title                | Author           | Pages | Rating(5) | Status  |
