@@ -25,8 +25,7 @@ Apache Kafka is a distributed **publish-subscribe** messaging system running ove
     
 - Each record has an **Offset**, which is a unique ID used to track position.
     
-
-`[Insert Image: Producer -> Cluster -> Consumer]`
+![[Pasted image 20260221071457.png | 500]]
 
 **Key Characteristics:**
 
@@ -36,5 +35,4 @@ Apache Kafka is a distributed **publish-subscribe** messaging system running ove
     
 - **Retention:** Data stays for a set time, allowing consumers to re-read or "replay" events.
     
-
-`[Insert Image: Topic Partitions and Offsets]`
+![[Pasted image 20260221071547.png | 500]]
