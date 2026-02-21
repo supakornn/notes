@@ -8,12 +8,11 @@ title: Milestones
 
 ## 2025
 
-### Hacktoberfest
+- Hacktoberfest
+
+	![[Pasted image 20260221083246.png | 350]]
 
 
+#### Completly Hackthebox Pentration Tester Path
 
-### HackTheBox Penetration Tester Path
-
-Completly Hackthebox Pentration Tester Path
-
-![[Pasted image 20260221082236.png| 500]]
+	![[Pasted image 20260221082236.png| 350]]
