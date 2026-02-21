@@ -5,7 +5,7 @@ tags:
 title: HTB - CodePartTwo
 ---
 
-### How many open TCP ports are listening on CodePartTwo?
+## How many open TCP ports are listening on CodePartTwo?
 
 ```js
 ┌──(kali㉿kali)-[~/Desktop/htb]
@@ -51,7 +51,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.41 seconds
            Raw packets sent: 6 (240B) | Rcvd: 3 (116B)
 ```
 
-### What is the version of the js2py library being used by the application?
+## What is the version of the js2py library being used by the application?
 
 - Open website with port 8000
 - Download app via "DOWNLOAD APP" button
@@ -85,7 +85,7 @@ flask-sqlalchemy==3.1.1
 js2py==0.74
 ```
 
-### Which CVE number corresponds to the sandbox escape vulnerability in js2py that the application uses.
+## Which CVE number corresponds to the sandbox escape vulnerability in js2py that the application uses.
 
 - Search by google
 
