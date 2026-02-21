@@ -1,5 +1,5 @@
 ---
-created: 2026-02-21
+created: 2025-10-10
 title: Kafka
 tags:
   - sapling
