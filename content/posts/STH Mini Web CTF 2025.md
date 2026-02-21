@@ -4,181 +4,123 @@ tags:
   - fruit
 created: 2025-10-05
 ---
-![](https://cdn-images-1.medium.com/max/800/0*quSIvw2fwHBmbBJa)
-
-Target : [https://web1.ctf.p7z.pw](https://web1.ctf.p7z.pw)
-
-- ทำการโจมตีเว็บโจทย์การแข่งขัน เพื่อหาข้อความลับ ที่เรียกว่า Flag โดย Flag จะมีรูปแบบ เช่น STH1{cff940beed74db5e1c7c63007223a6e6}
-- เข้าสู่ระบบเป็นสิทธิ์ผู้ดูแลระบบ (Flag 1)
-- ทำการพิมพ์เงินออกจากระบบ (Flag 2)
+> [!abstract] **Target Information**
+> 
+> - **Target URL:** [https://web1.ctf.p7z.pw](https://web1.ctf.p7z.pw/)
+>     
+> - **Objective:** ค้นหา Flag ทั้งหมด 2 ตัว (Admin Access & Logic Bypass)
+>     
+> - **Flag Format:** `STH1{...}`
+>     
 
 ---
 
-## มาเริ่มกันที่ Flag 1 : เข้าสู่ระบบเป็นสิทธิ์ผู้ดูแลระบบ
+## Flag 1: Privilege Escalation (เข้าสู่ระบบสิทธิ์ Admin)
 
-![](https://cdn-images-1.medium.com/max/800/1*MIA-GGdTygl9TsJOnUpJFg.png)
+### 1. Information Gathering & Login
 
-หลังจากเข้าเว็ปมาก็จะเห็นหน้า login ซึ่งเราไม่มี username, password แล้วเราจะ login ได้ยังไง ?
+จากการสำรวจหน้าแรก เราพบช่องโหว่พื้นฐานจากการตรวจสอบ Source Code (Inspect Element)
 
-ขั้นตอนแรกเรามารวบรวมหาข้อมูลให้มากที่สุดก่อน (Information Gathering) เริ่มจากลอง inspect หน้าเว็ปดูเผื่อจะเจออะไร
+- **พบ Credentials หลุด:** มี Username/Password ของ User ทดสอบถูก Comment ไว้
+    
+- **Action:** ทำการ Login ด้วยสิทธิ์ `test` และติ๊ก **"Remember Me"** เพื่อสร้าง JWT Cookie
+    
+### 2. API Enumeration (การไล่หาข้อมูลผ่าน API)
 
-![](https://cdn-images-1.medium.com/max/800/1*dqASwHKhA-0YkurFc0i-1w.png)
+เมื่อตรวจสอบไฟล์ `script.js` พบฟังก์ชัน Debug ที่น่าสนใจ 2 ตัว:
 
-เมื่อลองดูใน Source code เราจะเห็น comment ของ credentials อยู่ คือ username และ password ลองเอา username และ password ที่ได้มา login ดู และ ติ๊ก Remember Me ด้วย
+1. `debugFetchUserTest()` → ดึงข้อมูล User `test`
+    
+2. `debugFetchAllUsers()` → ดึงรายชื่อ User ทั้งหมดในระบบ
+    
 
-![](https://cdn-images-1.medium.com/max/800/1*qBCMf8ulCnAjzEl_uYdSWg.png)
+> [!bug] **Exploit Point**
+> 
+> จากการเรียก `api.php?action=get_alluser` พบ User ชื่อ `admin-uat`
+> 
+> เมื่อเจาะจงไปที่ `api.php?action=get_userinfo&user=admin-uat` เราได้รับ **remember_me_token** ของ Admin มา!
 
-หลังจาก login แล้ว เราจะเห็นว่ามีข้อมูลเกี่ยวกับการ login ของเราขึ้นมา คือ username “test”, Role “user”
+### 3. JWT Secret Brute-forcing
 
-![](https://cdn-images-1.medium.com/max/800/1*V9pCf388lfTMN3p6CzXecA.png)
+เรามี Token แต่ไม่สามารถปลอมแปลงสิทธิ์ได้ถ้าไม่มี **Secret Key** เราจึงต้องใช้ `Hashcat` เพื่อถอดรหัสหา Key จาก JWT เดิมของเรา:
 
-แต่ใน Flag นี้เราจะต้อง login ด้วย Admin user แล้วเราจะสามารถ login ด้วย Admin ได้ยังไง ? ลอง inspect หน้าเว็บดูอีกรอบเผื่อจะมีอะไรซ่อนอยู่อีก
-
-![](https://cdn-images-1.medium.com/max/800/1*tPAnEqOqZCeNaFMxgSg_BQ.png)
-
-เมื่อลองส่องๆดูเราจะเห็นไฟล์ javascript “script.js” และเราเห็นว่าในไฟล์นี้มี function อยู่ 2 function คือ
-
-**debugFetchUserTest()** - function นี้จะทำการ fetch data จาก **api.php?action=get_userinfo&user=test**
-
-![](https://cdn-images-1.medium.com/max/800/1*XEHSmAeddFaafO57Y1d9Ng.png)
-
-
-ลองยิง api ไปที่ endpoint นี้ดู `https://web1.ctf.p7z.pw/api.php?action=get_userinfo&user=test`
-
-ผลลัพธ์ที่ได้ :
-
-![](https://cdn-images-1.medium.com/max/800/1*RjiFslSA3qieWE09l66fAQ.png)
-
-แสดงว่า function นี้เป็น function ที่ทำหน้าที่ดึงข้อมูลของ user นั้นๆ ทีนี้ลองไปดูอีก function ว่ามันทำอะไรได้บ้าง ?
-
-**debugFetchAllUsers()** - function นี้จะทำการ fetch data จาก **api.php?action=get_alluser**
-
-![](https://cdn-images-1.medium.com/max/800/1*ztm59x3xqb5ipCb0fzgnHA.png)
-
-ลองยิง api ไปที่ endpoint นี้ดู `https://web1.ctf.p7z.pw/api.php?action=get_alluser`
-
-ผลลัพธ์ที่ได้ :
-
-![](https://cdn-images-1.medium.com/max/800/1*2nzCK4WD1WhV1tRgjVCayQ.png)
-
-แสดงว่า function นี้เป็น function ที่ทำหน้าที่ fetch user ทั้งหมดในระบบ
-
-จากผลลัพธ์ของ function **debugFetchAllUsers()** เราจะเห็นว่า มี user อยู่อีก 1 user ซึ่งอาจจะเป็น admin user เราจะลองเอา username นี้ไปยิง api เพื่อขอข้อมูลของ user ดู
-
-`https://web1.ctf.p7z.pw/api.php?action=get_userinfo&user=admin-uat`
-
-ผลลัพธ์ที่ได้ :
-
-![](https://cdn-images-1.medium.com/max/800/1*iKnZgCthfsCiMGCq0L4vuw.png)
-
-ดูจากข้อมูลนี้เราจะเห็น remember_me_token ซึ่งอาจจะเป็น token ที่ใช้ sign jwt token ของ admin-uat แสดงว่าเราอาจจะใช้ token นี้มา sign token เพื่อ login เป็น admin-uat ได้
-
-แต่เราไม่มี jwt secret key สำหรับใช้ sign token แล้วเราจะหามันได้ยังไง ? คำตอบก็คือ **bruteforce** ยังไงหล่ะ
-ก่อนอื่นเราต้องไปเอา Jwt token ของเรามาก่อน ซึ่งจะอยู่ใน cookies
-
-![](https://cdn-images-1.medium.com/max/800/1*pFCpW3nPwieQsrVl37GpHw.png)
-
-และเราจะใช้ hashcat สำหรับ brutefoce เพื่อหา Jwt secret key
+Bash
 
 ```
-hashcat -a 0 -m 16500 "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6ImI4MTk0M2JhLWQxYzUtNDk1YS04NDI3LTQ3MTFjMzkyNTZiZiJ9.Rlk_a69lx16hNhwn4nBfRxhiMGmEDoPIcxfr1_7JdH8" /usr/share/wordlists/rockyou.txt
+# ใช้ Mode 16500 สำหรับ JWT (HS256)
+hashcat -a 0 -m 16500 "<YOUR_JWT_HERE>" /usr/share/wordlists/rockyou.txt
 ```
 
-![](https://cdn-images-1.medium.com/max/800/1*iEY26e5EwWmYuby84foSmQ.png)
+- **Result Found:** Secret Key คือ `"bobcats"`
+    
 
-หลังจาก brutefoce เสร็จ เราก็จะได้คำตอบว่า jwt secret key คือ
+### 4. Forging Admin Token
 
-![](https://cdn-images-1.medium.com/max/800/1*VzCLOwQjpO5cNY5NcnFChQ.png)
+ใช้ Python ในการสร้าง JWT ใหม่โดยใช้ Token ของ `admin-uat` ที่เราแอบดูมาจาก API:
 
-ตอนนี้เราได้ทั้ง jwt secret key และ token แล้ว
+Python
 
-ต่อไปคือการเอาทั้ง 2 อย่างมารวมกัน ก็คือ การ sign token นั่นเอง
-
-เราจะใช้ python สำหรับ sign token
-
+```
 import jwt
-print(jwt.encode({ "token": "73eb7063-f8c3-4e50-bea2-07c05681aa92"}, '"bobcats"', algorithm="HS256"))
+# Sign token ใหม่ด้วย Secret ที่ Brute-force ได้
+payload = { "token": "73eb7063-f8c3-4e50-bea2-07c05681aa92" }
+print(jwt.encode(payload, "bobcats", algorithm="HS256"))
+```
 
-![](https://cdn-images-1.medium.com/max/800/1*woGgxRc0ghPoRvdEphHaYw.png)
-
-หลังจาก ได้ jwt token มาแล้ว เราจะเอา token ไปแก้ ใน cookies ของเรา
-
-![](https://cdn-images-1.medium.com/max/800/1*7rK6Jf0o0ti3dL4g8D4RaQ.png)
-
-แล้วลอง refresh browser ดู ถ้า user ยังไม่เปลี่ยนให้ ปิด browser แล้วเปิดใหม่ มันอาจจะติด cache อยู่
-
-เราก็จะสามารถ login ด้วย admin-uat ได้แล้ว
-
-![](https://cdn-images-1.medium.com/max/800/1*9_H-AIoIbyZnD0UjLBhKMA.png)
-
-เราจะลองเข้าไปที่หน้า admin.php ตามที่ถูก comment ไว้ใน script.js
-
-![](https://cdn-images-1.medium.com/max/800/1*foch7j9mazC6tgDgHq_6cw.png)
-
-![](https://cdn-images-1.medium.com/max/800/1*kzY9YBqNPKoSNH8dzf-VpQ.png)
-
-หลังจากเข้ามาที่หน้า admin.php แล้ว ก็ลอง inspect ดูอีกรอบ
-
-![](https://cdn-images-1.medium.com/max/800/1*tNyPQK5p_8Gh_X5UFiGHZg.png)
-
-จะเห็น Flag ที่ 1 ถูก comment อยู่ใน source code
+**Step สุดท้าย:** นำ JWT ที่ได้ไปแทนที่ใน Cookies ของ Browser แล้ว Refresh หน้าเว็บเพื่อเข้าสู่สิทธิ์ Admin และไปที่หน้า `admin.php` เพื่อรับ Flag ที่ 1 ใน Source Code
 
 ---
 
-## มาต่อกันที่ Flag ที่ 2
+## Flag 2: Logic Bypass (พิมพ์เงินออกจากระบบ)
 
-Flag 2 : ทำการพิมพ์เงินออกจากระบบ
+### 1. Vulnerability Analysis
 
-จากการ inspect หน้า admin.php เราจะเห็น โค้ดอะไรบางอย่างถูก comment อยู่
+ในหน้า `admin.php` มีโค้ดตรวจสอบความปลอดภัย (Validation) ที่ถูก Comment ไว้ ซึ่งมีช่องโหว่ที่ตัว Regex:
 
-![](https://cdn-images-1.medium.com/max/800/1*lTNt3qPI3dQjNBTJtgbTBw.png)
+PHP
 
-ลองแกะๆการทำงานดูจะเห็นว่า
+```
+// Regex: /^[0-9]+$/m  <-- มีจุดอ่อนที่ตัวแก้ไข /m (Multiline)
+if (preg_match('/^[0-9]+$/m', $amount) && strpos($amount, 'STH')) {
+    echo $flag2;
+}
+```
 
-โค้ดนี้คือโค้ดสำหรับ validate input และแสดง Flag ออกมา
+> [!warning] **The Flaw**
+> 
+> - `^...$ /m` จะตรวจสอบเงื่อนไขแบบ **บรรทัดต่อบรรทัด**
+>     
+> - ถ้าบรรทัดแรกเป็นตัวเลข (ผ่าน Regex) และมีบรรทัดอื่นที่มีคำว่า "STH" (ผ่าน strpos) เงื่อนไขจะเป็นจริงทันที
+>     
 
-logic ของการทำงาน คือ
+### 2. Exploitation (Newline Injection)
 
-**validateNumber()**
+เราไม่สามารถใส่ข้อความผ่านหน้าเว็บได้เพราะ Input ถูก Lock เป็น `type="number"` จึงต้องใช้ **Burp Suite** ในการยิง Request โดยตรง
 
-- Regular Expression `/^[0-9]+$/m`เช็คว่า input เป็นตัวเลขหรือไม่
-- ข้อสังเกตคือ Regx นี้ใช้ /m ซึ่งจะตรวจสอบแค่บรรทัดเดียวเท่านั้น
+**Payload ที่ใช้:**
 
-**strpos($amount, ‘STH’)**
+HTTP
 
-- เช็คว่า Input มีคำว่า STH อยู่หรือไม่
+```
+POST /api.php HTTP/1.1
+...
+amount=123%0ASTH&denomination=USD
+```
 
-การที่เราจะ bypass validator นี้ไปได้ คือ input ต้องเป็นตัวเลขทั้งหมด และ มี STH อยู่ด้วย ระบบถึงจะ return Flag มาให้เรา
+- `123` : ผ่านเงื่อนไขบรรทัดแรกว่าเป็นตัวเลข
+    
+- `%0A` : คือ Newline (`\n`) เพื่อขึ้นบรรทัดใหม่
+    
+- `STH` : บรรทัดที่สองทำให้ฟังก์ชัน `strpos` ตรวจเจอคำที่ต้องการ
+    
 
-แล้วเราจะทำยังไงหล่ะ ??
+**Result:** ระบบส่ง Flag ที่ 2 กลับมาให้ใน Response Body ทันที!
 
-ถ้าจำได้ Regx ที่ validate input มันตรวจสอบแค่บรรทัดเดียว ดังนั้นเราก็สามารถ input ข้อมูล 2 บรรทัดได้สิ
+---
 
-เช่นแบบนี้
+## Summary
 
-12345
-STH
-
-เพราะบรรทัดแรกจะถูกตรวจสอบว่าถูกต้องด้วย Regx แต่บรรทัดที่ 2 มีคำว่า STH ทำให้ logic ของระบบเป็น True && True และเราก็จะได้ Flag
-
-เราจะใช้ burpsuit สำหรับยิง API แทนการพิมพ์ข้อมูลใน form ของหน้าเว็ป
-
-![](https://cdn-images-1.medium.com/max/800/1*KXxreu45N0Z6cwvrVBpF8g.png)
-
-เพราะหน้าเว็ปใช้ input type number ทำให้เราไม่สามารถใส่ ข้อความใน input ได้
-
-ลองยิง API ด้วย burpsuit โดยส่ง payload **amount=123%0ASTH&denomination=USD**
-
-`12345` คือ ตัวเลขที่เราต้องการให้ผ่าน regx
-
-`%0A` คือ \n แบบเข้ารหัส (url encoding)
-
-`STH` คือ สิ่งที่เราต้องการแทรกเข้าไปใน payload เพื่อให้ได้ flag
-
-![](https://cdn-images-1.medium.com/max/800/1*YwS2Ho3DH7ueHwzh5CyXyg.png)
-
-หลังจากยิง API ไป เราก็จะเห็น Flag ที่ 2 ใน Response
-
-![](https://cdn-images-1.medium.com/max/800/1*kg2kjMK5Hs_AQ_PgV1FwnA.png)
-
-ทีนี้เราก็จะได้ Flag ครบทั้ง 2 Flag แล้ว เย้ๆๆๆ
+|**Flag**|**Vulnerability Type**|**Tool Used**|
+|---|---|---|
+|**Flag 1**|Information Disclosure & Weak JWT Secret|Hashcat, Python, DevTools|
+|**Flag 2**|Regex Multiline Bypass (Newline Injection)|Burp Suite|
