@@ -2,7 +2,7 @@
 created: 2026-02-20
 title: Goodbye VScode
 tags:
-  - vscode
+  - seed
 ---
 I’ve been a loyal VS Code user for over four years. It was my go-to tool from the very first line of HTML I wrote. But as my projects grew and my tech stack expanded, I began to feel the limitations of a general-purpose editor.
 
