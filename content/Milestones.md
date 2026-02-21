@@ -6,11 +6,9 @@ title: Milestones
 ---
 ## 2026
 
-- **Agoda Summer Internship**: Secured a Software Engineer (Full-Stack) internship offer at **Agoda** for the upcoming summer.
+- **Agoda Summer Internship**: Secured a Software Engineer (Full-Stack) internship offer at **Agoda** for the summer period.
     
-- **Research Assistant**: Awarded a Research Assistant Grant to develop an **AI-based Grading System** for handwritten exams under the guidance of my Professor.
-    
-
+- **Research Assistant**: Awarded a Research Assistant Grant to develop a **Web Application for an AI Grading System**, leveraging **LLMs** and **rubric-based evaluation** to grade handwritten exams under the guidance of my Professor.
 ## 2025
 
 - **Hacktoberfest**: Successfully completed the 6PR challenge and earned the limited-edition 2025 contributor T-shirt.
