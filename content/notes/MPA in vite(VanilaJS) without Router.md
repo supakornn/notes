@@ -4,7 +4,6 @@ tags:
   - sapling
 created: 2025-11-21
 ---
-
 Build a Multi-Page App (MPA) in Vite without a JS router.
 
 Each HTML file is a separate entry, and navigation reloads the page. Vite can bundle all HTML files using `rollupOptions.input`:

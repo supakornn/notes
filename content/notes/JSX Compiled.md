@@ -1,10 +1,9 @@
 ---
 created: 2026-02-12
 tags:
-  - sapling
-title: How jsx works under the hood
+  - seed
+title: JSX Compiled
 ---
-
 ### jsx
 
 ```js

@@ -1,7 +1,7 @@
 ---
-title: Graceful Shutdown in Go
+title: Golang Graceful Shutdown
 tags:
-  - sapling
+  - zeed
 created: 2025-10-05
 ---
 

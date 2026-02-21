@@ -4,7 +4,7 @@ title: Pointers
 tags:
   - sapling
 ---
-### 1. The Core Concept
+### The Core Concept
 
 A **Pointer** is a variable that stores a **memory address**.
 
@@ -22,20 +22,20 @@ cout << *ptr; // Prints the value stored at that address (42)
 ```
 
 
-### 2. Memory Visualization
+### Memory Visualization
 
 RAM is like a giant list of boxes. Each box has a number (Address).
 
 - **Pointer Size:** On 64-bit systems, a pointer is **8 bytes** because that's the size needed to store any address in your RAM.
 
 ![[Pasted image 20260221100213.png | 500]]
-### 3. Pointer Arithmetic
+### Pointer Arithmetic
 
 When you do `ptr + 1`, it jumps by the size of the type.
 
 - `int*` jumps 4 bytes.
 - `char*` jumps 1 byte.
-### 4. Why Use Pointers?
+### Why Use Pointers?
 
 - **Efficiency:** No need to copy big data.
 - **Dynamic Memory:** Allocate space on the **Heap**.
@@ -43,4 +43,4 @@ When you do `ptr + 1`, it jumps by the size of the type.
 
 ![[Pasted image 20260221100312.png | 500]]
 
-**Learn more** - https://www.youtube.com/watch?v=zuegQmMdy8M
+**Learn more** - [https://www.youtube.com/watch?v=zuegQmMdy8M](https://www.youtube.com/watch?v=zuegQmMdy8M)
