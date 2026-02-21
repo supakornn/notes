@@ -4,6 +4,8 @@ title: Learning CSS by game
 tags:
   - seed
 ---
-- [Flexbox Froggy](https://flexboxfroggy.com) - learn flexblox
-- [Grid Garden](https://cssgridgarden.com) - learn grid
-and more check at https://codepip.com/games/
+- [Flexbox Froggy](https://flexboxfroggy.com) — A game for learning CSS flexbox.
+    
+- [Grid Garden](https://cssgridgarden.com) — A game for learning CSS grid.
+    
+- [Codepip Games](https://codepip.com/games/) — More CSS/Web development games.
