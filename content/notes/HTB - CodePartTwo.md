@@ -179,7 +179,7 @@ ls instance
 users.db
 ```
 
-### What is the recovered password for the user marco?
+## What is the recovered password for the user marco?
 
 ```js
 cat instance/users.db
