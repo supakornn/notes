@@ -2,7 +2,6 @@
 title: Supakorn's Notes
 subtitle: brain dump website
 created: 2025-10-05
-modified: 2026-02-19
 ---
 ```poetry
 - Welcome
@@ -13,7 +12,10 @@ Currently, I'm interested in a lot of things that relate to technology field, bu
 
 I'm a curious person and I love learning new things, so I hope this website can be a place where I can share my knowledge and also learn from others.
 
-[[Bookshelf]]: A collection of books i've read.
+Here are some places you may want to visit:
+
+- [[Paper]]: A curated collection of research papers I find interesting.
+- [[Bookshelf]]: A log of books I’m currently reading, finished, or planning to dive into.
 
 ```poetry
 - supakorn:)
