@@ -6,12 +6,15 @@ title: Milestones
 ---
 ## 2026
 
-- **Summer Internship**: Get Offer of during summer internship at Agoda in Software Engineer (Full-Stack)
-- **Research Assistant**: Received a scholarship as a research assistant for build a AI-Grading for handwrite exam.
+- **Agoda Summer Internship**: Secured a Software Engineer (Full-Stack) internship offer at **Agoda** for the upcoming summer.
+    
+- **Research Assistant**: Awarded a Research Assistant Grant to develop an **AI-based Grading System** for handwritten exams under the guidance of my Professor.
+    
 
 ## 2025
 
-- **Hacktoberfest**: Completed the 6PR challenge and earned the limited edition T-shirt.
-- **#IT31 Starter Pack** - Head of Basic Programming subject in Basic training camp for freshy at my uni.
-- **Hack The Box**: Finished the Penetration Tester Path, mastering offensive security and network exploitation.
-  
+- **Hacktoberfest**: Successfully completed the 6PR challenge and earned the limited-edition 2025 contributor T-shirt.
+    
+- **#IT31 Starter Pack**: Served as the **Head of Basic Programming** for the freshman training camp, mentoring new students in core programming concepts.
+    
+- **Hack The Box**: Completed the **Penetration Tester Path**, mastering fundamental offensive security and network exploitation techniques.
