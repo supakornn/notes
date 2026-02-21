@@ -1,7 +1,7 @@
 ---
 created: 2026-02-08
 tags:
-  - seed
+  - sapling
 title: HTB - CodePartTwo
 ---
 

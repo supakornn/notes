@@ -1,7 +1,7 @@
 ---
 title: Managing Passwords with Pass and GPG
 tags:
-  - sapling
+  - seed
 created: 2025-11-21
 ---
 

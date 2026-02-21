@@ -1,7 +1,7 @@
 ---
 title: Tailscale to private network VM
 tags:
-  - sapling
+  - seed
 created: 2025-10-06
 ---
 

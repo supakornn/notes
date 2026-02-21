@@ -1,7 +1,7 @@
 ---
 title: Spicetify theme for Spotify
 tags:
-  - sapling
+  - seed
 created: 2025-10-05
 ---
 
