@@ -1,8 +1,7 @@
 ---
 title: Customize VScode UI fonts
 tags:
-  - vscode
-  - tools
+  - seed
 created: 2025-10-05
 ---
 

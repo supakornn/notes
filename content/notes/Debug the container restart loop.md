@@ -1,8 +1,7 @@
 ---
 title: Debug the container restart loop
 tags:
-  - docker
-  - linux
+  - seed
 created: 2025-12-03
 ---
 

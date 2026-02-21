@@ -1,8 +1,7 @@
 ---
 title: Compile Protobuf for Go
 tags:
-  - go
-  - dev
+  - seed
 created: 2025-10-05
 ---
 

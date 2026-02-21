@@ -1,8 +1,7 @@
 ---
 created: 2025-12-14
 tags:
-  - dsa
-  - concept
+  - seed
 title: Big O notation
 ---
 

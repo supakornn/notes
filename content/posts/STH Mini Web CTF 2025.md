@@ -1,11 +1,9 @@
 ---
 title: STH-Mini-Web-CTF-2025
 tags:
-  - ctf
-  - sth
+  - fruit
 created: 2025-10-05
 ---
-
 ![](https://cdn-images-1.medium.com/max/800/0*quSIvw2fwHBmbBJa)
 
 Target : [https://web1.ctf.p7z.pw](https://web1.ctf.p7z.pw)
