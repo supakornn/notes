@@ -5,8 +5,13 @@ tags:
   - evergreen
 ---
 ### Recursive Language Models for Infinite Context Scaling
-link: https://arxiv.org/pdf/2512.24601
-#### Abstact:
-We study allowing large language models (LLMs) to process arbitrarily long prompts through the lens of inference-time scaling. We propose Recursive Language Models (RLMs), a general inference paradigm that treats long prompts as part of an external environment and allows the LLM to programmatically examine, decompose, and recursively call itself over snippets of the prompt. We find that RLMs can successfully process inputs up to two orders of magnitude beyond model context windows and, even for shorter prompts, dramatically outperform the quality of vanilla frontier LLMs and common long-context scaffolds across four diverse longcontext tasks while having comparable cost. At a small scale, we post-train the first natively recursive language model. Our model, RLMQwen3-8B, outperforms the underlying Qwen3- 8B model by 28.3% on average and even approaches the quality of vanilla GPT-5 on three long-context tasks. Code is available at https://github.com/alexzhang13/rlm.
 
-###
+**Link:** [https://arxiv.org/pdf/2512.24601](https://arxiv.org/pdf/2512.24601) 
+
+**Summary:** Introduces **Recursive Language Models (RLMs)**, an inference paradigm that enables LLMs to scale to "infinite" context. Instead of processing long prompts at once, the model recursively calls itself to examine and decompose snippets of data. This allows it to handle inputs up to 100x beyond its native context window, significantly outperforming vanilla frontier models like GPT-5 on long-context tasks with comparable costs.
+
+### Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
+
+**Link:** [https://arxiv.org/pdf/2602.08222](https://arxiv.org/pdf/2602.08222) 
+
+**Summary:** Proposes **WMSS**, a post-training paradigm that solves the "saturation bottleneck" where strong models stop improving. It uses the model's own **historical weak states (checkpoints)** to find learning gaps. By letting weak agents guide the strong agent through entropy dynamics, the model can improve its reasoning and coding abilities beyond conventional limits without adding any extra inference cost.
