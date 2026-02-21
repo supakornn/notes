@@ -1,7 +1,7 @@
 ---
 created: 2026-02-08
 tags:
-  - sapling
+  - fruit
 title: HTB - CodePartTwo
 ---
 ## How many open TCP ports are listening on CodePartTwo?
@@ -114,7 +114,7 @@ app@codeparttwo:~/app$ cat instance/users.db
 Mmarco649c9d65a206a75f5abe509fe128bce5
 ```
 
-The recovered MD5 hash `649c9d65a206a75f5abe509fe128bce5` for user `marco` can be cracked using online rainbow tables like CrackStation.
+The recovered MD5 hash `649c9d65a206a75f5abe509fe128bce5` for user `marco` can be cracked using online rainbow tables like [CrackStation](https://crackstation.net).
 
 ---
 
