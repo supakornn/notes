@@ -5,15 +5,17 @@ tags:
 title: Milestones
 ---
 ## 2026
+- **Summer Internship**: Get Offer of during summer internship at Agoda in Software Engineer (Full-Stack)
 
+	![[Pasted image 20260221084748.png]]
 
 ## 2025
 
-- **Hack The Box**: Finished the Penetration Tester Path, mastering offensive security and network exploitation.
-  
-	![[Pasted image 20260221082236.png| 400]]
-
 - **Hacktoberfest**: Completed the 6PR challenge and earned the limited edition T-shirt.
 
-	![[Pasted image 20260221083246.png | 500]]
-- 
+	![[Pasted image 20260221083246.png]]
+
+- **Hack The Box**: Finished the Penetration Tester Path, mastering offensive security and network exploitation.
+  
+	![[Pasted image 20260221082236.png]]
+
