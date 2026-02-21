@@ -4,9 +4,13 @@ tags:
   - evergreen
 title: Bookshelf
 ---
+## To Read
 
-| Cover                                    | Title                | Author           | Pages | Rating(5) | Status  |
-| ---------------------------------------- | -------------------- | ---------------- | ----- | --------- | ------- |
-| ![[Pasted image 20260125221744.png\|80]] | Killing Peter Rabbit | Lee Chanyoung    | 248   | ⭐⭐        | Read    |
-| ![[Pasted image 20260125221920.png\|80]] | Clean Architecture   | Robert C. Martin | 238   | ⭐⭐        | Reading |
-|                                          | Domain-Driven Design |                  |       |           |         |
+- Domain-Driven Design by Eric Evans
+
+## Reading
+
+- Clean Architecture by Robert C. Martin
+## Past
+
+- Killing Peter Rabbit by Lee Chanyoung
