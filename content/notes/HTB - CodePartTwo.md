@@ -93,7 +93,7 @@ js2py==0.74
 https://github.com/naclapor/CVE-2024-28397
 ```
 
-#### What is the name of the database used by the application?
+## What is the name of the database used by the application?
 
 - Setup
 
@@ -200,7 +200,7 @@ cat instance/users.db
 
 - Crack with https://crackstation.net/
 
-### Submit the flag located in the marco user's home directory.
+## Submit the flag located in the marco user's home directory.
 
 - SSH with marco
 
@@ -256,7 +256,7 @@ backups  npbackup.conf  user.txt
 marco@codeparttwo:~$ cat user.txt
 ```
 
-### What is the full path to the backup utility that the marco user can run as root without a password?
+## What is the full path to the backup utility that the marco user can run as root without a password?
 
 ```js
 marco@codeparttwo:~$ sudo -l
@@ -267,7 +267,7 @@ User marco may run the following commands on codeparttwo:
     (ALL : ALL) NOPASSWD: /usr/local/bin/npbackup-cli
 ```
 
-### What is the full backup path defined in the npbackup configuration file found in marco’s home directory?
+## What is the full backup path defined in the npbackup configuration file found in marco’s home directory?
 
 ```js
 marco@codeparttwo:~$ cat npbackup.conf
@@ -284,7 +284,7 @@ repos:
 ...
 ```
 
-### Submit the flag located in the root user's home directory.
+## Submit the flag located in the root user's home directory.
 
 - Modify paths: to /root
 
