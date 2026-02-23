@@ -8,7 +8,7 @@ tags:
 
 **Link:** [https://arxiv.org/pdf/2602.08222](https://arxiv.org/pdf/2602.08222) 
 
-**Summary:** Proposes **WMSS**, a post-training paradigm that solves the "saturation bottleneck" where strong models stop improving. It uses the model's own **historical weak states (checkpoints)** to find learning gaps. By letting weak agents guide the strong agent through entropy dynamics, the model can improve its reasoning and coding abilities beyond conventional limits without adding any extra inference cost.\
+**Summary:** Proposes **WMSS**, a post-training paradigm that solves the "saturation bottleneck" where strong models stop improving. It uses the model's own **historical weak states (checkpoints)** to find learning gaps. By letting weak agents guide the strong agent through entropy dynamics, the model can improve its reasoning and coding abilities beyond conventional limits without adding any extra inference cost.
 
 ## Recursive Language Models for Infinite Context Scaling
 
