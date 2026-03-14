@@ -1,7 +1,7 @@
 ---
 created: 2026-03-12
 tags:
-  - fruit
+  - sapling
 title: Use NotebookLM in efficient way
 ---
 ### 1. Upload Many Sources

@@ -55,19 +55,19 @@ tags:
 				"typeName": "document"
 			},
 			{
+				"meta": {},
+				"id": "page:page",
+				"name": "Page 1",
+				"index": "a1",
+				"typeName": "page"
+			},
+			{
 				"x": 0,
 				"y": 0,
 				"lastActivityTimestamp": 0,
 				"meta": {},
 				"id": "pointer:pointer",
 				"typeName": "pointer"
-			},
-			{
-				"meta": {},
-				"id": "page:page",
-				"name": "Page 1",
-				"index": "a1",
-				"typeName": "page"
 			},
 			{
 				"followingUserId": null,
@@ -135,6 +135,48 @@ tags:
 				"meta": {},
 				"id": "camera:page:page",
 				"typeName": "camera"
+			},
+			{
+				"x": 167.98046875,
+				"y": 105.9296875,
+				"rotation": 0,
+				"isLocked": false,
+				"opacity": 1,
+				"meta": {},
+				"id": "shape:PA-H1tiy5LovsiO5jYrrn",
+				"type": "text",
+				"props": {
+					"color": "black",
+					"size": "m",
+					"w": 375.390625,
+					"font": "draw",
+					"textAlign": "start",
+					"autoSize": true,
+					"scale": 1,
+					"richText": {
+						"type": "doc",
+						"attrs": {
+							"dir": "auto"
+						},
+						"content": [
+							{
+								"type": "paragraph",
+								"attrs": {
+									"dir": "auto"
+								},
+								"content": [
+									{
+										"type": "text",
+										"text": "Project: Exam Grading System"
+									}
+								]
+							}
+						]
+					}
+				},
+				"parentId": "page:page",
+				"index": "a1mfu8SV",
+				"typeName": "shape"
 			}
 		]
 	}
