@@ -1,7 +1,7 @@
 ---
 title: Singleton Pattern for Connecting DB in Go
 tags:
-  - sapling
+  - seed
 created: 2025-10-05
 ---
 

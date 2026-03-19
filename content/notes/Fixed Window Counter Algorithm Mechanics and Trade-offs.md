@@ -1,8 +1,8 @@
 ---
 created: 2026-03-19
-title: Fixed Window Counter Algorithm
+title: Fixed Window Counter Algorithm Mechanics and Trade-offs
 tags:
-  - seed
+  - sapling
 ---
 The **Fixed Window Counter** is a fundamental rate-limiting algorithm characterized by its simplicity and low resource overhead. It restricts the number of requests a client can make within a discrete, static time alignment (the "window").
 

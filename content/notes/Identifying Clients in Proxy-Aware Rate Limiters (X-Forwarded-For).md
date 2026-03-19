@@ -1,7 +1,7 @@
 ---
 created: 2026-03-19
 tags:
-  - seed
+  - sapling
 title: Identifying Clients in Proxy-Aware Rate Limiters (X-Forwarded-For)
 ---
 Effective rate limiting depends on uniquely identifying the client making the request (the "key"). In modern web infrastructure, this is complicated because servers almost always sit behind **Reverse Proxies** (Load Balancers, Nginx, Cloudflare).

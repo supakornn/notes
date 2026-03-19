@@ -2,7 +2,7 @@
 created: 2026-03-19
 title: Functional Middleware Factories and Closure Scope
 tags:
-  - seed
+  - sapling
 ---
 The provided rate limiter is a sophisticated application of Functional Programming principles, specifically using a **Higher-Order Function (HOF)** and **JavaScript Closures** to manage private state.
 

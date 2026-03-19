@@ -2,7 +2,7 @@
 created: 2026-03-19
 title: CORS Preflight (OPTIONS)
 tags:
-  - seed
+  - sapling
 ---
 **CORS Preflight** is a security "handshake" used by web browsers to verify that a cross-origin request is safe to send. It ensures that the server understands and permits the specific HTTP method and headers intended by the client.
 

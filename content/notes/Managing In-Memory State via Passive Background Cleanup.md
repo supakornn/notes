@@ -2,7 +2,7 @@
 created: 2026-03-19
 title: Managing In-Memory State via Passive Background Cleanup
 tags:
-  - seed
+  - sapling
 ---
 When implementing rate limiting or caching strictly in memory (RAM), managing the lifecycle of data entries is critical to prevent a **Memory Leak**.
 

@@ -1,7 +1,7 @@
 ---
 created: 2026-03-19
 tags:
-  - seed
+  - sapling
 title: Node.js Timer Lifecycle and Graceful Process Shutdown (.unref)
 ---
 The management of background timers (`setInterval`, `setTimeout`) in Node.js and Bun directly impacts whether a server process can exit cleanly or must be forcefully killed.
