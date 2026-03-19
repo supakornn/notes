@@ -1,7 +1,7 @@
 ---
 title: Golang Graceful Shutdown
 tags:
-  - zeed
+  - seed
 created: 2025-10-05
 ---
 
