@@ -1,6 +1,6 @@
 ---
 created: 2026-02-20
-title: Why i decide to stop using vscode
+title: Why I Moved Away from VS Code
 tags:
   - fruit
 ---
