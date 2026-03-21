@@ -1,6 +1,6 @@
 ---
 created: 2026-03-22
-title: How i use AI in my Daily workflow
+title: How I Use AI in My Daily Workflow
 tags:
   - fruit
 ---
