@@ -4,8 +4,9 @@ tags:
   - seed
 created: 2025-10-05
 ---
+**Use this when:** You want to **stop a Go server** without dropping active connections or losing data.
 
-Cleanly stop a Go server without dropping active connections or losing data.
+---
 
 ```go
 c := make(chan os.Signal, 1)
@@ -19,10 +20,12 @@ go func() {
 }()
 ```
 
-**How it works:**
+---
 
-1. Creates a channel to receive OS signals
-2. Listens for SIGINT (Ctrl+C) or SIGTERM (docker stop)
-3. Calls `Shutdown()` to finish active requests before exiting
+### **How it works**
 
-More info: https://victoriametrics.com/blog/go-graceful-shutdown
+- Creates a **channel** to receive OS signals.
+- Listens for **SIGINT** (Ctrl+C) or **SIGTERM** (e.g., `docker stop`).
+- Calls `Shutdown()` to **finish active requests** before exiting.
+
+More info: [VictoriaMetrics – Go Graceful Shutdown](https://victoriametrics.com/blog/go-graceful-shutdown)

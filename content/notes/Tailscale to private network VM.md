@@ -4,29 +4,56 @@ tags:
   - seed
 created: 2025-10-06
 ---
+**Use this when:** You want to **SSH between devices** without port forwarding or exposing ports to the internet.
 
-**Use this when:** You want to SSH between your devices without port forwarding or exposing ports to the internet.
+---
 
-**What is Tailscale?** A mesh VPN that creates a secure private network between your devices.
+**What is Tailscale?**  
+A **mesh VPN** that creates a secure private network between your devices.
 
-**Steps:**
+---
+### **Install Tailscale**
 
-1. Install Tailscale
+**macOS**
 
-```shell
-# mac
+```bash
 brew install tailscale
 ```
 
-2. Start Tailscale
+**Linux**
 
-```shell
-# linux
+```bash
+sudo apt install tailscale   # or your distro's package manager
+```
+
+---
+### **Start Tailscale**
+
+```bash
 sudo tailscale up
 ```
 
-3. Login on both Mac and Linux
+---
+### **Log in on all devices**
 
-4. SSH with Machine Address: [https://login.tailscale.com/admin/machines](https://login.tailscale.com/admin/machines)
+Authenticate via:  
+[https://login.tailscale.com/admin/machines](https://login.tailscale.com/admin/machines)
 
-**Tip:** Use `tailscale status` to see connected devices and their IPs.
+---
+### **SSH between devices**
+
+Use the **Tailscale IP** of the target machine (check with `tailscale status`):
+
+```bash
+ssh user@<tailscale-ip>
+```
+
+---
+
+**Tip:**
+
+```bash
+tailscale status
+```
+
+Shows all connected devices and their private Tailscale IPs.

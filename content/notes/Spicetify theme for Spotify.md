@@ -7,7 +7,7 @@ created: 2025-10-05
 
 **What is Spicetify?** A CLI tool to customize Spotify client (themes, extensions, plugins).
 
-![[Pasted image 20251003010617.png]]
+![[Pasted image 20260322051431.png]]
 
 **Steps:**
 

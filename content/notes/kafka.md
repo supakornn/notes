@@ -5,6 +5,8 @@ tags:
   - sapling
 ---
 Apache Kafka is a distributed **publish-subscribe** messaging system running over **TCP**. It records state changes as **Events** (or messages/records).
+
+---
 ### Main Actors
 
 - **Producers:** Apps that write data into **Topics**.
@@ -13,6 +15,8 @@ Apache Kafka is a distributed **publish-subscribe** messaging system running ove
 - **Cluster:** A group of one or more Brokers working together.
 
 ![[Pasted image 20260221071457.png | 500]]
+
+---
 ### How Data is Stored
 
 - **Topics** are split into **Partitions** for parallelism.
@@ -21,6 +25,7 @@ Apache Kafka is a distributed **publish-subscribe** messaging system running ove
     
 ![[Pasted image 20260221071547.png | 500]]
 
+---
 ### Key Characteristics
 
 - **Sequential I/O:** High performance by writing data linearly to the disk.

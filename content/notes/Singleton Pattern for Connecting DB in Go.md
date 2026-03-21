@@ -4,8 +4,9 @@ tags:
   - seed
 created: 2025-10-05
 ---
+**Use this when:** You want a **single shared database connection** across your app to avoid opening multiple connections.
 
-Single database connection shared across your app to avoid opening multiple connections.
+---
 
 ```go
 var instance *sql.DB
@@ -23,6 +24,11 @@ func GetDB() *sql.DB {
 }
 ```
 
-**How it works:** `sync.Once` ensures the connection is created only once, even if `GetDB()` is called from multiple goroutines.
+---
+### **How it works**
 
-More info: https://www.codingexplorations.com/blog/implementing-the-singleton-pattern-in-go
+- `sync.Once` ensures the connection is **created only once**, even if `GetDB()` is called from multiple goroutines.
+- `instance` holds the **singleton database connection** for reuse.
+    
+
+More info: [Coding Explorations – Singleton Pattern in Go](https://www.codingexplorations.com/blog/implementing-the-singleton-pattern-in-go)

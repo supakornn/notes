@@ -4,31 +4,62 @@ tags:
   - sapling
 title: Big O notation
 ---
-#### O(1) – Constant Time: same time regardless of input size
+### $O(1)$ — Constant Time
 
-- Example: access element by index
+Execution time does not change with input size.
 
-#### O(log n) – Logarithmic Time: reduces problem by constant factor each step
+- Example: accessing an element by index in an array
 
-- Example: binary search (data must be sorted)
+---
 
-#### O(n log n) – Linearithmic Time: log work for each of n elements
+### $O(\log n)$ — Logarithmic Time
+
+Problem size is reduced by a constant factor at each step.
+
+- Example: binary search _(requires sorted data)_
+
+---
+
+### $O(n \log n)$ — Linearithmic Time
+
+Processes nnn elements, each with logarithmic work.
 
 - Example: merge sort
 
-#### O(n^c) – Polynomial Time: running time grows as n^c
+---
 
-- Example: nested loops (n², n³, …)
+### $O(n^c)$ — Polynomial Time
 
-#### O(c^n) – Exponential Time: running time doubles or multiplies each input
+Running time grows as a power of nnn (e.g., $n^2, n^3$).
+
+- Example: nested loops
+
+---
+
+### $O(c^n)$ — Exponential Time
+
+Running time grows exponentially with input size.
 
 - Example: naive recursive Fibonacci
 
-#### O(n!) – Factorial Time: all permutations considered
+---
+
+### $O(n!)$ — Factorial Time
+
+Considers all possible permutations.
 
 - Example: generating all permutations
 
-See also:
+---
 
-- [[Time and Space Complexity]]
-- [[P and NP Problem]]
+## Notes
+
+- Growth rate matters more than exact runtime for large nnn
+- Constants and lower-order terms are ignored in Big-O notation
+
+---
+
+## See also
+
+- [[notes/Time and Space Complexity]]
+- [[notes/P and NP Problem]]

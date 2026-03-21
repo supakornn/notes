@@ -4,9 +4,12 @@ tags:
   - seed
 title: JSX Compiled
 ---
-### jsx
+JSX is **syntax sugar** → compiled into function calls → produces **React elements (objects)**
 
-```js
+---
+### JSX (Source)
+
+```jsx
 function App() {
   return (
     <div>
@@ -18,22 +21,20 @@ function App() {
 }
 ```
 
-### Copiled Code
+---
+## Compiled Output
 
-#### Babel
+### Babel (modern JSX runtime)
 
 ```js
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime"
+
 function App() {
-  return /*#__PURE__*/ _jsxs("div", {
+  return _jsxs("div", {
     children: [
-      /*#__PURE__*/ _jsx("h1", {
-        children: "Hello Babel",
-      }),
-      /*#__PURE__*/ _jsx("p", {
-        children: "This is JSX that looks like HTML.",
-      }),
-      /*#__PURE__*/ _jsx("button", {
+      _jsx("h1", { children: "Hello Babel" }),
+      _jsx("p", { children: "This is JSX that looks like HTML." }),
+      _jsx("button", {
         onClick: () => alert("Hi"),
         children: "Click me",
       }),
@@ -42,7 +43,8 @@ function App() {
 }
 ```
 
-#### swc
+---
+### Classic (React.createElement)
 
 ```js
 function App() {
@@ -53,13 +55,86 @@ function App() {
     React.createElement("p", null, "This is JSX that looks like HTML."),
     React.createElement(
       "button",
-      {
-        onClick: function onClick() {
-          return alert("Hi")
-        },
-      },
-      "Click me",
-    ),
+      { onClick: () => alert("Hi") },
+      "Click me"
+    )
   )
 }
 ```
+
+---
+## `_jsx` vs `_jsxs`
+
+- `_jsx` → **single child**
+    
+- `_jsxs` → **multiple children (array)**
+    
+
+```js
+_jsx("h1", { children: "Hello" })      // 1 child
+_jsxs("div", { children: [ ... ] })    // many children
+```
+
+👉 optimization: avoids always creating arrays
+
+---
+## What React Actually Gets
+
+Both outputs produce a **React Element (plain object)**
+
+```js
+{
+  $$typeof: Symbol.for("react.element"),
+  type: "div",
+  key: null,
+  ref: null,
+  props: {
+    children: [...]
+  }
+}
+```
+
+---
+## Mental Model (Important)
+
+```txt
+JSX
+ ↓ compile (Babel / SWC / TS)
+Function calls (jsx / createElement)
+ ↓
+React Element (object)
+ ↓
+React Fiber reconciler
+ ↓
+DOM updates
+```
+
+---
+## Key Differences
+
+### Modern JSX Runtime (Babel)
+
+- No `import React`
+- Uses `react/jsx-runtime`
+- Smaller + faster output
+
+### Classic Runtime
+
+- Uses `React.createElement`
+- Requires `React` in scope
+- More verbose
+    
+---
+## Notes
+
+- JSX ≠ template → it's **just JavaScript**
+- React elements are **immutable objects**
+- JSX is compiled **at build time**, not runtime
+    
+
+---
+## Insight
+
+> JSX is not the abstraction.  
+> **React Element is the real abstraction.**
+

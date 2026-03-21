@@ -21,6 +21,7 @@ cout << ptr;  // Prints the memory address
 cout << *ptr; // Prints the value stored at that address (42)
 ```
 
+---
 
 ### Memory Visualization
 
@@ -29,12 +30,16 @@ RAM is like a giant list of boxes. Each box has a number (Address).
 - **Pointer Size:** On 64-bit systems, a pointer is **8 bytes** because that's the size needed to store any address in your RAM.
 
 ![[Pasted image 20260221100213.png | 500]]
+
+---
 ### Pointer Arithmetic
 
 When you do `ptr + 1`, it jumps by the size of the type.
 
 - `int*` jumps 4 bytes.
 - `char*` jumps 1 byte.
+
+---
 ### Why Use Pointers?
 
 - **Efficiency:** No need to copy big data.
@@ -43,4 +48,5 @@ When you do `ptr + 1`, it jumps by the size of the type.
 
 ![[Pasted image 20260221100312.png | 500]]
 
+---
 **Learn more** - [https://www.youtube.com/watch?v=zuegQmMdy8M](https://www.youtube.com/watch?v=zuegQmMdy8M)

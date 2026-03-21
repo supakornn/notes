@@ -15,12 +15,14 @@ Events in the DOM don't just happen on a single element; they travel through the
 
 ![[Pasted image 20260221225620.png | 500]]
 
+---
 #### Critical Insight: Why Bubbling over Capturing?
 
 - **Specific-to-General Logic:** It is more intuitive to handle the innermost element (Specific) first before notifying its parents (General).
 - **Safety from Interception:** Using `e.stopPropagation()` in the **Capturing** phase is dangerous because it kills the event before it ever reaches the children (a "top-down dictatorship"). Bubbling allows children to finish their job before the parent takes over.
 - **Historical Standard:** Historically, Internet Explorer only supported Bubbling. The web evolved around this model, making it the de facto standard for modern frameworks.
 
+---
 ### Event Delegation
 
 A powerful pattern that leverages **Bubbling**. Instead of attaching a listener to every single child element, you attach one listener to a **Parent** element.
@@ -36,12 +38,14 @@ document.querySelector('#parent').addEventListener('click', (e) => {
 });
 ```
 
+---
 ### Controlling Event Behavior
 
 - **`e.preventDefault()`**: Prevents the browser's default action (e.g., stopping a link from navigating).
 - **`e.stopPropagation()`**: Stops the event from bubbling up. In Bubbling phase, this lets the child act but prevents the parent from reacting.
 - **`e.stopImmediatePropagation()`**: Stops bubbling AND prevents other listeners on the **same element** from firing.
     
+---
 ### Memory & Performance
 
 - **`{ once: true }`**: Automatically removes the listener after it fires once.
@@ -49,6 +53,7 @@ document.querySelector('#parent').addEventListener('click', (e) => {
     
 - **Cleanup:** Always use `removeEventListener` when a component unmounts to avoid **Memory Leaks**.
     
+---
 ### When to use Capturing? (Interception Pattern)
 
 You only use the Capturing phase when you need to **intercept** an event before the target element even knows it happened:

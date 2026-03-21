@@ -1,12 +1,14 @@
 ---
 title: MPA in vite(VanilaJS) without Router
 tags:
-  - sapling
+  - seed
 created: 2025-11-21
 ---
-Build a Multi-Page App (MPA) in Vite without a JS router.
+**Use this when:** You want **each HTML file as a separate entry**, with navigation triggering a full page reload instead of a client-side router.
 
-Each HTML file is a separate entry, and navigation reloads the page. Vite can bundle all HTML files using `rollupOptions.input`:
+---
+
+Vite can bundle all HTML files automatically using `rollupOptions.input` in `vite.config.js`:
 
 ```js
 // vite.config.js
@@ -31,3 +33,10 @@ export default defineConfig({
   },
 })
 ```
+
+**Tip:**
+
+- Place all your HTML files in the project root or adjust the script to scan subdirectories.
+- Navigation between pages will reload the page, no JS router required.
+    
+

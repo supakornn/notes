@@ -4,82 +4,103 @@ tags:
   - seed
 created: 2025-11-21
 ---
+**Use this when:** You want a simple, CLI-based, **GPG-encrypted password manager** that integrates with Git.
 
-**Use this when:** You want a simple, CLI-based, GPG-encrypted password manager that works with Git.
+---
 
-**What is Pass?** The standard Unix password manager - stores passwords in GPG-encrypted files.
+**What is Pass?**  
+The standard Unix password manager. Stores passwords in **GPG-encrypted files**.
 
-**Setup:**
+---
 
-1. Install on Mac
+## **Setup**
 
-```shell
+### Install on macOS
+
+```bash
 brew install pass
 ```
 
-2. Generate a GPG Key
+### Generate a GPG Key
 
-```shell
+```bash
 gpg --full-generate-key
 ```
 
-- Key type: **RSA and RSA**
-- Key size: **4096**
+- **Key type:** RSA and RSA
+    
+- **Key size:** 4096 bits
+    
 
-3. List all GPG keys
+### List all GPG keys
 
-```shell
+```bash
 gpg --list-keys
 ```
 
 - Example output:
+    
 
-```shell
+```text
 pub   rsa4096 2025-11-21 [SC]
-ABCD1234EF5678901234567890ABCDEF12345678 <- Copy this
+ABCD1234EF5678901234567890ABCDEF12345678  <- Copy this
 uid           [ultimate] Your Name <you@example.com>
 ```
 
-4. Initialize Pass Vault
+### Initialize Pass Vault
 
-```shell
+```bash
 pass init <Your-Key-ID>
 ```
 
-**Daily Usage:**
+---
 
-5. Add a new password
+## **Daily Usage**
 
-```shell
+### Add a new password
+
+```bash
 pass insert <name>
 ```
 
 - Example:
+    
 
-```shell
+```bash
 pass insert vm/myvm
 ```
 
-6. Show a password
+### Show a password
 
-```shell
+```bash
 pass show <name>
 ```
 
-**Useful Commands:**
+---
 
-| Command                   | Description                      |
-| ------------------------- | -------------------------------- |
-| `pass -c <name>`          | Copy to clipboard                |
-| `pass edit <name>`        | Edit password                    |
-| `pass generate <name> 20` | Generate random 20-char password |
-| `pass rm <name>`          | Delete password                  |
-| `pass git push`           | Sync with Git (if enabled)       |
+## **Useful Commands**
 
-**Tip:** Use with SSH (requires `sshpass`):
+|Command|Description|
+|---|---|
+|`pass -c <name>`|Copy password to clipboard|
+|`pass edit <name>`|Edit an existing password|
+|`pass generate <name> 20`|Generate a random 20-char password|
+|`pass rm <name>`|Delete a password|
+|`pass git push`|Sync with Git (if enabled)|
 
-```shell
+---
+
+## **Tip:** Use with SSH
+
+```bash
 sshpass -p "$(pass show vm/myvm)" ssh user@vm-ip
 ```
 
-**Storage location:** `~/.password-store/`
+---
+
+**Storage location:**
+
+```text
+~/.password-store/
+```
+

@@ -8,6 +8,8 @@ I’ve been a loyal VS Code user for over four years. It was my go-to tool from 
 
 Today, I’m officially moving to **JetBrains IDEs** as my primary workspace, with **Zed** as my companion for quick edits. This isn’t just a change of tools—it’s a shift in how I approach development.
 
+---
+
 ### 1. The "Extension Hell" vs. Integrated Intelligence
 
 As a **polyglot developer**, I regularly switch between **Java, Go, Rust, Vue, and C++**—sometimes all within the same day.
@@ -22,6 +24,9 @@ As a **polyglot developer**, I regularly switch between **Java, Go, Rust, Vue, a
     
     The result is not just convenience, but **consistency and reliability**, especially in large or multi-language codebases.
     
+
+---
+
 ### 2. Coding in the Age of AI: From Writing Code to Understanding It
 
 The way we build software is changing.
@@ -41,17 +46,17 @@ With AI capable of generating hundreds—or even thousands—of lines of code in
     In this environment, basic editing features are not enough. I need:
     
     - Deep code navigation across the entire codebase
-        
     - Refactoring tools I can trust without hesitation
-        
     - Powerful debugging for complex execution paths
-        
     - Static analysis that catches issues early
         
 - **Why JetBrains Fits:**  
     JetBrains IDEs excel at helping me **reason about code**. Their integrated analysis and mature debugging tools make it significantly easier to work with large, unfamiliar, or AI-generated codebases.
     
     They don’t just help me write code faster—they help me **understand it better**. And that’s the real leverage now.
+    
+
+---
 
 ### 3. A Pragmatic Workflow: The Right Tool for the Right Job
 
@@ -61,9 +66,7 @@ I’ve moved away from the idea of a single tool for everything. Instead, I use 
     I use Zed for:
     
     - Editing config files
-        
     - Quick fixes
-        
     - Small or temporary projects
         
     
@@ -73,11 +76,8 @@ I’ve moved away from the idea of a single tool for everything. Instead, I use 
     When things get complex, I switch immediately:
     
     - Large or long-lived projects
-        
     - Multi-language systems
-        
     - Debugging non-trivial issues
-        
     - Refactoring or architectural changes
         
     
@@ -86,11 +86,12 @@ I’ve moved away from the idea of a single tool for everything. Instead, I use 
     My setup:
     
     - IntelliJ IDEA Ultimate — Java, web, and general backend work
-        
     - Rider — .NET and game development
-        
     - CLion — low-level work (C/C++, Rust, systems programming)
         
+
+---
+
 ### Final Thoughts
 
 VS Code is a masterpiece of software, and it served me well for over four years.

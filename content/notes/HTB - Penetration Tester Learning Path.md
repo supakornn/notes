@@ -3,9 +3,9 @@ created: 2026-01-31
 tags:
   - seed
 ---
+### [Complete](https://academy.hackthebox.com/achievement/1467577/path/16)
 
-https://academy.hackthebox.com/achievement/1467577/path/16
-
+## Completed Modules
 - Penetration Testing Process
 - Getting Started
 - Network Enumeration with Nmap

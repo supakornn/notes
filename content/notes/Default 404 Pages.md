@@ -4,9 +4,10 @@ tags:
   - seed
 title: Default 404 Pages
 ---
+**Use this when:** You want to **fingerprint the framework or language** used by a website.
 
-Default of 404 page, used to fingerprint the framework / language being used by the site.
+---
+- Created by **0xdf**
+- Reference / cheatsheet: [Default 404 Pages](https://0xdf.gitlab.io/cheatsheets/404)
 
-Created By **0xdf**
-
-- https://0xdf.gitlab.io/cheatsheets/404
+**Tip:** Observing default 404 responses can reveal underlying **web frameworks, languages, or CMS**.

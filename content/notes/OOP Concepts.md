@@ -2,6 +2,7 @@
 created: 2025-12-18
 tags:
   - sapling
+title: OOP Concepts
 ---
 ### Encapsulation
 
@@ -45,6 +46,7 @@ car.getLicensePlate(); // Expect: TH-001
 car.validateLicensePlate("X"); // Expect: Compile-time error
 ```
 
+---
 ### Inheritance
 
 Inheritance allows a new class (child / subclass) to **reuse properties and behaviors** from an existing class (parent / superclass).  
@@ -78,6 +80,7 @@ Kid kid = new Kid("Jane");
 kid.speak(); // Expect: Hello
 ```
 
+---
 ### Abstraction
 
 Abstraction means **hiding complex implementation details** and showing only essential features of an object.  
@@ -105,6 +108,7 @@ class Motorcycle extends Vehicle {
 }
 ```
 
+---
 ### Polymorphism
 
 Polymorphism means **"many forms"**.  

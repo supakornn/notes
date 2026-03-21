@@ -4,21 +4,37 @@ tags:
   - seed
 created: 2025-10-05
 ---
+**Use this when:** You want to **generate Go code** from `.proto` files for gRPC services.
 
-Generate Go code from `.proto` files for gRPC services.
+---
 
-**Important:** Make sure `protoc` (Protocol Buffer compiler) is installed first: `brew install protobuf`
+**Important:** Make sure the **Protocol Buffer compiler** is installed:
 
-**Steps:**
+```bash
+brew install protobuf
+```
 
-1. Install protoc-gen-go plugin for Go
+---
+### **Install the Go plugin for Protobuf**
 
-```shell
+```bash
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 ```
 
-2. Compile your `.proto` file with Go and gRPC options
+---
+### **Compile your `.proto` file**
 
-```shell
-protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative path_to_protobuf_file
+Generate Go code with gRPC support:
+
+```bash
+protoc \
+  --go_out=. --go_opt=paths=source_relative \
+  --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+  path_to_protobuf_file
 ```
+
+**Tip:**
+
+- `--go_out=.` and `--go-grpc_out=.` specify the output directory.
+- `paths=source_relative` ensures the generated files keep the same relative path as your `.proto` file.
+    
