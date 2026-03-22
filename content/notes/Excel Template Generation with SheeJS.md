@@ -67,3 +67,7 @@ const handleDownloadTemplate = () => {
 2. **Do not add/remove columns casually** → import depends on it
 3. **Keep minimal** → no formulas, no formatting logic
 4. **Generic** → just pass `sheetName` + `headers` → reusable for any entity
+
+---
+**See also**
+- [[notes/Excel Import — SheeJS]]

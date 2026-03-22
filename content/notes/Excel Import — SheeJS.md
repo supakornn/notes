@@ -4,7 +4,6 @@ tags:
   - seed
 title: Excel Import — SheeJS
 ---
-
 **Flow:**
 1. Receive file (multipart/form-data)
 2. Parse Excel/CSV → JSON rows
@@ -100,4 +99,7 @@ export async function importRecords<T>(
 4. **Bulk insert** → no per-row DB calls
 5. **Return summary** → imported/skipped count
 6. **Generic row typing** → allow reuse for any entity (students, products, orders, etc.)
-    
+
+---
+**See also**
+- [[notes/Excel Template Generation with SheeJS]]
