@@ -18,7 +18,6 @@ If headers change → import logic must change.
 ### Service
 
 ```ts
-// TypeScript (Node.js)
 import { utils, write } from 'xlsx';
 
 export function generateStudentTemplate(): Buffer {
@@ -42,7 +41,6 @@ export function generateStudentTemplate(): Buffer {
 ### Route
 
 ```ts
-// TypeScript (Hono / Fetch API style)
 const buffer = generateStudentTemplate();
 
 return new Response(buffer, {
@@ -58,7 +56,6 @@ return new Response(buffer, {
 ### Frontend
 
 ```ts
-// TypeScript (React)
 const handleDownloadTemplate = () => {
   window.open(`/api/v1/subjects/${subjectId}/students/template`, '_blank');
 };
