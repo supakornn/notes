@@ -4,8 +4,6 @@ title: Excel Template Generation - SheeJS
 tags:
   - seed
 ---
-## Excel Template Generation Pattern
-
 **Flow:**
 
 1. Define headers (source of truth / schema contract)
