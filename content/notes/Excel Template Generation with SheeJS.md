@@ -4,44 +4,43 @@ title: Excel Template Generation - SheeJS
 tags:
   - seed
 ---
-Define a **strict Excel schema** that will be used as the contract for imports.  
-If headers change → import logic must change.
+## Excel Template Generation Pattern
 
----
-### Flow
+**Flow:**
 
-1. Define headers (source of truth)
-2. Generate workbook
+1. Define headers (source of truth / schema contract)
+2. Generate workbook (no formulas / formatting logic)
 3. Return as downloadable file
-
+    
 ---
-### Service
+### Generic Template Service
 
 ```ts
 import { utils, write } from 'xlsx';
 
-export function generateStudentTemplate(): Buffer {
+export function generateExcelTemplate(
+  sheetName: string,
+  headers: string[]
+): Buffer {
   const wb = utils.book_new();
 
-  // Contract: must match import keys exactly
-  const headers = ['student_code', 'full_name'];
-
+  // Contract: headers = source of truth
   const ws = utils.aoa_to_sheet([headers]);
 
-  // Optional: UX only
-  ws['!cols'] = [{ wch: 20 }, { wch: 30 }];
+  // Optional UX: set column width
+  ws['!cols'] = headers.map((h) => ({ wch: Math.max(10, h.length + 5) }));
 
-  utils.book_append_sheet(wb, ws, 'Students');
+  utils.book_append_sheet(wb, ws, sheetName);
 
   return Buffer.from(write(wb, { type: 'buffer', bookType: 'xlsx' }));
 }
 ```
 
 ---
-### Route
+### Generic Route
 
 ```ts
-const buffer = generateStudentTemplate();
+const buffer = generateExcelTemplate('Students', ['student_code', 'full_name']);
 
 return new Response(buffer, {
   headers: {
@@ -62,10 +61,9 @@ const handleDownloadTemplate = () => {
 ```
 
 ---
-### Key Rules
+### Key Patterns / Rules
 
-- Header = contract (must match import keys exactly)
-- Do not add/remove columns casually
-- Keep template minimal (no formulas, no formatting logic)
-- Treat this as schema definition, not UI
-
+1. **Header = contract** → must match import keys exactly
+2. **Do not add/remove columns casually** → import depends on it
+3. **Keep minimal** → no formulas, no formatting logic
+4. **Generic** → just pass `sheetName` + `headers` → reusable for any entity
