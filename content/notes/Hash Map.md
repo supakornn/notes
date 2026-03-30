@@ -1,5 +1,5 @@
 ---
-created: 1205-12-22
+created: 2025-12-22
 title: Hash Map
 tags:
   - sapling
