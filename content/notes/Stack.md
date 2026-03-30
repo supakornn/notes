@@ -1,6 +1,8 @@
 ---
 created: 2025-12-21
-tag: sapling
+tags:
+  - sapling
+  - dsa
 title: Stack
 ---
 A Stack is the simplest data structure with a rule: **last in, first out (LIFO)**. The last thing you push is the first thing you pop. That's it — but this single constraint makes it the right tool for a surprising number of real problems.

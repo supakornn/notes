@@ -1,6 +1,8 @@
 ---
 created: 2025-12-20
-tag: sapling
+tags:
+  - sapling
+  - dsa
 title: Array
 ---
 Array is the simplest but most fundamental data structure — and understanding it deeply means understanding how memory actually works.

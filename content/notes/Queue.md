@@ -1,11 +1,13 @@
 ---
 created: 2025-12-21
 title: Queue
-tag: sapling
+tags:
+  - sapling
+  - dsa
 ---
 A Queue enforces one rule: **first in, first out (FIFO)**. The first element you enqueue is the first one you dequeue. Think of a line at a coffee shop — nobody cuts the queue.
 
-A **Deque** (double-ended queue, pronounced "deck") relaxes that rule — you can add and remove from _both_ ends. It's the generalization that makes both Stack and Queue special cases of the same structure.
+A **Deque** (double-ended queue, pronounced "deck") relaxes that rule — you can add and remove from _both_ ends. It's the generalization that makes both [[notes/Stack]] and Queue special cases of the same structure.
 
 ![[Pasted image 20260330193659.png]]
 
@@ -70,10 +72,11 @@ The deque's ability to push and pop from both ends unlocks patterns neither a pu
 
 ## Stack vs Queue vs Deque — when to pick which
 
-|You need|Use|
-|---|---|
-|Last-in-first-out (undo, recursion, DFS)|Stack|
-|First-in-first-out (scheduling, BFS, buffers)|Queue|
-|Fast insert/remove at both ends|Deque|
-|Sliding window problems|Deque|
-|Implement a stack using a queue or vice versa|Classic interview problem — ask me!|
+| You need                                      | Use                       |
+| --------------------------------------------- | ------------------------- |
+| Last-in-first-out (undo, recursion, DFS)      | Stack                     |
+| First-in-first-out (scheduling, BFS, buffers) | Queue                     |
+| Fast insert/remove at both ends               | Deque                     |
+| Sliding window problems                       | Deque                     |
+
+

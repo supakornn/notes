@@ -1,7 +1,9 @@
 ---
 created: 2025-12-21
 title: Linked List
-tag: sapling
+tags:
+  - sapling
+  - dsa
 ---
 A Linked List solves the exact problem arrays have: costly middle insertions. Instead of storing elements in one contiguous block, each element (called a **node**) holds its value plus a pointer to the next node. Memory doesn't need to be contiguous — nodes can live anywhere in the heap.
 

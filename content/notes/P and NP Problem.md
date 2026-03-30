@@ -2,6 +2,7 @@
 created: 2026-01-17
 tags:
   - sapling
+  - dsa
 title: P and NP Problem
 ---
 ## P Problem (Polynomial Time)
