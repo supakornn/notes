@@ -2,8 +2,8 @@
 created: 2026-03-31
 title: Binary Tree and Binary Search Tree
 tags:
-  - dsa
   - sapling
+  - dsa
 ---
 A **Binary Tree** is a tree where every node has at most two children — a left child and a right child. That's the only rule. No ordering, no balance requirement, just a branching structure.
 
