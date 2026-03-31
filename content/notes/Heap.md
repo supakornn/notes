@@ -2,8 +2,8 @@
 created: 2026-03-31
 title: Heap
 tags:
-  - dsa
   - sapling
+  - dsa
 ---
 A **Heap** is a binary tree with one extra rule: the **heap property**. In a max-heap, every parent is larger than its children. In a min-heap, every parent is smaller. That's it — but this single constraint guarantees that the most extreme value (min or max) is always sitting at the root, reachable in O(1).
 
