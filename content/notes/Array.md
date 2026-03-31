@@ -48,5 +48,5 @@ The core insight: every element sits at a **contiguous** memory address. To find
 
 ## When _not_ to use an array
 
-If you're frequently inserting or deleting from the middle → use a [[notes/Linked List]] or [Deque](Queue%20and%20Deque.md). If you need fast lookup by key rather than position → use a [[notes/Hash Map]]. If you need sorted order with fast insert → use a **BST**.
+If you're frequently inserting or deleting from the middle → use a [[notes/Linked List]] or [Deque](Queue%20and%20Deque.md). If you need fast lookup by key rather than position → use a [[notes/Hash Map]]. If you need sorted order with fast insert → use a [BST](notes/Binary Tree and Binary Search Tree).
 
