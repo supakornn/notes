@@ -2,6 +2,7 @@
 created: 2025-12-14
 tags:
   - sapling
+  - dsa
 title: Big O notation
 ---
 ### $O(1)$ — Constant Time

@@ -1,6 +1,6 @@
 ---
 created: 2025-12-21
-title: Queue
+title: Queue and Deque
 tags:
   - sapling
   - dsa
