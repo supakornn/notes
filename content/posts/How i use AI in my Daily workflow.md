@@ -3,7 +3,6 @@ created: 2026-03-22
 title: How I Use AI in My Daily Workflow
 tags:
   - fruit
-  - writing
 ---
 I use AI in almost every part of my daily workflow—coding, researching, studying at university, preparing for exams, and even writing this post.
 
@@ -15,7 +14,7 @@ So instead of talking about what AI _can_ do, I want to share how I actually use
 
 ---
 
-### As a Developer: When Coding Stops Being the Bottleneck
+## As a Developer: When Coding Stops Being the Bottleneck
 
 AI has completely changed how I write code.
 
@@ -29,7 +28,7 @@ Instead of enjoying the act of typing code, I started enjoying **designing syste
 
 ---
 
-### I Don’t Let AI Think for Me
+## I Don’t Let AI Think for Me
 
 One thing I’m very strict about: I never let AI make decisions on its own.
 
@@ -51,7 +50,7 @@ AI helps me move faster, but the direction still comes from me.
 
 ---
 
-### Reading Code Matters More Than Writing It
+## Reading Code Matters More Than Writing It
 
 AI writes code fast. That part is obvious.
 
@@ -65,7 +64,7 @@ Because at the end of the day, if something breaks, it’s not the AI’s proble
 
 ---
 
-### Side Projects Became My Playground Again
+## Side Projects Became My Playground Again
 
 One of the biggest changes AI brought to my workflow is how I approach side projects.
 
@@ -104,7 +103,7 @@ AI doesn’t just make me faster—it makes me more curious.
 
 ---
 
-### I Document More Than I Used To
+## I Document More Than I Used To
 
 One thing I’ve noticed after using AI more is how easy it is to lose context.
 
@@ -134,7 +133,7 @@ It’s explainable.
 
 ---
 
-### As a Student: AI Helps Me Learn, Not Replace Learning
+## As a Student: AI Helps Me Learn, Not Replace Learning
 
 Outside of coding, I also use AI a lot for studying.
 
@@ -152,7 +151,7 @@ With AI, I can focus on what actually matters: understanding the idea.
 
 ---
 
-### Writing, Thinking, and Learning English
+## Writing, Thinking, and Learning English
 
 Even writing this post follows the same pattern.
 
@@ -168,7 +167,7 @@ In a way, it feels like having a writing coach that’s always there.
 
 ---
 
-### Final Thought
+## Final Thought
 
 AI is powerful—but only if you use it intentionally.
 

