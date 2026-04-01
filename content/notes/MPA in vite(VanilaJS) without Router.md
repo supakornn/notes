@@ -4,9 +4,7 @@ tags:
   - seed
 created: 2025-11-21
 ---
-**Use this when:** You want **each HTML file as a separate entry**, with navigation triggering a full page reload instead of a client-side router.
-
----
+**each HTML file as a separate entry**, with navigation triggering a full page reload instead of a client-side router.
 
 Vite can bundle all HTML files automatically using `rollupOptions.input` in `vite.config.js`:
 

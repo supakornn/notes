@@ -5,9 +5,7 @@ tags:
 created: 2025-12-04
 ---
 
-**Use this when:** You're switching from Tmux to Zellij and want familiar keybindings.
-
----
+I was switching from Tmux to Zellij and want familiar keybindings.
 
 **What is Zellij?** A modern terminal multiplexer (like Tmux) written in Rust.
 

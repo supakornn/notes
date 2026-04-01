@@ -5,8 +5,6 @@ tags:
 title: Upgrading a Non-Interactive Shell
 ---
 Convert a limited shell into a more usable **interactive TTY shell**.
-
----
 ### Method: Python PTY Spawn
 
 ```bash

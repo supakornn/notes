@@ -4,22 +4,34 @@ tags:
   - seed
 created: 2025-12-03
 ---
-When a container keeps restarting, you can start a shell inside it using the following commands.
+container stuck in restart loop is annoying because you can’t exec into it
 
-### **With Docker Compose**
-
-```shell
-docker compose run --entrypoint sh <service_name>
-```
-
-### **With Docker Run**
+usually I end up doing:
 
 ```shell
-docker run --rm -it --entrypoint sh <image_name>
+docker compose run --entrypoint sh <service>
 ```
 
-**Notes:**
+it works, but actually this creates a NEW container
+→ so sometimes debugging feels weird because state/env is not the same
 
-- `<service_name>` refers to the service defined in your `docker-compose.yml`.
-- `<image_name>` refers to the image you want to run.
-- `--rm` removes the container after exit, and `-it` makes the shell interactive.
+if I actually want to see what’s going on:
+
+```json
+docker logs <container>
+```
+
+another thing that worked before:
+disable restart first
+
+```json
+docker update --restart=no <container>
+```
+
+then start + attach:
+
+```json
+docker start -ai <container>
+```
+
+this gets closer to the real environment

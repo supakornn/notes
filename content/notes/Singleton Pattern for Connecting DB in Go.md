@@ -4,7 +4,7 @@ tags:
   - seed
 created: 2025-10-05
 ---
-**Use this when:** You want a **single shared database connection** across your app to avoid opening multiple connections.
+**single shared database connection** across your app to avoid opening multiple connections.
 
 ---
 

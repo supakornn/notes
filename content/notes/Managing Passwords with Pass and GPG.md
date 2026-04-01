@@ -4,15 +4,8 @@ tags:
   - seed
 created: 2025-11-21
 ---
-**Use this when:** You want a simple, CLI-based, **GPG-encrypted password manager** that integrates with Git.
-
----
-
 **What is Pass?**  
 The standard Unix password manager. Stores passwords in **GPG-encrypted files**.
-
----
-
 ## **Setup**
 
 ### Install on macOS

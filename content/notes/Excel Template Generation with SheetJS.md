@@ -1,6 +1,6 @@
 ---
 created: 2026-03-22
-title: Excel Template Generation - SheeJS
+title: Excel Template Generation with SheetJS
 tags:
   - seed
 ---
@@ -68,4 +68,4 @@ const handleDownloadTemplate = () => {
 
 ---
 **See also**
-- [[notes/Excel Import — SheeJS]]
+- [[Excel Import with SheetJS]]

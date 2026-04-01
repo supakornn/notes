@@ -4,9 +4,7 @@ tags:
   - seed
 created: 2025-10-05
 ---
-**Use this when:** You want a **translucent or glass-like** look for your Obsidian window.
-
----
+make **translucent or glass-like** look for your Obsidian window.
 ### **Setup**
 
 - Go to **Settings → Appearance → Advanced** and turn on **“Translucent window”**.

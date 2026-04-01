@@ -4,11 +4,7 @@ tags:
   - seed
 created: 2025-12-03
 ---
-## **Find the Bundle ID of a macOS App**
-
-**Use case:** You’ll need the **bundle ID** when using automation tools like **Yabai** or **Aerospace**.
-
----
+I need the **bundle ID** when using automation tools like **Yabai** or **Aerospace**.
 ### **Command**
 
 Open Terminal and run:

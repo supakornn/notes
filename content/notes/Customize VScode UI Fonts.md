@@ -4,9 +4,7 @@ tags:
   - seed
 created: 2025-10-05
 ---
-**Use this when:** You want to change VSCode’s **UI font** (sidebar, tabs, etc.) to match your editor font.
-
----
+This is how to change VSCode’s **UI font** (sidebar, tabs, etc.) to match your editor font.
 ### **Setup**
 
 - Install the [**Custom UI Style**](https://marketplace.visualstudio.com/items?itemName=subframe7536.custom-ui-style) extension.

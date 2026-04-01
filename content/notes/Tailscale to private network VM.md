@@ -4,10 +4,6 @@ tags:
   - seed
 created: 2025-10-06
 ---
-**Use this when:** You want to **SSH between devices** without port forwarding or exposing ports to the internet.
-
----
-
 **What is Tailscale?**  
 A **mesh VPN** that creates a secure private network between your devices.
 

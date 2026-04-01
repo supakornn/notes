@@ -4,9 +4,7 @@ tags:
   - seed
 created: 2025-10-05
 ---
-**Use this when:** You want to **stop a Go server** without dropping active connections or losing data.
-
----
+ **stop a Go server** without dropping active connections or losing data.
 
 ```go
 c := make(chan os.Signal, 1)

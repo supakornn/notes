@@ -2,7 +2,7 @@
 created: 2026-03-22
 tags:
   - seed
-title: Excel Import — SheeJS
+title: Excel Import with SheetJS
 ---
 **Flow:**
 1. Receive file (multipart/form-data)
@@ -101,4 +101,4 @@ export async function importRecords<T>(
 
 ---
 **See also**
-- [[notes/Excel Template Generation with SheeJS]]
+- [[Excel Template Generation with SheetJS]]

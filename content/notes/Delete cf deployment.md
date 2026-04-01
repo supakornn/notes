@@ -4,12 +4,7 @@ title: Delete cf deployment
 tags:
   - seed
 ---
-## Delete Cloudflare Pages Deployments
-
 Delete all deployments except the live production deployment.
-
----
-
 ### Steps
 
 1. Download script  

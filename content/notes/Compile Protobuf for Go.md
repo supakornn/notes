@@ -4,9 +4,7 @@ tags:
   - seed
 created: 2025-10-05
 ---
-**Use this when:** You want to **generate Go code** from `.proto` files for gRPC services.
-
----
+how to **generate Go code** from `.proto` files for gRPC services.
 
 **Important:** Make sure the **Protocol Buffer compiler** is installed:
 
