@@ -16,7 +16,7 @@ Here are some places you may want to visit:
 
 - [[Milestones]]: A timeline of my professional growth and personal achievements.
 - [[Bookshelf]]: A log of books I’m currently reading, finished, or planning to dive into.
-- [[tag/Writing]]: A collection of my Writing
+- [[tag/Writing]]: A collection of my writing
 
 
 ```poetry
