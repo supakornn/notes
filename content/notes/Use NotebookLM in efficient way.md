@@ -4,14 +4,6 @@ tags:
   - seed
 title: Use NotebookLM in efficient way
 ---
-One mistake I used to make was treating NotebookLM like a simple summarization tool—upload one document, ask for a summary, and move on.
-
-It works. But it’s a very shallow way to use it.
-
-Over time, I found a workflow that turns it into something much more powerful—a tool for **building understanding**, not just extracting information.
-
----
-
 ### Start With Breadth, Not Just One Source
 
 Instead of uploading a single document, I upload everything related to the topic:
