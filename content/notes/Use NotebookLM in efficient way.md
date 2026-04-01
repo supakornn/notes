@@ -1,7 +1,7 @@
 ---
 created: 2026-03-12
 tags:
-  - fruit
+  - seed
 title: Use NotebookLM in efficient way
 ---
 One mistake I used to make was treating NotebookLM like a simple summarization tool—upload one document, ask for a summary, and move on.

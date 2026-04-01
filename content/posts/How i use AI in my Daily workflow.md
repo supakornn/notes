@@ -3,6 +3,7 @@ created: 2026-03-22
 title: How I Use AI in My Daily Workflow
 tags:
   - fruit
+  - writing
 ---
 I use AI in almost every part of my daily workflow—coding, researching, studying at university, preparing for exams, and even writing this post.
 

@@ -3,6 +3,7 @@ created: 2026-02-20
 title: Why I Moved Away from VS Code
 tags:
   - fruit
+  - writing
 ---
 I’ve been a loyal VS Code user for over four years. It was my go-to tool from the very first line of HTML I wrote. But as my projects grew and my tech stack expanded, I started to feel the friction of relying on a general-purpose editor.
 

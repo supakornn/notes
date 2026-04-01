@@ -15,8 +15,9 @@ I'm a curious person and I love learning new things, so I hope this website can 
 Here are some places you may want to visit:
 
 - [[Milestones]]: A timeline of my professional growth and personal achievements.
-- [[Paper]]: A curated collection of research papers I find interesting.
 - [[Bookshelf]]: A log of books I’m currently reading, finished, or planning to dive into.
+- [[tag/Writing]]: A collection of my Writing
+
 
 ```poetry
 - supakorn:)
