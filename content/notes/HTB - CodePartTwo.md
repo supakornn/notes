@@ -1,7 +1,7 @@
 ---
 created: 2026-02-08
 tags:
-  - fruit
+  - sapling
   - writeups
 title: HTB - CodePartTwo
 ---
