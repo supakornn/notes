@@ -2,6 +2,7 @@
 title: STH-Mini-Web-CTF-2025
 tags:
   - fruit
+  - writeups
 created: 2025-10-05
 ---
 > [!abstract] **Target Information**
