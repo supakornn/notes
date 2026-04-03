@@ -101,4 +101,4 @@ export async function importRecords<T>(
 
 ---
 **See also**
-- [[Excel Template Generation with SheetJS]]
+- [[notes/Excel Template Generation with SheetJS]]

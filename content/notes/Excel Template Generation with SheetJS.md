@@ -68,4 +68,4 @@ const handleDownloadTemplate = () => {
 
 ---
 **See also**
-- [[Excel Import with SheetJS]]
+- [[notes/Excel Import with SheetJS]]
