@@ -1,6 +1,6 @@
 ---
 created: 2026-03-22
-title: AI in My Daily Workflow
+title: Thinking With AI
 tags:
   - fruit
 ---
