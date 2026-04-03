@@ -8,12 +8,12 @@ If I told people in the developer community that I use light mode, most of them 
 
 First of all, I should mention that I used to strongly dislike light mode because it felt harsh on my eyes. I had been using dark mode since I got my first computer—almost 10 years ago. So why did I suddenly decide to switch to light mode for everything (IDE, browser, and any application that supports it)?
 
-### Why I decided to try light mode
+## Why I decided to try light mode
 
 It started simply because I got bored of seeing the same color scheme every day. It began to feel monotonous, and I found myself becoming less motivated to code or work. So I thought, “Maybe I should try using light mode for a day or a week, just for a change of pace.”  
 Yes, it really started from that simple (and slightly silly) idea.
 
-### My experience after using light mode for a month
+## My experience after using light mode for a month
 
 Surprisingly, I became more productive. My mind felt more active, and I was less prone to feeling sluggish or sleepy while working. It seems that the brighter interface helped me stay more alert and engaged throughout the day.
 
@@ -25,7 +25,7 @@ For anyone concerned about my eye health, I took several precautions. I wear blu
 
 ![[IMG_4929 2.jpg]]
 
-### Themes I use
+## Themes I use
 
 - I use [[notes/Catppuccin Palette|Catppuccin Latte]] for my terminal, IDE, and developer tools
 - [[notes/Spicetify theme for Spotify|Spotify]]
