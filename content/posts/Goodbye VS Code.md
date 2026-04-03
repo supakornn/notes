@@ -1,6 +1,6 @@
 ---
 created: 2026-02-20
-title: Why I Moved Away from VS Code
+title: Goodbye VScode
 tags:
   - fruit
 ---
