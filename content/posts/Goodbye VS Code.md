@@ -10,7 +10,7 @@ Today, I’m officially moving to **JetBrains IDEs** as my primary workspace, wi
 
 ---
 
-## 1. The "Extension Hell" vs. Integrated Intelligence
+## The "Extension Hell" vs. Integrated Intelligence
 
 As a **polyglot developer**, I regularly switch between **Java, Go, Rust, Vue, and C++**—sometimes all within the same day.
 
@@ -27,7 +27,7 @@ As a **polyglot developer**, I regularly switch between **Java, Go, Rust, Vue, a
 
 ---
 
-## 2. Coding in the Age of AI: From Writing Code to Understanding It
+## Coding in the Age of AI: From Writing Code to Understanding It
 
 The way we build software is changing.
 
@@ -58,7 +58,7 @@ With AI capable of generating hundreds—or even thousands—of lines of code in
 
 ---
 
-## 3. A Pragmatic Workflow: The Right Tool for the Right Job
+## A Pragmatic Workflow: The Right Tool for the Right Job
 
 I’ve moved away from the idea of a single tool for everything. Instead, I use a **tiered workflow** based on task complexity.
 
