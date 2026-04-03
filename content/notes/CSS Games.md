@@ -1,6 +1,6 @@
 ---
 created: 2026-02-21
-title: Learn CSS Through Games
+title: CSS Games
 tags:
   - seed
 ---

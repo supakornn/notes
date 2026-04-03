@@ -1,5 +1,5 @@
 ---
-title: MPA in vite(VanilaJS) without Router
+title: MPA VanilaJS
 tags:
   - seed
 created: 2025-11-21

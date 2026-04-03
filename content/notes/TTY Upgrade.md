@@ -2,7 +2,7 @@
 created: 2026-02-08
 tags:
   - seed
-title: Upgrading a Non-Interactive Shell
+title: TTY Upgrade
 ---
 Convert a limited shell into a more usable **interactive TTY shell**.
 ### Method: Python PTY Spawn

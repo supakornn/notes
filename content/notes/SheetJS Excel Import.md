@@ -15,7 +15,7 @@ title: Excel Import with SheetJS
 6. Return summary (imported/skipped/errors)
     
 ---
-### Generic Route (Receive File)
+## Generic Route (Receive File)
 
 ```ts
 const body = await c.req.parseBody();
@@ -41,7 +41,7 @@ return c.json({ data: result }, 200);
 ```
 
 ---
-### Generic Import Service
+## Generic Import Service
 
 ```ts
 import { read, utils } from 'xlsx';
@@ -89,8 +89,7 @@ export async function importRecords<T>(
 ```
 
 ---
-
-### Key Patterns to Reuse
+## Key Patterns to Reuse
 
 1. **Always cast + trim** → Excel / CSV cells are unreliable
 2. **Fail fast** → invalid rows should throw immediately
@@ -101,4 +100,4 @@ export async function importRecords<T>(
 
 ---
 **See also**
-- [[notes/Excel Template Generation with SheetJS]]
+- [[SheetJS Generate Excel Template]]

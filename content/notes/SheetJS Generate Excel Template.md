@@ -1,6 +1,6 @@
 ---
 created: 2026-03-22
-title: Excel Template Generation with SheetJS
+title: SheetJS Generate Excel Template
 tags:
   - seed
 ---
@@ -11,7 +11,7 @@ tags:
 3. Return as downloadable file
     
 ---
-### Generic Template Service
+## Generic Template Service
 
 ```ts
 import { utils, write } from 'xlsx';
@@ -35,7 +35,7 @@ export function generateExcelTemplate(
 ```
 
 ---
-### Generic Route
+## Generic Route
 
 ```ts
 const buffer = generateExcelTemplate('Students', ['student_code', 'full_name']);
@@ -50,7 +50,7 @@ return new Response(buffer, {
 ```
 
 ---
-### Frontend
+## Frontend
 
 ```ts
 const handleDownloadTemplate = () => {
@@ -59,7 +59,7 @@ const handleDownloadTemplate = () => {
 ```
 
 ---
-### Key Patterns / Rules
+## Key Patterns / Rules
 
 1. **Header = contract** → must match import keys exactly
 2. **Do not add/remove columns casually** → import depends on it
@@ -68,4 +68,4 @@ const handleDownloadTemplate = () => {
 
 ---
 **See also**
-- [[notes/Excel Import with SheetJS]]
+- [[SheetJS Excel Import]]

@@ -1,14 +1,14 @@
 ---
-title: Tailscale to private network VM
+title: Tailscale Usage
 tags:
   - seed
 created: 2025-10-06
 ---
-**What is Tailscale?**  
+**What is Tailscale?**
 A **mesh VPN** that creates a secure private network between your devices.
 
 ---
-### **Install Tailscale**
+## **Install Tailscale**
 
 **macOS**
 
@@ -23,20 +23,20 @@ sudo apt install tailscale   # or your distro's package manager
 ```
 
 ---
-### **Start Tailscale**
+## **Start Tailscale**
 
 ```bash
 sudo tailscale up
 ```
 
 ---
-### **Log in on all devices**
+## **Log in on all devices**
 
 Authenticate via:  
 [https://login.tailscale.com/admin/machines](https://login.tailscale.com/admin/machines)
 
 ---
-### **SSH between devices**
+## **SSH between devices**
 
 Use the **Tailscale IP** of the target machine (check with `tailscale status`):
 

@@ -1,11 +1,12 @@
 ---
 created: 2026-02-19
-title: Delete cf deployment
+title: Delete Cloudflare Deployment
 tags:
   - seed
 ---
 Delete all deployments except the live production deployment.
-### Steps
+
+## Steps
 
 1. Download script  
     [https://pub-505c82ba1c844ba788b97b1ed9415e75.r2.dev/delete-all-deployments.zip](https://pub-505c82ba1c844ba788b97b1ed9415e75.r2.dev/delete-all-deployments.zip)
@@ -34,7 +35,7 @@ npm start
 
 ---
 
-### Required Variables
+## Required Variables
 
 - **CF_API_TOKEN**  
     https://dash.cloudflare.com/api-tokens
@@ -46,7 +47,7 @@ npm start
 
 ---
 
-### Notes
+## Notes
 
 - `CF_DELETE_ALIASED_DEPLOYMENTS=true`  
     → also deletes deployments with custom domains / aliases

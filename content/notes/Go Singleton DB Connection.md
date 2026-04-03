@@ -1,5 +1,5 @@
 ---
-title: Singleton Pattern for Connecting DB in Go
+title: Go Singleton DB Connection
 tags:
   - seed
 created: 2025-10-05

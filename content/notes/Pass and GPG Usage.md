@@ -1,5 +1,5 @@
 ---
-title: Managing Passwords with Pass and GPG
+title: Pass and GPG Usage
 tags:
   - seed
 created: 2025-11-21

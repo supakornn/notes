@@ -1,5 +1,5 @@
 ---
-title: Change Zellij keybinds to be like Tmux
+title: Tmux keybinds in Zellij
 tags:
   - seed
 created: 2025-12-04

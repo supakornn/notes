@@ -1,11 +1,11 @@
 ---
-title: Make Obsidian Window Translucent
+title: Obsidian Translucent
 tags:
   - seed
 created: 2025-10-05
 ---
 make **translucent or glass-like** look for your Obsidian window.
-### **Setup**
+## **Setup**
 
 - Go to **Settings → Appearance → Advanced** and turn on **“Translucent window”**.
 - Open terminal and navigate to `.obsidian/snippets/` in your vault directory.

@@ -1,5 +1,5 @@
 ---
-title: Find the bundle ID of any macOS app
+title: App's Bundle ID
 tags:
   - seed
 created: 2025-12-03

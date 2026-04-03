@@ -2,7 +2,7 @@
 created: 2026-02-25
 tags:
   - seed
-title: Active Directory Attack Mind Map
+title: AD Mind Map
 ---
 [Source](https://orange-cyberdefense.github.io/ocd-mindmaps/img/mindmap_ad_dark_classic_2025.03.excalidraw.svg)
 

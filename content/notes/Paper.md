@@ -1,6 +1,6 @@
 ---
 created: 2025-11-10
-title: Interesting Paper
+title: Paper
 tags:
   - evergreen
 ---
