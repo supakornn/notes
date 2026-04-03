@@ -32,4 +32,4 @@ For anyone concerned about my eye health, I took several precautions. I wear blu
 ## Themes I use
 
 - I use [[notes/Catppuccin Palette|Catppuccin Latte]] for my terminal, IDE, and developer tools
-- [[notes/Spicetify theme for Spotify|Spotify]]
+- [[Spicetify|Spotify]]

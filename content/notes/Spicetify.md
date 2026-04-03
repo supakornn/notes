@@ -1,5 +1,5 @@
 ---
-title: Spicetify theme for Spotify
+title: Spicetify
 tags:
   - seed
 created: 2025-10-05
