@@ -24,6 +24,26 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        <a
+          href="https://webring.wonderful.software#supakorn.me"
+          title="วงแหวนเว็บ"
+          className="group inline-block ml-4"
+        >
+          <img
+            alt="วงแหวนเว็บ"
+            width="28"
+            height="28"
+            src="https://webring.wonderful.software/webring.black.svg"
+            className="webring-light transition-transform duration-500 ease-in-out group-hover:rotate-360"
+          />
+          <img
+            alt="วงแหวนเว็บ"
+            width="28"
+            height="28"
+            src="https://webring.wonderful.software/webring.white.svg"
+            className="webring-dark transition-transform duration-500 ease-in-out group-hover:rotate-360"
+          />
+        </a>
       </footer>
     )
   }

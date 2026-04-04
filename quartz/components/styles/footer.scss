@@ -1,3 +1,6 @@
+:root[saved-theme="dark"] .webring-light { display: none; }
+:root:not([saved-theme="dark"]) .webring-dark { display: none; }
+
 footer {
   text-align: left;
   padding-bottom: 4rem;

@@ -1,6 +1,5 @@
 ---
-title: Home
-subtitle: brain dump website
+title: supakorn.me
 created: 2025-10-05
 ---
 ```poetry

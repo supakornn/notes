@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Supakorn's Notes",
+    pageTitle: "supakorn.me",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "notes.supakorn.me",
+    baseUrl: "supakorn.me",
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
     theme: {
