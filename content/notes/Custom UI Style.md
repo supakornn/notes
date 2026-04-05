@@ -11,7 +11,9 @@ This is how to change VSCode’s **UI font** (sidebar, tabs, etc.) to match your
 - Open `settings.json` (`Cmd + Shift + P` → "Open User Settings JSON").
 - Add the following line:
 
+```json
 "custom-ui-style.font.sansSerif": "JetBrains Mono",
+```
 
 - Reload VSCode 🎉
 
