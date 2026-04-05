@@ -13,3 +13,4 @@ tags:
 - https://www.youtube.com/@CoreDumpped
 - https://www.youtube.com/@LexClips
 - https://www.youtube.com/@veritasium
+- https://www.youtube.com/@TechWithNikola
