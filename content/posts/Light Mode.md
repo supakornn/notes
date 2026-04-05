@@ -19,8 +19,6 @@ Yes, it really started from that simple (and slightly silly) idea.
 
 Surprisingly, I became more productive. My mind felt more active, and I was less prone to feeling sluggish or sleepy while working. It seems that the brighter interface helped me stay more alert and engaged throughout the day.
 
-![[619A6D8B-C0C3-40E5-9199-AAF2B9AF09DF 2.jpg]]
-
 ---
 ## About eye health
 
