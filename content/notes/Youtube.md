@@ -11,10 +11,13 @@ Math
 
 CS
 - https://www.youtube.com/@Fireship
-- https://www.youtube.com/@CoreDumpped
-- https://www.youtube.com/@jonhoo
-- https://www.youtube.com/@CoreDumpped
 - https://www.youtube.com/@mikelopster
+
+Rust
+- https://www.youtube.com/@jonhoo
+  
+Low-Level
+- https://www.youtube.com/@CoreDumpped
 
 Podcast
 - https://www.youtube.com/@LexClips
