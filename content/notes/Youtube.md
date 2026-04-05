@@ -14,6 +14,7 @@ CS
 - https://www.youtube.com/@CoreDumpped
 - https://www.youtube.com/@jonhoo
 - https://www.youtube.com/@CoreDumpped
+- https://www.youtube.com/@mikelopster
 
 Podcast
 - https://www.youtube.com/@LexClips
