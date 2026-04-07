@@ -14,7 +14,7 @@ title: Bookshelf
 
 ## Reading
 
-- **Clean Architecture** by Robert C. Martin
+- [[notes/Clean Architecture]] by Robert C. Martin
 
 ## Past
 - **Back Hat Go** by Tom Steele, Chris Patten, Dan Kottmann
