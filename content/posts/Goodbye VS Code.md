@@ -9,7 +9,6 @@ I’ve been a loyal VS Code user for over four years. It was my go-to tool from 
 Today, I’m officially moving to **JetBrains IDEs** as my primary workspace, with **Zed** as my companion for quick edits. This isn’t just a change of tools—it’s a shift in how I approach development.
 
 ---
-
 ## The "Extension Hell" vs. Integrated Intelligence
 
 As a **polyglot developer**, I regularly switch between **Java, Go, Rust, Vue, and C++**—sometimes all within the same day.
@@ -24,9 +23,7 @@ As a **polyglot developer**, I regularly switch between **Java, Go, Rust, Vue, a
     
     The result is not just convenience, but **consistency and reliability**, especially in large or multi-language codebases.
     
-
 ---
-
 ## Coding in the Age of AI: From Writing Code to Understanding It
 
 The way we build software is changing.
@@ -55,9 +52,7 @@ With AI capable of generating hundreds—or even thousands—of lines of code in
     
     They don’t just help me write code faster—they help me **understand it better**. And that’s the real leverage now.
     
-
 ---
-
 ## A Pragmatic Workflow: The Right Tool for the Right Job
 
 I’ve moved away from the idea of a single tool for everything. Instead, I use a **tiered workflow** based on task complexity.
@@ -68,7 +63,6 @@ I’ve moved away from the idea of a single tool for everything. Instead, I use 
     - Editing config files
     - Quick fixes
     - Small or temporary projects
-        
     
     It’s fast, lightweight, and gets out of the way. When I don’t need full project context, I don’t want to pay for it.
     
@@ -91,7 +85,6 @@ I’ve moved away from the idea of a single tool for everything. Instead, I use 
         
 
 ---
-
 ## Final Thoughts
 
 VS Code is a masterpiece of software, and it served me well for over four years.

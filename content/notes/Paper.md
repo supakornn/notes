@@ -6,6 +6,7 @@ tags:
 ---
 > A collection of papers I’ve come across that seem interesting or potentially useful.  
 Most entries are based on abstracts or quick skims and are saved for future reading.
+
 ### ThaiOCRBench: A Task-Diverse Benchmark for Vision-Language Understanding in Thai
 
 **Link:** [https://arxiv.org/pdf/2511.04479](https://arxiv.org/pdf/2511.04479)  

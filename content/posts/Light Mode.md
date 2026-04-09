@@ -25,9 +25,3 @@ Surprisingly, I became more productive. My mind felt more active, and I was less
 For anyone concerned about my eye health, I took several precautions. I wear blue light–blocking glasses, use a monitor light bar, and keep a desk lamp on while working. These adjustments have been very helpful in reducing eye strain and protecting my vision.
 
 ![[IMG_4929 2.jpg]]
-
----
-## Themes I use
-
-- I use [[notes/Catppuccin Palette|Catppuccin Latte]] for my terminal, IDE, and developer tools
-- [[Spotify Theme|Spotify]]
