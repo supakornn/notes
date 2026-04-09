@@ -1,9 +1,10 @@
 ---
 created: 2026-03-12
 tags:
-  - sapling
+  - seed
 title: NotebookLM
 ---
+[source](https://x.com/AriaWestcott/status/2030928794261794961)
 ## Start With Breadth, Not Just One Source
 
 Instead of uploading a single document, I upload everything related to the topic:

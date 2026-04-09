@@ -1,7 +1,7 @@
 ---
 created: 2026-02-08
 tags:
-  - sapling
+  - seed
   - writeups
 title: HTB - CodePartTwo
 ---

@@ -6,7 +6,7 @@ tags:
 ---
 I use AI in almost every part of my daily workflow—coding, researching, studying at university, preparing for exams, and even writing this post.
 
-(Okay, maybe not _writing_ it entirely—I mostly use AI to clean up my messy grammar and organize my thoughts 😅)
+(Okay, maybe not _writing_ it entirely—I mostly use AI to clean up my messy grammar and organize my thoughts.)
 
 At this point, it’s hard to deny how useful AI has become. But at the same time, I don’t see it as something magical. It’s just another tool—powerful, yes—but still something that needs to be used carefully.
 
@@ -135,7 +135,7 @@ It’s explainable.
 
 ## As a Student: AI Helps Me Learn, Not Replace Learning
 
-Outside of coding, I also use AI a lot for studying.
+Outside of coding, I also use AI a lot for [[notes/NotebookLM |studying]].
 
 But my rule is simple:  
 I never store anything I don’t understand.
