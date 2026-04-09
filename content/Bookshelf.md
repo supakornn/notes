@@ -15,7 +15,7 @@ A (mostly) up-to-date list of books I at some point, have wanted to read, am rea
 - **Back Hat Go** by Tom Steele, Chris Patten, Dan Kottmann
 - [[notes/Clean Architecture]] by Robert C. Martin
 
-### Past
-#### 2023
+## Past
+### 2023
 - **Killing Peter Rabbit** by Lee Chanyoung
 - **The Master Algorithm** by Predro Domingos
