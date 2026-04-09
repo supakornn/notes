@@ -4,12 +4,28 @@ tags:
   - evergreen
 title: Milestones
 ---
+> A record of moments that marked meaningful shifts in how I think, build, and approach problems.
 ## 2026
+### Agoda Summer Internship 
+Received an offer for a Software Engineer (Full-Stack) internship at Agoda.  
+This marks my first step into a real-world production environment, working on systems at scale.
 
-- **Agoda Summer Internship**: Secured a Software Engineer (Full-Stack) internship offer at **Agoda** for the summer period.
-- **Research Assistant**: Awarded a Research Assistant Grant to develop a **Web Application for an AI Grading System**, leveraging **LLMs** and **rubric-based evaluation** to grade handwritten exams under the guidance of my Professor.
+### Research Assistant
+Awarded a research grant to develop a web application for an AI-assisted grading system.  
+The project focuses on using LLMs with rubric-based evaluation to assess handwritten exams, under the guidance of my professor.  
+This is my first time working at the intersection of software engineering and applied AI research.
+
 ## 2025
+### Hacktoberfest
+Made my first open source contributions through Hacktoberfest, completing the 6 PR challenge.  
+This marked my transition from building personal projects to collaborating on shared codebases.
 
-- **Hacktoberfest**: Successfully completed the 6PR challenge and earned the limited-edition 2025 contributor T-shirt.
-- **IT31 Starter Pack**: Served as the **Head of Basic Programming** for the freshman training camp, mentoring new students in core programming concepts.
-- **Hack The Box**: Completed the **Penetration Tester Path**, mastering fundamental offensive security and network exploitation techniques.
+### IT31 Starter Pack
+Led the Basic Programming track for a freshman training camp.  
+Taught core programming concepts and helped new students get comfortable with writing code.  
+This experience strengthened my ability to explain and structure technical knowledge.
+
+### Hack The Box
+Completed the Penetration Tester Path.  
+Built a foundation in offensive security, including network exploitation and system enumeration.  
+This shifted my perspective on software—from just building systems to also understanding how they break.
