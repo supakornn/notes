@@ -4,17 +4,14 @@ tags:
   - seed
 created: 2025-12-04
 ---
+**Updated:** Now I'm back tmux again.
 
 I was switching from Tmux to Zellij and want familiar keybindings.
 
-**What is Zellij?** A modern terminal multiplexer (like Tmux) written in Rust.
+- Go to your Zellij config file: `~/.config/zellij/config.kdl`
+- Update your keybinds like this:
 
-**Steps:**
-
-1. Go to your Zellij config file: `~/.config/zellij/config.kdl`
-2. Update your keybinds like this:
-
-```kdl
+```shell
 keybinds clear-defaults=true {
     normal {
         // Prefix like tmux
