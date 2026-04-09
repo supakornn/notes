@@ -4,21 +4,17 @@ title: Paper
 tags:
   - evergreen
 ---
-## ThaiOCRBench: A Task-Diverse Benchmark for Vision-Language Understanding in Thai
+> A collection of papers I’ve come across that seem interesting or potentially useful.  
+Most entries are based on abstracts or quick skims and are saved for future reading.
+### ThaiOCRBench: A Task-Diverse Benchmark for Vision-Language Understanding in Thai
 
-**Link:** [https://arxiv.org/pdf/2511.04479](https://arxiv.org/pdf/2511.04479)
+**Link:** [https://arxiv.org/pdf/2511.04479](https://arxiv.org/pdf/2511.04479)  
+**Note (from abstract):** A benchmark for evaluating vision-language models on Thai documents, including OCR, tables, charts, and question answering. Highlights limitations in handling complex layouts and handwriting.
+### Weak-Driven Learning: How Weak Agents Make Strong Agents Stronger
 
-**Summary:** Introduces **ThaiOCRBench**, a benchmark dataset designed to evaluate how well vision-language models understand Thai documents. It includes diverse tasks such as OCR, table and chart parsing, and document question answering. Experiments show that current models still struggle with complex Thai text layouts and handwriting. The benchmark provides a standardized way to measure and improve Thai document understanding systems.
+**Link:** [https://arxiv.org/pdf/2602.08222](https://arxiv.org/pdf/2602.08222)  
+**Note (from abstract):** Introduces a post-training approach that leverages weaker historical model states to improve stronger models, addressing performance saturation without additional inference cost.
+### Recursive Language Models for Infinite Context Scaling
 
-## Weak-Driven Learning: How Weak Agents make Strong Agents Stronger
-
-**Link:** [https://arxiv.org/pdf/2602.08222](https://arxiv.org/pdf/2602.08222) 
-
-**Summary:** Proposes **WMSS**, a post-training paradigm that solves the "saturation bottleneck" where strong models stop improving. It uses the model's own **historical weak states (checkpoints)** to find learning gaps. By letting weak agents guide the strong agent through entropy dynamics, the model can improve its reasoning and coding abilities beyond conventional limits without adding any extra inference cost.
-
-## Recursive Language Models for Infinite Context Scaling
-
-**Link:** [https://arxiv.org/pdf/2512.24601](https://arxiv.org/pdf/2512.24601) 
-
-**Summary:** Introduces **Recursive Language Models (RLMs)**, an inference paradigm that enables LLMs to scale to "infinite" context. Instead of processing long prompts at once, the model recursively calls itself to examine and decompose snippets of data. This allows it to handle inputs up to 100x beyond its native context window, significantly outperforming vanilla frontier models like GPT-5 on long-context tasks with comparable costs.
-
+**Link:** [https://arxiv.org/pdf/2512.24601](https://arxiv.org/pdf/2512.24601)  
+**Note (from abstract):** Proposes a recursive inference method that allows language models to process extremely long contexts by decomposing inputs into smaller parts and iterating over them.
