@@ -2,7 +2,7 @@
 created: 2026-04-05
 title: Youtube
 tags:
-  - seed
+  - evergreen
 ---
 - https://www.youtube.com/@BriTheMathGuy
 - https://www.youtube.com/@3blue1brown 

@@ -16,7 +16,7 @@ I'm a curious person and I love learning new things, so I hope this website can 
 
 Here are some places you may want to visit:
 
-- [[Milestones]]: A timeline of my professional growth and personal achievements.
+- [[notes/Milestones]]: A timeline of my professional growth and personal achievements.
 - [[Bookshelf]]: A log of books I’m currently reading, finished, or planning to dive into.
 
 ```poetry
