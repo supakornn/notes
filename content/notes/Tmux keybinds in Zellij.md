@@ -4,8 +4,6 @@ tags:
   - seed
 created: 2025-12-04
 ---
-**Updated:** Now I'm back tmux again.
-
 I was switching from Tmux to Zellij and want familiar keybindings.
 
 - Go to your Zellij config file: `~/.config/zellij/config.kdl`
