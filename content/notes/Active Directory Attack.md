@@ -8,8 +8,7 @@ tags:
 
 **Active Directory (AD) attack** is an attempt to compromise an organization’s **Active Directory**, the system that manages users, groups, permissions, and security policies in a Windows network.
 - AD acts as the **“brain” of a Windows network**, controlling who can access what.
-- AD attacks aim to **escalate privileges, steal account credentials, or take control of the network**.\
-
+- AD attacks aim to **escalate privileges, steal account credentials, or take control of the network**.
 - Common techniques include:
     - **Credential dumping** – extracting passwords from memory or domain controllers
     - **Kerberos attacks** – such as Pass-the-Ticket or Golden Ticket
