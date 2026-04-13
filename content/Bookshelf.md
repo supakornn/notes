@@ -4,8 +4,9 @@ tags:
   - evergreen
 title: Bookshelf
 ---
-> A list of books I’ve wanted to read, am currently reading, or have finished over time.  
-Some books may later link to notes or ideas that came out of reading them.
+> A list of books I’ve wanted to read, am currently reading, or have finished over time. 
+> Some books may later link to notes or ideas that came out of reading them.
+
 ## To Read
 - **Domain-Driven Design** by Eric Evans
 - **Eat That Frog! by Brian** Tracy
