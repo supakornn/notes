@@ -14,8 +14,10 @@ title: Bookshelf
 - **Foundations of Large Language Models** by Tong Xiao, Jingbo Zhu
 - **Natural Language Processing with Transformers** by Lewis Tunstall, Leandro von Werra, Thomas Wolf
 - **Back Hat Go** by Tom Steele, Chris Patten, Dan Kottmann
-- [[notes/Clean Architecture]] by Robert C. Martin
 ## Past
+
+### 2026
+- [[notes/Clean Architecture]] by Robert C. Martin
 ### 2024 – 2025
 I didn’t read any books during this period.  
 In 2024, I was focused on preparing for university, and in 2025 (my first year), I was adjusting to a new environment and dealing with a lot of activities.
