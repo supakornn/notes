@@ -4,182 +4,90 @@ title: Thinking With AI
 tags:
   - fruit
 ---
-I use AI in almost every part of my daily workflow—coding, researching, studying at university, preparing for exams, and even writing this post.
+## As a Developer
 
-(Okay, maybe not _writing_ it entirely—I mostly use AI to clean up my messy grammar and organize my thoughts.)
+AI has changed the way I approach coding more than anything else.
 
-At this point, it’s hard to deny how useful AI has become. But at the same time, I don’t see it as something magical. It’s just another tool—powerful, yes—but still something that needs to be used carefully.
+There was a time when writing code itself felt like the craft. Sitting down, thinking through the logic, and typing everything out line by line was where the satisfaction came from. It was slow, but it was deeply engaging.
 
-So instead of talking about what AI _can_ do, I want to share how I actually use it in my day-to-day life—especially how I try to use it without letting it replace my thinking.
+Now AI can generate in a single day what used to take weeks. At first, that shift felt uncomfortable, almost like something important was being taken away.
 
----
+But over time, I realized something important. **The enjoyment did not disappear. It simply moved.**
 
-## As a Developer: When Coding Stops Being the Bottleneck
+Instead of focusing on typing every line, I started to enjoy **designing systems**. Thinking about structure, trade-offs, and how different pieces fit together became the new craft. The work did not become less meaningful. It just shifted to a higher level.
 
-AI has completely changed how I write code.
+At the same time, I am very intentional about how I use AI. **I do not let it make decisions for me.**
 
-There was a time when writing everything by hand was the fun part. I enjoyed sitting there, thinking through logic, typing things out line by line. That _was_ the craft.
+I treat it more like a friend I am working with. When I build something, I do not just ask it to generate everything. I start with an idea, then talk through different approaches, question its suggestions, and decide what actually makes sense.
 
-But now, AI can generate what used to take me weeks in a single day. And that changes everything.
+Sometimes I agree with it. Sometimes I do not. What matters is simple. **The decisions are still mine.**
 
-At first, it felt like it was taking away the fun. But over time, I realized something else was happening—the “fun” didn’t disappear, it just moved.
+This also means that reading code has become more important than writing it. AI can generate code quickly, but **understanding that code is still my responsibility.**
 
-Instead of enjoying the act of typing code, I started enjoying **designing systems**.
+Whenever I get output from AI, I go through it carefully. I read the logic, check assumptions, and make sure everything makes sense. If something breaks, it is not the AI’s problem. **It is mine.**
 
----
+![[IMG_4997.jpg]]
 
-## I Don’t Let AI Think for Me
+Another thing AI has changed is how I approach side projects.
 
-One thing I’m very strict about: I never let AI make decisions on its own.
+In the past, trying something new required a lot of effort just to get started. Setting up environments, writing boilerplate, and simulating systems often took more time than the actual idea I wanted to explore.
 
-I don’t treat it like a code generator. I treat it more like a junior developer that I’m working with.
+Now that barrier is much lower.
 
-When I build something—say, a chat app—I don’t just say:
+I can experiment more freely with ideas that used to feel too heavy, such as event-driven systems or more structured architectural patterns. Even if it ends up being overengineered, that is part of the learning process.
 
-> “Build this for me.”
+Side projects are no longer just about building something small. They have become a space to explore bigger questions.
 
-I start with an idea, then I discuss it with AI. I ask questions, challenge its suggestions, compare approaches.
+**What would this look like if it had to scale to millions of users?**
 
-Sometimes I agree. Sometimes I don’t.
-
-The important part is that I stay in control of the decisions.
-
-Instead of jumping straight into code, I break things down—starting from system design, then going deeper into features, then planning tasks, and only then moving into implementation.
-
-AI helps me move faster, but the direction still comes from me.
+AI does not just make me faster. **It makes me more curious.**
 
 ---
+## As a Student
 
-## Reading Code Matters More Than Writing It
+Outside of development, AI has become a big part of how I study.
 
-AI writes code fast. That part is obvious.
+But I follow a simple rule. **I do not keep anything I do not understand.**
 
-What’s not obvious—but much more important—is that it also creates a new responsibility: **you have to understand everything it gives you**.
+When I start learning a new topic, I often use AI to get a high-level overview. This helps reduce the initial friction, especially when something feels overwhelming.
 
-After AI generates code, I go through it carefully. I read almost every line, check the logic, and make sure it actually makes sense.
+![[Pasted image 20260415164500.png]]
 
-If something is small, I fix it myself. If it’s bigger, I let AI adjust it—but only after I know what’s wrong.
+After that, I try to work through the material on my own. I break it down, think through it step by step, and make sure I actually understand what is going on.
 
-Because at the end of the day, if something breaks, it’s not the AI’s problem—it’s mine.
+Only then do I use AI again to help structure my notes.
 
----
+This step matters to me because I am not trying to store AI-generated information. **I am trying to capture my own understanding.**
 
-## Side Projects Became My Playground Again
+Without AI, I sometimes get stuck trying to make everything perfect from the beginning. With AI, I can focus on what actually matters.
 
-One of the biggest changes AI brought to my workflow is how I approach side projects.
-
-Before AI, trying something new was expensive—not in money, but in time and effort.
-
-If I wanted to experiment with something like Kafka or event-driven systems, I had to:
-
-- set everything up from scratch
-    
-- simulate an environment
-    
-- write a lot of boilerplate just to test a single idea
-    
-
-Most of the time, that friction alone was enough to stop me.
-
-Now, that barrier is almost gone.
-
-I can try things I normally wouldn’t touch—not because they’re unnecessary, but because they used to cost too much to explore.
-
-Technologies like event-driven architecture, Kafka, DDD, or TDD—these used to feel “too heavy” for a simple side project.
-
-Now, they feel accessible.
-
-Is it overengineering?
-
-Yes. Absolutely.
-
-But that’s kind of the point.
-
-My side projects are no longer just small apps—they’re a place where I can ask:
-
-> _“If this had to scale to millions of users, how would I design it?”_
-
-AI doesn’t just make me faster—it makes me more curious.
+**Understanding first. Structuring later.**
 
 ---
+## Personal Use
 
-## I Document More Than I Used To
+Even outside of coding and studying, AI has quietly become part of how I think and communicate.
 
-One thing I’ve noticed after using AI more is how easy it is to lose context.
+Writing is a good example.
 
-When I write code myself, I usually remember why I made certain decisions. But when AI is involved—especially when it generates large chunks of code quickly—that context disappears much faster than I expect.
+I usually start by dumping everything from my head. It is messy, unstructured, and full of mistakes. That is just how my thoughts come out at first.
 
-I’ve had moments where I come back to my own code and think:
+Then I use AI to refine it.
 
-> _“Wait… why did I do it this way?”_
+Not to change the meaning, but to make it clearer and easier to read. In that sense, it feels less like a generator and more like **a tool for clarity**.
 
-The code works—but the reasoning is gone.
+Over time, this has also helped me improve my English. I get to see how ideas can be expressed more naturally, how sentences flow, and how small changes can make things easier to understand.
 
-That’s why I started documenting more.
+![[Pasted image 20260415164603.png]]
 
-After finishing a feature, I often ask AI to help generate a structured document—not something perfect, just something that captures what was built and, more importantly, **why it was built that way**.
+It feels like having **a writing coach that is always available.**
 
-It’s not about following a fixed template. I adjust it depending on the project.
+At the same time, using AI has made me more aware of how easily context can be lost.
 
-What I really care about is preserving the thinking:
+When a lot of content is generated quickly, it becomes harder to remember why certain decisions were made. I have come back to my own work and realized that while everything still functions, the reasoning behind it is no longer clear.
 
-- Why this approach?
-- What were the trade-offs?
-- What assumptions did I make?
+That is why I started documenting more.
 
-So that when I come back later—or when someone else reads the code—it’s not just understandable.
+Not just what was built, but why it was built that way. The trade-offs, the assumptions, and the decisions that shaped the final result.
 
-It’s explainable.
-
----
-
-## As a Student: AI Helps Me Learn, Not Replace Learning
-
-Outside of coding, I also use AI a lot for [[notes/NotebookLM |studying]].
-
-But my rule is simple:  
-I never store anything I don’t understand.
-
-I usually start by using AI to get the big picture—especially when a topic feels overwhelming. From there, I try to think through it myself, piece by piece.
-
-Only after that do I let AI help me turn it into a structured note.
-
-This way, the note reflects my understanding—not just AI output.
-
-Without AI, I tend to get stuck trying to make everything “perfect.”  
-With AI, I can focus on what actually matters: understanding the idea.
-
----
-
-## Writing, Thinking, and Learning English
-
-Even writing this post follows the same pattern.
-
-I start by dumping everything from my head—messy, unstructured, full of broken grammar.
-
-Then I use AI to clean it up.
-
-Not to change what I’m saying—but to make it readable.
-
-It also helps me learn English along the way. I get to see how sentences are structured, how ideas flow, how things can be expressed more clearly.
-
-In a way, it feels like having a writing coach that’s always there.
-
----
-
-## Final Thought
-
-AI is powerful—but only if you use it intentionally.
-
-I don’t use AI to replace my thinking.  
-I use it to support it.
-
-I still make the decisions.  
-I still take responsibility.  
-I still try to understand everything I build.
-
-AI just helps me move faster—and explore further.
-
-At the end of the day, it’s not about the tool.
-
-> It’s about how you choose to think with it.
+Because in the long run, **understanding matters more than output.**
