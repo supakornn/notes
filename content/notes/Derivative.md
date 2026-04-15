@@ -4,7 +4,7 @@ title: Derivative
 tags:
   - seed
 ---
-In mathematics, the formal **defination of derivative** is built on the concept of a [[Limit]]. While the **speedometer** and **slope** analogies help us visualize it, the strict defination allows us to calculate that slope at a single point where **rise over run** would normally fail (because at a single point, the run is zero).
+In mathematics, the formal **defination of derivative** is built on the concept of a [[Limit|limit]]. While the **speedometer** and **slope** analogies help us visualize it, the strict defination allows us to calculate that slope at a single point where **rise over run** would normally fail (because at a single point, the run is zero).
 
 ### Formal Defination
 The derivative of a function $f(x)$ , denoted as $f'(x)$ or $\frac{dy}{dx}$ , is defined by the limit:
