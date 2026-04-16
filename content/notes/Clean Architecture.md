@@ -9,10 +9,6 @@ tags:
 
 Book, written by Robert C. Martin
 
-## Part I: Introduction
-## Part II: Starting with the Bricks: Programming Paradigms
-## Part III: Design Principles
-## Part IV: Components Principles
-## Part V: Architecture
-## Part VI: Details
-## Part VII: Appendix
+> [!quote]
+> The goal of software architecture is to minimize the human resources required to build and maintain the required system.
+
