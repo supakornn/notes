@@ -8,7 +8,7 @@ tags:
 - Welcome
 ```
 
-I'm Gap this is my little corner of the internet where I dump all my thoughts and notes. I hope you find something useful here!
+I'm supakorn (or you can call me _Gap_) this is my little corner of the internet where I dump all my thoughts and notes. I hope you find something useful here!
 
 Currently, I'm interested in a lot of things that relate to technology field, but I also have a lot of random thoughts that I want to share. So, expect a wide variety of topics here!
 
