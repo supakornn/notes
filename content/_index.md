@@ -18,7 +18,6 @@ Here are some places you may want to visit:
 
 - [[Milestones]]: A timeline of my professional growth and personal achievements.
 - [[Bookshelf]]: A log of books I’m currently reading, finished, or planning to dive into.
-- [[Paper]]:  A collection of research papers that I’m interested in.
 
 ```poetry
 - supakorn:)
