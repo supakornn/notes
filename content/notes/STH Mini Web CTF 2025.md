@@ -2,7 +2,7 @@
 title: STH-Mini-Web-CTF-2025
 tags:
   - seed
-  - writeups
+  - ctf
 created: 2025-10-05
 ---
 > [!abstract] **Target Information**

@@ -2,7 +2,7 @@
 created: 2026-02-08
 tags:
   - seed
-  - writeups
+  - ctf
 title: HTB - CodePartTwo
 ---
 ## How many open TCP ports are listening on CodePartTwo?
