@@ -9,7 +9,7 @@ title: Bookshelf
 
 ## To Read
 - **Domain-Driven Design** by Eric Evans
-- **Eat That Frog! by Brian** Tracy
+- **Eat That Frog!** by Brian Tracy
 - **Crafting Interpreters** by Robert Nystrom
 - **Foundations of Large Language Models** by Tong Xiao, Jingbo Zhu
 - **Natural Language Processing with Transformers** by Lewis Tunstall, Leandro von Werra, Thomas Wolf
