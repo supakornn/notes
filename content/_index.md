@@ -8,18 +8,19 @@ tags:
 - Welcome
 ```
 
-I'm supakorn this is my little corner of the internet where I dump all my thoughts and notes. I hope you find something useful here!
+Hi, I'm Supakorn.
 
-Currently, I'm interested in a lot of things that relate to technology field, but I also have a lot of random thoughts that I want to share. So, expect a wide variety of topics here!
+This is my little corner of the internet—a place where I collect thoughts, notes, and things I learn along the way. I’m a student at [KMUTT](https://sit.kmutt.ac.th), with experience as a research assistant and in software engineering.
 
-I'm a curious person and I love learning new things, so I hope this website can be a place where I can share my knowledge and also learn from others.
+I’m interested in a wide range of topics across the technology field, and I tend to follow whatever catches my curiosity. Because of that, you’ll find a mix of structured notes, experiments, and occasional random ideas here.
 
-Here are some places you may want to visit:
+I enjoy learning new things, and this space serves both as my personal knowledge base and a way to share what I discover. If something here helps you, that’s a bonus.
 
-- [[Milestones]]: A timeline of my professional growth and personal achievements.
-- [[Bookshelf]]: A log of books I’m currently reading, finished, or planning to dive into.
+Here are a few places to start:
 
+- [[Milestones]] — a timeline of my growth, projects, and achievements
+- [[Bookshelf]] — what I’m reading, have read, and plan to read
+    
 ```poetry
-- supakorn:)
+- supakorn :)
 ```
-
