@@ -10,7 +10,7 @@ tags:
 
 Hi, I'm Supakorn.
 
-A student at King Mongkut's University of Technology Thonburi, exploring software engineering, research, and the occasional CTF challenge.
+A student at [King Mongkut's University of Technology Thonburi](https://sit.kmutt.ac.th), exploring software engineering, research, and the occasional CTF challenge.
 
 This is my digital garden — a place for notes, experiments, and half-formed ideas. Some are polished, some are not, but all of them reflect things I’m trying to understand.
 
