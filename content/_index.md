@@ -10,17 +10,19 @@ tags:
 
 Hi, I'm Supakorn.
 
-This is my little corner of the internet—a place where I collect thoughts, notes, and things I learn along the way. I’m a student at [KMUTT](https://sit.kmutt.ac.th), with experience as a research assistant and in software engineering.
+A student at King Mongkut's University of Technology Thonburi, exploring software engineering, research, and the occasional CTF challenge.
 
-I’m interested in a wide range of topics across the technology field, and I tend to follow whatever catches my curiosity. Because of that, you’ll find a mix of structured notes, experiments, and occasional random ideas here.
+This is my digital garden — a place for notes, experiments, and half-formed ideas. Some are polished, some are not, but all of them reflect things I’m trying to understand.
 
-I enjoy learning new things, and this space serves both as my personal knowledge base and a way to share what I discover. If something here helps you, that’s a bonus.
+I tend to follow curiosity across different areas of technology, so the topics here can vary quite a bit.
 
-Here are a few places to start:
+If you find something useful, that’s great. If not, think of this as my thinking-out-loud space.
 
-- [[Milestones]] — a timeline of my growth, projects, and achievements
-- [[Bookshelf]] — what I’m reading, have read, and plan to read
-    
+Start here:
+
+- [[Milestones]] — projects, progress, and things I’ve done
+- [[Bookshelf]] — things I’m reading (or pretending to finish)
+
 ```poetry
 - supakorn :)
 ```
