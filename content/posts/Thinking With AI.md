@@ -26,7 +26,7 @@ This also means that reading code has become more important than writing it. AI 
 
 Whenever I get output from AI, I go through it carefully. I read the logic, check assumptions, and make sure everything makes sense. If something breaks, it is not the AI’s problem. **It is mine.**
 
-![[IMG_4997.jpg]]
+![[image.png]]
 
 Another thing AI has changed is how I approach side projects.
 
