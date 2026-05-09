@@ -4,6 +4,8 @@ title: Engineering Taste
 tags:
   - sapling
 ---
+> The only people who think AI is really good at things is people who aren't that good at things themselves. — [the tiny corp](https://x.com/__tinygrad__/status/2052814497816125557)
+
 I spend most of my time learning the fundamentals and understanding what good software looks like. I’m no longer focused on constantly chasing new tech stacks, libraries, frameworks, or languages. That doesn’t mean I don’t know how to program, but I don’t think it’s necessary to follow every new stack that comes out each week.
 
 Instead, I believe the most valuable skill is having engineering taste. It’s about knowing what good code and software look like, and choosing the right architecture to solve problems efficiently. I’d rather spend time understanding how microservices work and what trade-offs to consider, instead of just learning how to write a loop in Go. I want to understand how Go compiles and what happens behind the scenes, not just focus on basic syntax like if or else statements.
