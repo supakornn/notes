@@ -80,3 +80,5 @@ class UserService {
 ```
 
 **Quick check:** If changing a low-level detail (like a database) forces you to edit high-level business logic, DIP is violated.
+
+see also: [[Software Development Life Cycle (SDLC)]]
