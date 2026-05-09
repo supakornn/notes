@@ -20,8 +20,8 @@ If you find something useful, that’s great. If not, think of this as my thinki
 
 Start here:
 
-- [[Milestones]] — projects, progress, and things I’ve done
-- [[Bookshelf]] — things I’m reading (or pretending to finish)
+- [[Milestones]] — moments that changed how I think, build, and solve problems
+- [[Bookshelf]] — books I read slowly and buy too quickly
 
 ```poetry
 - supakorn :)
