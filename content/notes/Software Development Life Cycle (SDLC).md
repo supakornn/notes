@@ -1,6 +1,6 @@
 ---
 created: 2026-05-02
-title: Software Development Life Cycle
+title: Software Development Life Cycle (SDLC)
 tags:
   - seed
 ---

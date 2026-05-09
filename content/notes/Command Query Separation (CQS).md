@@ -1,6 +1,6 @@
 ---
 created: 2026-05-01
-title: Command Query Separation
+title: Command Query Separation (CQS)
 tags:
   - seed
 ---
