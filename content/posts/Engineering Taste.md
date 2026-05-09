@@ -2,7 +2,7 @@
 created: 2026-05-02
 title: Engineering Taste
 tags:
-  - fruit
+  - sapling
 ---
 I spend most of my time learning the fundamentals and understanding what good software looks like. I’m no longer focused on constantly chasing new tech stacks, libraries, frameworks, or languages. That doesn’t mean I don’t know how to program, but I don’t think it’s necessary to follow every new stack that comes out each week.
 
