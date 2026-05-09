@@ -2,7 +2,7 @@
 created: 2026-04-07
 title: Clean Architecture
 tags:
-  - seed
+  - sapling
   - book
 ---
 > Clean Architecture: A Craftsman's Guide to Software Structure and Design
