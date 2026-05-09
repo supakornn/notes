@@ -7,7 +7,7 @@ tags:
 ---
 > Clean Architecture: A Craftsman's Guide to Software Structure and Design
 
-Book, written by Robert C. Martin
+Book, written by **Robert C. Martin (Uncle Bob)**
 
 > [!quote]
 > The goal of software architecture is to minimize the human resources required to build and maintain the required system.
