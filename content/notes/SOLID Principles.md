@@ -6,7 +6,7 @@ title: SOLID Principles
 ---
 SOLID is an acronym for the first 5 object-oriented design (OOD) principles by **Robert C. Martin (Uncle Bob)**. These principles help you write software that is easier to maintain, extend, and refactor as your project grows. They also help avoid code smells and support Agile/Adaptive development.
 
-### S - Single Resposibility Principle (SRP)
+## S - Single Resposibility Principle (SRP)
 
 > _"A class should have one and only one reason to change."_
 
@@ -19,7 +19,7 @@ class UserRepository { void save(User user) {} }
 
 **Quick check:** Ask yourself _"What would cause this class to change?"_ If you have more than one answer, it violates SRP.
 
-### O — Open-Closed Principle (OCP)
+## O — Open-Closed Principle (OCP)
 
 > _"A class should be open for extension, but closed for modification."_
 
@@ -33,7 +33,7 @@ class Square implements Shape { public double area() { return side * side; } }
 
 **Quick check:** If adding a new feature requires you to edit an existing class, OCP is likely being violated.
 
-### L — Liskov Substitution Principle (LSP)
+## L — Liskov Substitution Principle (LSP)
 
 > _"A subclass should be substitutable for its parent class."_
 
@@ -47,7 +47,7 @@ class Penguin implements Bird { public void move() { System.out.println("Swimmin
 
 **Quick check:** If swapping a parent for a child class breaks something, LSP is violated.
 
-### I — Interface Segregation Principle (ISP)
+## I — Interface Segregation Principle (ISP)
 
 > _"A client should never be forced to implement an interface it doesn't use."_
 
@@ -63,7 +63,7 @@ class Robot implements Workable { ... } // Robot doesn't need eat()
 
 **Quick check:** If a class implements a method but leaves it empty or throws an error, ISP is likely violated.
 
-### D — Dependency Inversion Principle (DIP)
+## D — Dependency Inversion Principle (DIP)
 
 > _"Depend on abstractions, not on concretions."_
 
