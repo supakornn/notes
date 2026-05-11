@@ -148,3 +148,14 @@ see also: [[SOLID Principles]]
 - Interfaces and dependency inversion help enforce boundaries.
 - Crossing boundaries usually involves data transformation.
 - Good boundaries reduce coupling between parts of the system.
+
+### Chapter 18 - Boundary Anatomy
+- Architectural boundaries can exist within:
+	- monoliths
+	- services
+	- plugins
+	- distributed systems
+- Boundaries are logical, not just physical separation.
+- Different systems enforce boundaries differently.
+- Good boundaries control dependency direction regardless of deployment style.
+- Communication across boundaries should minimize coupling.
