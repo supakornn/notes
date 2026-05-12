@@ -159,3 +159,24 @@ see also: [[SOLID Principles]]
 - Different systems enforce boundaries differently.
 - Good boundaries control dependency direction regardless of deployment style.
 - Communication across boundaries should minimize coupling.
+
+### Chapter 19 - Policy and Level
+- Software architecture is organized into different levels of policy.
+- High-level policies contain core business rules.
+- Lower-level policies handle implementation details.
+- Source code dependencies should point from low-level details toward high-level policies.
+- Business rules should remain independent from frameworks and external systems.
+
+### Chapter 20 - Business Rules
+- Business rules define how the system should operate.
+- Entities contain critical business rules and core data.
+- Use cases describe application-specific business behavior.
+- Entities should remain independent from databases, UI, and frameworks.
+- Business rules are the most stable and valuable part of the system.
+
+### Chapter 21 - Screaming Architecture
+- Architecture should reflect the business domain, not the framework.
+- The system structure should reveal what the application does.
+- Frameworks are tools, not the core identity of the system.
+- Use cases should drive architectural decisions.
+- A good architecture “screams” the business purpose of the application.
