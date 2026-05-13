@@ -212,4 +212,4 @@ see also: [[SOLID Principles]]
 - Boundaries prevent layers from becoming tightly coupled.
 - Architectural boundaries must be actively enforced.
 - Without enforcement, systems naturally drift into coupling.
-- Good layering keeps business rules independent from implementation details.
+- Good layering keeps business rules independent from implementation details.P
