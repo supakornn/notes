@@ -180,3 +180,22 @@ see also: [[SOLID Principles]]
 - Frameworks are tools, not the core identity of the system.
 - Use cases should drive architectural decisions.
 - A good architecture “screams” the business purpose of the application.
+
+### Chapter 22 - The Clean Architecture
+- Clean Architecture separates systems into concentric layers.
+- Dependencies should always point inward.
+- Inner layers contain business rules and policies.
+- Outer layers contain implementation details like:
+	- UI
+	- databases
+	- frameworks
+	- external systems
+- Business rules should remain independent from external technologies.
+- The architecture improves maintainability, testability, and flexibility.
+
+### Chapter 23 - Presenters and Humble Objects  
+- UI logic should be separated from business logic.  
+- Presenters transform data into UI-friendly formats.  
+- Humble objects contain minimal logic and are easy to replace.  
+- Business rules should remain testable without UI dependencies.  
+- Keep complex logic away from frameworks and visual components.
