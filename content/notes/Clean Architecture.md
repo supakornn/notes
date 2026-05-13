@@ -200,3 +200,16 @@ see also: [[SOLID Principles]]
 - Business rules should remain testable without UI dependencies.  
 - Keep complex logic away from frameworks and visual components.
 
+### Chapter 24 - Partial Boundaries
+- Full architectural boundaries are not always necessary.
+- Partial boundaries provide separation with lower complexity and cost.
+- Interfaces, facades, and dependency inversion can create lightweight boundaries.
+- Boundaries can evolve as the system grows.
+- Use only the level of architectural separation the system currently needs.
+
+### Chapter 25 - Layers and Boundaries
+- Layers organize responsibilities within the system.
+- Boundaries prevent layers from becoming tightly coupled.
+- Architectural boundaries must be actively enforced.
+- Without enforcement, systems naturally drift into coupling.
+- Good layering keeps business rules independent from implementation details.
