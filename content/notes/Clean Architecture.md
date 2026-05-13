@@ -199,3 +199,4 @@ see also: [[SOLID Principles]]
 - Humble objects contain minimal logic and are easy to replace.  
 - Business rules should remain testable without UI dependencies.  
 - Keep complex logic away from frameworks and visual components.
+
