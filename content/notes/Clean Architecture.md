@@ -227,3 +227,4 @@ see also: [[SOLID Principles]]
 - Service boundaries should follow business boundaries, not technical trends.
 - Independent deployability is more important than service size.
 - Good architecture depends on dependency direction, not deployment style.
+
