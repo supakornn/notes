@@ -213,3 +213,17 @@ see also: [[SOLID Principles]]
 - Architectural boundaries must be actively enforced.
 - Without enforcement, systems naturally drift into coupling.
 - Good layering keeps business rules independent from implementation details.
+
+### Chapter 26 - The Main Component
+- The `main` component is the entry point and ultimate detail of the system.
+- Dependency injection should be configured in `main`.
+- `main` wires together the application’s components and frameworks.
+- Business rules should not depend on `main`.
+- Frameworks and external details should remain at the outermost layer.
+
+### Chapter 27 - Services: Great and Small
+- Services do not automatically create good architecture.
+- Microservices can still become tightly coupled systems.
+- Service boundaries should follow business boundaries, not technical trends.
+- Independent deployability is more important than service size.
+- Good architecture depends on dependency direction, not deployment style.
