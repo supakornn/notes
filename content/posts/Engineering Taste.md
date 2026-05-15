@@ -4,8 +4,8 @@ title: Engineering Taste
 tags:
   - sapling
 ---
+> [!Quote] 
 > The only people who think AI is really good at things is people who aren't that good at things themselves. — [the tiny corp](https://x.com/__tinygrad__/status/2052814497816125557)
-
 
 I spend most of my time learning the fundamentals and understanding what good software looks like. I’m no longer focused on constantly chasing new tech stacks, libraries, frameworks, or languages. That doesn’t mean I don’t know how to program, but I don’t think it’s necessary to follow every new stack that comes out each week.
 
