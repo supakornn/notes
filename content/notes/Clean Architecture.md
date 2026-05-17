@@ -228,3 +228,27 @@ see also: [[SOLID Principles]]
 - Independent deployability is more important than service size.
 - Good architecture depends on dependency direction, not deployment style.
 
+### Chapter 28 - The Test Boundary
+- Tests are part of the system architecture.
+- The architecture should support fast and isolated testing.
+- Business rules should be testable without frameworks or external systems.
+- Tests should not depend heavily on implementation details.
+- Well-designed boundaries improve testability.
+
+### Chapter 29 - Clean Embedded Architecture
+- Embedded systems benefit from clean architectural boundaries.
+- Hardware dependencies should be isolated from business logic.
+- Business rules should remain testable without physical hardware.
+- Device-specific code should stay at the outer layers.
+- Good architecture improves portability and maintainability in embedded systems.
+
+---
+
+## Part VI — Details
+
+### Chapter 30 - The Database Is a Detail
+- Databases are implementation details, not the core architecture.
+- Business rules should not depend on database technology.
+- The database should be replaceable without affecting core logic.
+- Data storage concerns belong to outer architectural layers.
+- Architecture should prioritize business policies over persistence mechanisms.
