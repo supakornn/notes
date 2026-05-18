@@ -275,7 +275,7 @@ see also: [[SOLID Principles]]
 - Architectural decisions should support maintainability and flexibility.
 
 ### Chapter 34 - The Missing Chapter
-- Package structure should reflect architectural bouเรndaries.
+- Package structure should reflect architectural boundaries.
 - Organize code by feature and responsibility, not by framework type.
 - Architectural rules should be enforceable through code structure.
 - Source code organization affects maintainability and coupling.
