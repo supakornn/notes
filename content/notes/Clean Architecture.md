@@ -252,3 +252,42 @@ see also: [[SOLID Principles]]
 - The database should be replaceable without affecting core logic.
 - Data storage concerns belong to outer architectural layers.
 - Architecture should prioritize business policies over persistence mechanisms.
+
+### Chapter 31 - The Web Is a Detail
+- The web is a delivery mechanism, not the core system.
+- Business rules should not depend on web frameworks or HTTP.
+- Web technologies belong to outer architectural layers.
+- The application core should remain usable without the web.
+- Frameworks should serve the architecture, not control it.
+
+### Chapter 32 - Frameworks Are Details
+- Frameworks are tools, not the foundation of the architecture.
+- Avoid coupling business logic tightly to frameworks.
+- Frameworks should remain replaceable.
+- The system should be usable even if frameworks change.
+- Depend on abstractions instead of framework-specific implementations.
+
+### Chapter 33 - Case Study: Video Sales
+- Business rules should remain independent from UI, databases, and frameworks.
+- Boundaries define responsibility separation within the system.
+- Dependency direction should always point toward business policies.
+- Use cases coordinate application-specific behavior.
+- Architectural decisions should support maintainability and flexibility.
+
+### Chapter 34 - The Missing Chapter
+- Package structure should reflect architectural bouเรndaries.
+- Organize code by feature and responsibility, not by framework type.
+- Architectural rules should be enforceable through code structure.
+- Source code organization affects maintainability and coupling.
+- Good package design helps preserve architectural integrity.
+
+---
+
+## Part VII — Appendix
+
+### Appendix A - Architecture Archaeology
+- Software architecture evolved to manage increasing system complexity.
+- Programming paradigms changed how developers control dependencies and behavior.
+- Separating policies from implementation details became increasingly important over time.
+- Modern architecture focuses on maintainability, flexibility, and dependency management.
+- Architectural evolution is driven by the need to reduce the cost of change.
