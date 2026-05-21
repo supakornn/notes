@@ -25,14 +25,13 @@ In 2024, I was focused on preparing for university, and in 2025 (my first year),
 - **ผมพูดไม่ได้ว่าใครคือฆาตกร** by Lee Chanyoung
 - **The Master Algorithm** by Predro Domingos
 ### 2022
-- **สร้างการเรียนรู้สำหรับ AI ด้วย Python Machine Learning** by บัญชา-ปะสีละเตสัง
-- **จัดการและวิเคราะห์ข้อมูลด้วย Python Data Science** by บัญชา-ปะสีละเตสัง
-- **พัฒนา Application ด้วย React และ React Native** by บัญชา-ปะสีละเตสัง
-- **พัฒนา Web Application ด้วย PHP และ MariaDB** by บัญชา-ปะสีละเตสัง
+- **สร้างการเรียนรู้สำหรับ AI ด้วย Python Machine Learning** by บัญชา ปะสีละเตสัง
+- **จัดการและวิเคราะห์ข้อมูลด้วย Python Data Science** by บัญชา ปะสีละเตสัง
+- **พัฒนา Application ด้วย React และ React Native** by บัญชา ปะสีละเตสัง
+- **พัฒนาเว็บแอปพลิเคชั่นด้วย PHP ร่วมกับ MySQL และ jQuery** by บัญชา ปะสีละเตสัง
 ### 2021
-- **สร้างเว็บไซต์แบบ Responsive ด้วย Bootstrap ร่วมกับ CSS และ JavaScript** by บัญชา-ปะสีละเตสัง
-- **พัฒนา Web Application ด้วย JavaScript และ Node.js** by บัญชา-ปะสีละเตสัง
-- **รวมพื้นฐานการสร้าง WEB** by บัญชา-ปะสีละเตสัง
+- **สร้างเว็บไซต์แบบ Responsive ด้วย Bootstrap ร่วมกับ CSS และ JavaScript** by บัญชา ปะสีละเตสัง
+- **พัฒนา Web Application ด้วย JavaScript และ Node.js** by บัญชา ปะสีละเตสัง
 - **ตะลุยโจทย์ Python 500 ข้อ พร้อมเฉลยอย่างละเอียด** by ฆฤณ ชินประสาทศักดิ์, นันทนัช ฟูสามป๊อก, พนมวัฒน์ วรัทเศรษฐ์
-- **การเขียนโปรแกรมด้วย Python สำหรับผู้เริ่มต้น** by บัญชา-ปะสีละเตสัง
+- **การเขียนโปรแกรมด้วย Python สำหรับผู้เริ่มต้น** by บัญชา ปะสีละเตสัง
 - **NETWORK SECURITY ฉบับก้าวสู่นักทดสอบและป้องกันระบบ** by EZ-Genius
