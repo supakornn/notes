@@ -12,6 +12,8 @@ Book, written by **Robert C. Martin (Uncle Bob)**
 > [!quote]
 > The goal of software architecture is to minimize the human resources required to build and maintain the required system.
 
+---
+
 ## Part I — Introduction
 
 ### Chapter 1 - Introduction
