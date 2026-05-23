@@ -7,7 +7,7 @@ tags:
 ---
 Book, written by **Robert C. Martin (Uncle Bob)**
 
-> The goal of software architecture is to minimize the human resources required to build and maintain the required system.
+> The goal of software architecture is to minimize the human resources required to build and maintain the required system. - Uncle Bob
 
 ---
 
