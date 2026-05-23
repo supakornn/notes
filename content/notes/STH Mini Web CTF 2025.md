@@ -1,7 +1,7 @@
 ---
 title: STH-Mini-Web-CTF-2025
 tags:
-  - seed
+  - sapling
   - ctf
 created: 2025-10-05
 ---
