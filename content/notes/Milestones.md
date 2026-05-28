@@ -160,4 +160,4 @@ It took me about half a year to complete. I mostly studied after school because 
 
 ![[Pasted image 20260509134942.png | 800]]
 
-In the end, it was all worth it because I successfully completed the [Penetration Tester Path](https://academy.hackthebox.com/path/preview/penetration-tester). It helped me build a strong foundation in computer science and better understand how systems, networks, and technologies connect together. I do not necessarily plan to pursue cybersecurity professionally — I mainly explore [[ctf|CTFs]] and security challenges as a hobby because I enjoy understanding how the digital world works.
+In the end, it was all worth it because I successfully completed the [Penetration Tester Path](https://academy.hackthebox.com/path/preview/penetration-tester). It helped me build a strong foundation in computer science and better understand how systems, networks, and technologies connect together. I do not necessarily plan to pursue cybersecurity professionally — I mainly explore [[ctfs|CTFs]] and security challenges as a hobby because I enjoy understanding how the digital world works.
