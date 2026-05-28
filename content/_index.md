@@ -16,7 +16,7 @@ Right now, I’m mainly studying at [SIT, KMUTT](https://sit.kmutt.ac.th/) and a
 
 The rest is less structured.
 
-I tend to follow whatever catches my attention — not because it fits into a plan, but because it feels interesting enough to go deeper into. That can lead me into systems and low-level details, security problems, [[CTFs|CTFs]], AI, or sometimes things I don’t even know how to categorize yet.
+I tend to follow whatever catches my attention — not because it fits into a plan, but because it feels interesting enough to go deeper into. That can lead me into systems and low-level details, security problems, [[ctfs|CTFs]], AI, or sometimes things I don’t even know how to categorize yet.
 
 I don’t think of this space as a portfolio or a finished collection of ideas. It’s more like a working memory — things I’m actively thinking through, breaking apart, and slowly understanding over time.
 
