@@ -2,7 +2,7 @@
 created: 2026-05-01
 title: Object Oriented Programming (OOP)
 tags:
-  - seed
+  - sapling
 ---
 OOP was founded by **Alan Kay**, but the OOP that most people learn today is quite different from the original idea.
 

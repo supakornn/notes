@@ -2,7 +2,7 @@
 created: 2026-05-02
 title: Engineering Taste
 tags:
-  - sapling
+  - fruit
 ---
 > The only people who think AI is really good at things is people who aren't that good at things themselves. — [the tiny corp](https://x.com/__tinygrad__/status/2052814497816125557)
 

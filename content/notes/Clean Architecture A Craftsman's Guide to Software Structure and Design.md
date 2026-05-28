@@ -2,7 +2,7 @@
 created: 2026-04-07
 title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
 tags:
-  - sapling
+  - seed
   - book
 ---
 Book, written by **Robert C. Martin (Uncle Bob)**
