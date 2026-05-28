@@ -4,7 +4,7 @@ title: Eat That Frog!
 tags:
   - sapling
 ---
-Book written by Brian Tracy.
+Book written by **Brian Tracy**.
 
 > “The frog” is your hardest, most important task. Do it first before everything else.
 
