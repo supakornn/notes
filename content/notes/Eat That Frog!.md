@@ -2,7 +2,7 @@
 created: 2026-05-28
 title: Eat That Frog!
 tags:
-  - sapling
+  - seed
 ---
 Book written by **Brian Tracy**.
 
