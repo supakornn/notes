@@ -10,7 +10,9 @@ In mathematics, the formal **defination of derivative** is built on the concept 
 The derivative of a function $f(x)$ , denoted as $f'(x)$ or $\frac{dy}{dx}$ , is defined by the limit:
 
 
-$$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+$$
 
 
 ### Geometric Interpretation

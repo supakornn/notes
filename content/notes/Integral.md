@@ -14,7 +14,9 @@ The most common way to visualize an integral is as the **area** trapped between 
 ### The Definite Integral
 This calculates a **specific number** (the area between two points).
 
-$$\int_{a}^{b} f(x) \, dx$$
+$$
+\int_{a}^{b} f(x) \, dx
+$$
 
 - **$a$ and $b$:** The boundaries (where you start and stop measuring).
 - **$f(x)$:** The height of the function.
@@ -24,7 +26,9 @@ $$\int_{a}^{b} f(x) \, dx$$
 #### The Antiderivative
 This results in a **new function** rather than a number. It is the **undoing** of a derivative.
 
-$$\int f(x) \, dx = F(x) + C$$
+$$
+\int f(x) \, dx = F(x) + C
+$$
 
 - **$+ C$:** This is the **Constant of Integration.** Because the derivative of any constant (like 5 or 100) is zero, we add $+ C$ to acknowledge there might have been a constant in the original function that disappeared during differentiation.
 
