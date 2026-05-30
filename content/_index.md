@@ -12,7 +12,7 @@ Hi, I’m Supakorn.
 
 This is my small corner of the internet — a digital garden where I collect thoughts, ideas, and things I’m still figuring out.
 
-Right now, I’m mainly studying at [SIT, KMUTT](https://sit.kmutt.ac.th/) and also working as a Full Stack Software Engineering Intern at [Agoda](https://www.agoda.com/). That’s the structured part of my life.
+Right now, I’m mainly studying at [SIT, KMUTT](https://sit.kmutt.ac.th/) and also working as Software Engineering Intern at [Agoda](https://www.agoda.com/). That’s the structured part of my life.
 
 The rest is less structured.
 
