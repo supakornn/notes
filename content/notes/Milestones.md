@@ -6,7 +6,7 @@ title: Milestones
 ---
 > A record of moments that marked meaningful shifts in how I think, build, and approach problems.
 ## 2026
-### Agoda Summer Internship — Software Engineer (Full-stack)
+### Agoda Summer Internship — Software Engineer Intern (Full-stack)
 
 ---
 ### Research Assistant — Apprenticeship
