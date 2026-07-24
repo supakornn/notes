@@ -7,19 +7,6 @@ title: Milestones
 > A record of moments that marked meaningful shifts in how I think, build, and approach problems.
 ## 2026
 ### Agoda Summer Internship — Software Engineer (Full-stack)
-This was not the first time I applied for an internship at [Agoda](https://www.agoda.com) — it was actually my second attempt.
-
-The first time, I was rejected because I was unprepared. I was very excited about the opportunity, but during the technical interview round, I became too nervous and could not perform well in the coding interview. That experience was disappointing, but it also became an important turning point for me.
-
-After being rejected, I spent time reflecting on myself and thinking seriously about what I needed to improve. I told myself that I would come back better prepared and try again.
-
-From that point on, I started studying more deeply and practicing consistently. I focused on strengthening my fundamentals, improving my problem-solving skills, and preparing properly for technical interviews.
-
-When I applied again, everything felt completely different. This time, I was much more confident and well prepared, and I successfully passed every interview round.
-
-My internship will take place from June to August, and I am very excited to join a world-class technology company. I hope to learn as much as possible from the engineers, the culture, and the real-world systems at Agoda so I can continue growing into a stronger software engineer.
-
-After the internship ends in August, I will come back and update this journey with everything I learned.
 
 ---
 ### Research Assistant — Apprenticeship
