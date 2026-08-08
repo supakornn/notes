@@ -6,10 +6,12 @@ title: Milestones
 ---
 > A record of moments that marked meaningful shifts in how I think, build, and approach problems.
 ## 2026
-### Agoda Summer Internship — Software Engineer Intern (Full-stack)
+### Agoda — Software Engineer Intern (Part-Time) 
+
+### Agoda Summer Internship —  Software Engineer Intern
 
 ---
-### Research Assistant — Apprenticeship
+### SIT, KMUTT — Research Assistant (Apprenticeship)
 
 This was my first apprenticeship experience. My university opened an apprenticeship program where students could work as research assistants with professors for 90 days. I decided to join the program by contacting  through [Dr. Nantapong Keandoungchun](https://www.sit.kmutt.ac.th/showprofile/?empid=289).
 
