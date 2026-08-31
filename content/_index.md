@@ -12,11 +12,13 @@ Hi, I’m Supakorn.
 
 This is my small corner of the internet — a digital garden where I collect thoughts, ideas, and things I’m still figuring out.
 
-Right now, I’m mainly studying at [SIT, KMUTT](https://sit.kmutt.ac.th/) and also working as Software Engineering Intern at [Agoda](https://www.agoda.com/). That’s the structured part of my life.
+I spend most of my time studying at [SIT, KMUTT](https://sit.kmutt.ac.th/) and working as a Software Engineering Intern at [Agoda](https://www.agoda.com/).
 
-The rest is less structured.
+When I’m not doing that, I’m usually messing around with whatever I happen to find interesting. I’ve never been very good at sticking to one thing—I tend to find something, get curious about it, and keep digging until I end up somewhere completely different.
 
-I tend to follow whatever catches my attention — not because it fits into a plan, but because it feels interesting enough to go deeper into. That can lead me into systems and low-level details, security problems, [[ctfs|CTFs]], AI, or sometimes things I don’t even know how to categorize yet.
+A lot of the time that means systems, low-level stuff, security, [[ctfs|CTFs]], or AI. Other times it’s something random that I don’t really have a name for yet.
+
+I just like figuring things out, especially when I have no idea what I’m doing at first.
 
 I don’t think of this space as a portfolio or a finished collection of ideas. It’s more like a working memory — things I’m actively thinking through, breaking apart, and slowly understanding over time.
 
