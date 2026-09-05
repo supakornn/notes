@@ -5,6 +5,9 @@ tags:
   - ctfs
 title: HTB - Cap
 ---
+![[Pasted image 20260905212406.png]]
+
+
 ## Enumeration
 
 ```
