@@ -17,7 +17,7 @@ title: Bookshelf
 
 ### 2026
 - [[Eat That Frog!]] by Brian Tracy
-- [[Clean Architecture A Craftsman's Guide to Software Structure and Design | Clean Architecture: A Craftsman's Guide to Software Structure and Design]] by Robert C. Martin
+- [[Book - Clean Architecture|Clean Architecture: A Craftsman's Guide to Software Structure and Design]] by Robert C. Martin
 ### 2024 – 2025
 I didn’t read any books during this period.  
 In 2024, I was focused on preparing for university, and in 2025 (my first year), I was adjusting to a new environment and dealing with a lot of activities.
