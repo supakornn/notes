@@ -1,6 +1,6 @@
 ---
 created: 2026-05-07
-title: Universal Approximation Theorem
+title: Universal Approximation Theorem (UATs)
 tags:
   - seed
 ---

@@ -1,359 +1,280 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-@use "./variables.scss" as *;
+:root {
+  --bodyFont: "Atkinson Hyperlegible Mono", monospace;
+  --headerFont: "Atkinson Hyperlegible Mono", monospace;
+  --codeFont: "JetBrains Mono", monospace;
+}
 
-body[data-slug="index"] img {
-  filter: invert(0%);
-  opacity: 0.85;
+html {
+  background: var(--light);
 }
 
 body {
-  position: relative;
-  min-height: 100vh;
-
-  // only allow synthesizing italics but not bold
-  font-synthesis: style;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
 }
 
-img[src*="banner.svg"] {
-  opacity: 0.8;
+#dappled-light,
+.left.sidebar:empty {
+  display: none;
 }
 
-[saved-theme="dark"] body[data-slug="index"] img[src*="banner.svg"] {
-  filter: invert(100%);
+.page {
+  max-width: 56rem;
+  margin: 3rem auto 4rem;
+  padding: 0 1.5rem;
 }
 
-body[data-slug="thoughts/craft"] {
-  & li:has(> img, > video) {
-    list-style-type: none;
+.page > #quartz-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "grid-header"
+    "grid-center"
+    "grid-sidebar-right"
+    "grid-footer";
+  gap: 0;
+}
 
-    & > img,
-    & > video {
-      margin: 1rem 0;
-    }
-  }
+.page > #quartz-body .page-header {
+  margin: 0 0 1.5rem;
+}
 
-  article > ul {
-    padding-left: 0;
+.page > #quartz-body .center,
+.page > #quartz-body footer {
+  min-width: 0;
+  margin: 0;
+}
 
-    & > li {
-      list-style-type: none;
-      margin: 1rem 0;
-    }
-  }
+.page > #quartz-body .right.sidebar {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin-top: 2.5rem;
+}
+
+a {
+  color: var(--darkgray);
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--dark);
+}
+
+a.internal {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+article {
+  max-width: 100%;
+}
+
+article > h1,
+.article-title {
+  color: var(--dark);
+  font-size: 1.5rem !important;
+  margin: 0.5rem 0 !important;
+}
+
+article h1::before {
+  content: "# ";
+  opacity: 0.3;
+  font-weight: 400;
+}
+article h2::before {
+  content: "## ";
+  opacity: 0.3;
+  font-weight: 400;
+}
+article h3::before {
+  content: "### ";
+  opacity: 0.3;
+  font-weight: 400;
+}
+
+.content-meta,
+.meta {
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+}
+
+.tags,
+.section-li > .section > .tags {
+  justify-content: flex-start;
+  gap: 0.2rem;
+}
+
+a.internal.tag-link {
+  color: var(--gray);
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+a.internal.tag-link::before {
+  content: "[";
+}
+a.internal.tag-link::after {
+  content: "]";
+}
+
+ul.section-ul {
+  margin-top: 1rem;
+}
+
+li.section-li {
+  border-left: 2px solid var(--lightgray);
+  margin-bottom: 0.5rem;
+  padding: 0.2rem 0 0.2rem 0.75rem;
+}
+
+li.section-li > .section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.75rem;
+  align-items: baseline;
+}
+
+li.section-li > .section .meta {
+  order: 2;
+  margin: 0 0 0 auto;
+  white-space: nowrap;
+}
+
+li.section-li > .section .desc {
+  order: 1;
+}
+
+li.section-li > .section > .tags {
+  order: 3;
+  width: 100%;
+  margin: 0;
+}
+
+li.section-li h3 {
+  font-family: var(--bodyFont);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+li.section-li h3::before {
+  content: none;
 }
 
 hr {
-  overflow: visible;
+  border: 0;
+  color: var(--gray);
+  margin: 2.5rem 0;
+}
+
+hr::after {
+  content: "* * *";
+  background: var(--light);
+}
+
+footer {
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+}
+
+footer p,
+footer ul {
+  margin: 0;
+}
+
+body[data-slug="index"] > .page hr {
+  display: none;
+}
+
+.home-sections {
+  margin-top: 2rem;
+}
+
+.home-section {
+  margin-bottom: 2rem;
+}
+
+.home-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.home-section-header h2 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.home-section-header h2::before {
+  content: none;
+}
+
+.home-section-header span,
+.home-list time,
+.empty-section,
+.now-section p,
+.see-all {
+  color: var(--gray);
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+}
+
+.now-section p,
+.empty-section {
+  border-left: 2px solid var(--lightgray);
+  margin: 0;
+  padding: 0.25rem 0 0.25rem 0.75rem;
+}
+
+.home-list {
+  list-style: none;
+  margin: 0;
   padding: 0;
-  height: 0;
-  margin: 2em auto;
-  border: none;
-  text-align: center;
-  width: 100%;
-
-  &:after {
-    content: "* * *";
-    display: inline-block;
-    margin: -1em 0 0.5em;
-    font-size: 1.5em;
-    padding: 0.5em 1em;
-    color: var(--gray);
-  }
 }
 
-pre.poetry {
-  font-size: 1.2rem;
-  font-family: biro_script_standardRgus;
-  border: none;
-  padding: 0;
-  position: unset;
+.home-list li {
+  display: flex;
+  align-items: baseline;
+  border-left: 2px solid var(--lightgray);
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0 0.25rem 0.75rem;
 }
 
-.meta,
-.content-meta {
-  font-family: biro_script_standardRgus, var(--bodyFont);
+.home-list time {
+  margin-left: auto;
+  white-space: nowrap;
 }
 
-audio::-webkit-media-controls-panel {
-  background-color: var(--lightgray);
+.see-all {
+  display: inline-block;
+  margin: 0.25rem 0 0 0.75rem;
 }
 
-#quartz-root {
-  isolation: isolate;
-}
-
-// fade-in elements
-body.animation-ready #quartz-body {
-  [saved-theme="dark"] & {
-    --animation-name: fade2;
+@media (max-width: 800px) {
+  .page {
+    margin-top: 1.5rem;
+    padding: 0 1rem;
   }
 
-  [saved-theme="light"] & {
-    --animation-name: fade;
+  .current-path {
+    display: none;
   }
 
-  @for $i from 1 through 4 {
-    @for $j from 1 through 8 {
-      & > *:nth-child(#{$i}) > *:nth-child(#{$j}) {
-        animation: var(--animation-name) 2s ease 1 normal backwards;
-        animation-delay: #{0.1 * $j + 0.4 * $i}s;
-      }
-    }
-  }
-}
-
-// hack to duplicate the fade-in animation so that we reset the animation in both directions
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade2 {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-// dappled light
-#dappled-light {
-  animation-duration: 0s;
-  animation-fill-mode: forwards;
-  animation-timing-function: linear;
-  pointer-events: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  isolation: isolate;
-
-  --day: #eff1f5;
-  --evening: #fccc83;
-  --dusk: #db7a2a;
-  --night: #24273a;
-  --dawn: #1e2030;
-  --morning: #9fb3bf;
-
-  --shadow: #1a1917;
-  --bounce-light: #fffffc;
-  --timing-fn: cubic-bezier(0.455, 0.19, 0, 0.985);
-
-  body.animation-ready & {
-    animation-play-state: running;
-    animation-duration: 1s;
-    animation-name: sunrise;
-  }
-
-  [saved-theme="dark"] body.animation-ready & {
-    animation-duration: 1.5s;
-    animation-name: sunset;
-  }
-
-  [saved-theme="dark"] & {
-    --shadow: #030307;
-    --bounce-light: #1b293f;
-  }
-
-  & > #progressive-blur {
-    position: absolute;
-    height: 100%;
+  li.section-li > .section .meta {
+    margin-left: 0;
     width: 100%;
-
-    & > div {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      backdrop-filter: blur(var(--blur-amount));
-      mask-image: linear-gradient(
-        252deg,
-        transparent,
-        transparent var(--stop1),
-        black var(--stop2),
-        black
-      );
-
-      &:nth-child(1) {
-        --blur-amount: 8px;
-        --stop1: 0%;
-        --stop2: 0%;
-      }
-
-      &:nth-child(2) {
-        --blur-amount: 72px;
-        --stop1: 30%;
-        --stop2: 60%;
-      }
-    }
-  }
-
-  #glow {
-    position: absolute;
-    background: linear-gradient(309deg, var(--bounce-light), var(--bounce-light) 20%, transparent);
-    transition: background 1s var(--timing-fn);
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-  }
-
-  #glow-bounce {
-    content: "";
-    position: absolute;
-    background: linear-gradient(355deg, var(--bounce-light) 0%, transparent 30%, transparent 100%);
-    transition: background 1s var(--timing-fn);
-    opacity: 0.5;
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-  }
-
-  & > .perspective {
-    position: absolute;
-    transition:
-      transform 1.7s var(--timing-fn),
-      opacity 4s ease;
-    top: -30vh;
-    right: 0;
-    width: 80vw;
-    height: 130vh;
-    opacity: 0.07;
-    background-blend-mode: darken;
-    transform-origin: top right;
-    transform-style: preserve-3d;
-    transform: matrix3d(0.75, -0.0625, 0, 0.0008, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-
-    [saved-theme="dark"] & {
-      opacity: 0.3;
-      transform: matrix3d(0.8333, 0.0833, 0, 0.0003, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    }
-  }
-
-  #leaves {
-    position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    bottom: 0px;
-    right: -600px;
-    width: 1600px;
-    height: 1400px;
-    background-image: url("/static/leaves.png");
-    perspective: 400px;
-    animation: billow 8s ease-in-out infinite;
-  }
-
-  #blinds {
-    position: relative;
-    width: 100%;
-
-    & .shutter,
-    & .bar {
-      background-color: var(--shadow);
-    }
-
-    & .shutter {
-      width: 100%;
-      height: 40px;
-      transition: height 1s var(--timing-fn);
-
-      [saved-theme="dark"] & {
-        height: 80px;
-      }
-    }
-
-    & .shutters {
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 60px;
-      transition: gap 1s var(--timing-fn);
-
-      [saved-theme="dark"] & {
-        gap: 20px;
-      }
-    }
-
-    & > .vertical {
-      top: 0;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-
-      & > .bar {
-        width: 12px;
-        height: 100%;
-      }
-    }
-  }
-}
-
-@keyframes sunrise {
-  0% {
-    background-color: var(--night);
-  }
-
-  10% {
-    background-color: var(--dawn);
-  }
-
-  35% {
-    background-color: var(--morning);
-  }
-
-  100% {
-    background-color: var(--day);
-  }
-}
-
-@keyframes sunset {
-  0% {
-    background-color: var(--day);
-  }
-
-  30% {
-    background-color: var(--evening);
-  }
-
-  60% {
-    background-color: var(--dusk);
-  }
-
-  90% {
-    background-color: var(--dawn);
-  }
-
-  100% {
-    background-color: var(--night);
-  }
-}
-
-@keyframes billow {
-  0% {
-    transform: rotateX(0deg) rotateY(0deg) scale(1);
-  }
-
-  18% {
-    transform: rotateX(1deg) rotateY(2deg) scale(1.03);
-  }
-
-  32% {
-    transform: rotateX(-4deg) rotateY(-2deg) scale(0.96);
-  }
-
-  66% {
-    transform: rotateX(3deg) rotateY(-1deg) scale(1.04);
-  }
-
-  100% {
-    transform: rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
