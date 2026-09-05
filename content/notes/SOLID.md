@@ -81,4 +81,4 @@ class UserService {
 
 **Quick check:** If changing a low-level detail (like a database) forces you to edit high-level business logic, DIP is violated.
 
-see also: [[Book - Clean Architecture]]
+see also: [[Clean Architecture]]
