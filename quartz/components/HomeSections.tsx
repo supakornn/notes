@@ -31,7 +31,7 @@ const sections: Section[] = [
     title: "books",
     path: "~/books",
     link: "books/" as SimpleSlug,
-    limit: 5,
+    limit: 3,
     matches: (file) => !!file.slug?.startsWith("books/") && file.slug !== "books/index",
   },
 ]

@@ -95,13 +95,20 @@ PageTitle.css = `
 
 .site-header nav {
   display: flex;
-  gap: 1.1rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
   margin-top: 0.25rem;
 }
 
 .site-header nav a {
   color: var(--gray);
   font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .site-header nav {
+    column-gap: 0.85rem;
+  }
 }
 
 .webring-link {
