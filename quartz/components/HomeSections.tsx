@@ -24,16 +24,15 @@ const sections: Section[] = [
     title: "posts",
     path: "~/posts",
     link: "posts/" as SimpleSlug,
-    limit: 10,
+    limit: 5,
     matches: (file) => !!file.slug?.startsWith("posts/") && file.slug !== "posts/index",
   },
   {
-    title: "projects",
-    path: "~/projects",
-    link: "projects/" as SimpleSlug,
+    title: "books",
+    path: "~/books",
+    link: "books/" as SimpleSlug,
     limit: 5,
-    matches: (file) =>
-      !!file.slug?.startsWith("projects/") || !!file.frontmatter?.tags?.includes("project"),
+    matches: (file) => !!file.slug?.startsWith("books/") && file.slug !== "books/index",
   },
 ]
 
@@ -48,7 +47,14 @@ const HomeSections: QuartzComponent = ({ allFiles, cfg, fileData }: QuartzCompon
           <h2># now</h2>
           <span>~/now</span>
         </div>
-        <p>learning, building, and writing in public.</p>
+        <ul class="home-list">
+          <li>
+            studying → <a href="https://sit.kmutt.ac.th/">SIT, KMUTT</a>
+          </li>
+          <li>
+            working → <a href="https://www.agoda.com/">Agoda</a>
+          </li>
+        </ul>
       </section>
       {sections.map((section) => {
         const pages = allFiles.filter(section.matches).sort(sort)
@@ -80,17 +86,6 @@ const HomeSections: QuartzComponent = ({ allFiles, cfg, fileData }: QuartzCompon
           </section>
         )
       })}
-      <section class="home-section">
-        <div class="home-section-header">
-          <h2># books</h2>
-          <span>~/books</span>
-        </div>
-        <ul class="home-list">
-          <li>
-            <a href={resolveRelative(fileData.slug!, "notes/Bookshelf" as SimpleSlug)}>Bookshelf</a>
-          </li>
-        </ul>
-      </section>
     </div>
   )
 }

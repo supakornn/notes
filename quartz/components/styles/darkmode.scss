@@ -3,20 +3,33 @@
   padding: 0;
   position: relative;
   background: none;
-  border: none;
-  width: 20px;
-  height: 32px;
+  border: 1px solid var(--lightgray);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
   margin: 0;
   text-align: inherit;
   flex-shrink: 0;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+
+  &:hover {
+    background-color: var(--lightgray);
+    transform: rotate(15deg);
+  }
 
   & svg {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    top: calc(50% - 10px);
+    width: 1rem;
+    height: 1rem;
+    top: 0.45rem;
+    left: 0.45rem;
     fill: var(--darkgray);
-    transition: opacity 0.1s ease;
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s ease;
   }
 }
 
@@ -30,18 +43,29 @@
 
 :root[saved-theme="dark"] .darkmode {
   & > .dayIcon {
-    display: none;
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
   }
   & > .nightIcon {
-    display: inline;
+    opacity: 1;
+    transform: rotate(0) scale(1);
   }
 }
 
 :root .darkmode {
   & > .dayIcon {
-    display: inline;
+    opacity: 1;
+    transform: rotate(0) scale(1);
   }
   & > .nightIcon {
-    display: none;
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .darkmode,
+  .darkmode svg {
+    transition: none;
   }
 }

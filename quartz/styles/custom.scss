@@ -16,14 +16,34 @@ body {
   letter-spacing: -0.01em;
 }
 
+body.animation-ready,
+body.animation-ready * {
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    color 0.35s ease,
+    fill 0.35s ease;
+}
+
+body.animation-ready .darkmode,
+body.animation-ready .darkmode svg {
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    opacity 0.35s ease,
+    fill 0.35s ease;
+}
+
 #dappled-light,
-.left.sidebar:empty {
-  display: none;
+.left.sidebar:empty,
+.right.sidebar:empty {
+  display: none !important;
 }
 
 .page {
   max-width: 56rem;
-  margin: 3rem auto 4rem;
+  margin: 3rem auto 1rem;
   padding: 0 1.5rem;
 }
 
@@ -42,10 +62,28 @@ body {
   margin: 0 0 1.5rem;
 }
 
+.page-header > header {
+  position: relative;
+}
+
+.page-header > header > .darkmode {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.current-path {
+  margin-right: 2rem;
+}
+
 .page > #quartz-body .center,
 .page > #quartz-body footer {
   min-width: 0;
   margin: 0;
+}
+
+.page > #quartz-body .center {
+  grid-area: grid-center;
 }
 
 .page > #quartz-body .right.sidebar {
@@ -54,6 +92,21 @@ body {
   height: auto;
   padding: 0;
   margin-top: 2.5rem;
+}
+
+@media (min-width: 801px) {
+  body[data-slug="index"] > .page > #quartz-body {
+    grid-template-columns: minmax(0, 1fr) 16rem;
+    grid-template-areas:
+      "grid-header grid-header"
+      "grid-center grid-sidebar-right"
+      "grid-footer grid-footer";
+    column-gap: 3rem;
+  }
+
+  body[data-slug="index"] > .page > #quartz-body .right.sidebar {
+    margin-top: 0;
+  }
 }
 
 a {
@@ -187,6 +240,9 @@ footer {
   color: var(--gray);
   font-family: var(--codeFont);
   font-size: 0.8rem;
+  border-top: 1px solid var(--lightgray);
+  margin-top: 2rem;
+  padding: 1rem 0 0;
 }
 
 footer p,
@@ -195,6 +251,10 @@ footer ul {
 }
 
 body[data-slug="index"] > .page hr {
+  display: none;
+}
+
+.center > hr:has(+ .page-footer:empty) {
   display: none;
 }
 
@@ -258,12 +318,20 @@ body[data-slug="index"] > .page hr {
   white-space: nowrap;
 }
 
+.now-section .home-list a {
+  margin-left: 0.35em;
+}
+
 .see-all {
   display: inline-block;
   margin: 0.25rem 0 0 0.75rem;
 }
 
 @media (max-width: 800px) {
+  body[data-slug="index"] > .page > #quartz-body .right.sidebar {
+    display: none;
+  }
+
   .page {
     margin-top: 1.5rem;
     padding: 0 1rem;

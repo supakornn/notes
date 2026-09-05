@@ -10,20 +10,45 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   return (
     <div class={classNames(displayClass, "site-header")}>
       <div class="site-header-top">
-        <h2 class="page-title">
-          <a href={baseDir}>
-            {title}
-            <span aria-hidden="true" class="terminal-cursor">
-              █
-            </span>
+        <div class="site-brand">
+          <h2 class="page-title">
+            <a href={baseDir}>
+              {title}
+              <span aria-hidden="true" class="terminal-cursor">
+                █
+              </span>
+            </a>
+          </h2>
+          <a
+            href="https://webring.wonderful.software#supakorn.me"
+            title="วงแหวนเว็บ"
+            class="webring-link"
+          >
+            <img
+              alt="วงแหวนเว็บ"
+              width="22"
+              height="22"
+              src="https://webring.wonderful.software/webring.black.svg"
+              class="webring-light"
+            />
+            <img
+              alt="วงแหวนเว็บ"
+              width="22"
+              height="22"
+              src="https://webring.wonderful.software/webring.white.svg"
+              class="webring-dark"
+            />
           </a>
-        </h2>
+        </div>
         <span class="current-path">{path}</span>
       </div>
       <nav aria-label="Site links">
         <a href="https://github.com/supakornn">github</a>
         <a href="https://twitter.com/supak0rnn">twitter</a>
-        <a href={`${baseDir}/index.xml`}>rss</a>
+        <a href="https://www.linkedin.com/in/supakornieamgomol/">linkedin</a>
+        <a href="https://www.instagram.com/supakornigm/">instagram</a>
+        <a href="https://www.facebook.com/supakornigm/">facebook</a>
+        <a href="https://resume.supakorn.me">resume</a>
       </nav>
     </div>
   )
@@ -38,6 +63,12 @@ PageTitle.css = `
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .page-title {
@@ -72,6 +103,27 @@ PageTitle.css = `
   color: var(--gray);
   font-weight: 400;
 }
+
+.webring-link {
+  display: inline-flex;
+  opacity: 0.55;
+}
+
+.webring-link:hover {
+  opacity: 1;
+}
+
+.webring-link img {
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.webring-link:hover img {
+  transform: rotate(360deg);
+}
+
+:root[saved-theme="dark"] .webring-light { display: none; }
+:root:not([saved-theme="dark"]) .webring-dark { display: none; }
 
 @keyframes blink { 50% { opacity: 0; } }
 `

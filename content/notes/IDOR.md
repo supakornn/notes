@@ -2,5 +2,5 @@
 created: 2026-09-05
 tags:
   - seed
-title: " insecure direct object Reference (IDOR)"
+title: " Insecure Direct Object Reference (IDOR)"
 ---

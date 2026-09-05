@@ -15,6 +15,7 @@ export interface D3Config {
   linkDistance: number
   fontSize: number
   opacityScale: number
+  initialZoom: number
   removeTags: string[]
   showTags: boolean
   focusOnHover?: boolean
@@ -37,6 +38,7 @@ const defaultOptions: GraphOptions = {
     linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
+    initialZoom: 1,
     showTags: true,
     removeTags: [],
     focusOnHover: false,
@@ -52,6 +54,7 @@ const defaultOptions: GraphOptions = {
     linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
+    initialZoom: 1,
     showTags: true,
     removeTags: [],
     focusOnHover: true,

@@ -39,7 +39,7 @@ export default {
       createdWith: "Created with",
     },
     graph: {
-      title: "Graph View",
+      title: "Knowledge Constellation",
     },
     recentNotes: {
       title: "Recent Notes",
