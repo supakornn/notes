@@ -14,9 +14,6 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
           <h2 class="page-title">
             <a href={baseDir}>
               {title}
-              <span aria-hidden="true" class="terminal-cursor">
-                █
-              </span>
             </a>
           </h2>
           <a
@@ -78,14 +75,6 @@ PageTitle.css = `
   line-height: 1.25;
 }
 
-.terminal-cursor {
-  display: inline-block;
-  margin-left: 0.15em;
-  color: var(--gray);
-  font-size: 0.75em;
-  animation: blink 1.1s step-end infinite;
-}
-
 .current-path,
 .site-header nav {
   color: var(--gray);
@@ -131,8 +120,6 @@ PageTitle.css = `
 
 :root[saved-theme="dark"] .webring-light { display: none; }
 :root:not([saved-theme="dark"]) .webring-dark { display: none; }
-
-@keyframes blink { 50% { opacity: 0; } }
 `
 
 export default (() => PageTitle) satisfies QuartzComponentConstructor
