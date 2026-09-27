@@ -4,7 +4,7 @@ title: Thinking With AI
 tags:
   - fruit
 ---
-## As a Developer
+## Building with AI
 
 AI has changed the way I approach coding more than anything else.
 
@@ -26,7 +26,7 @@ This also means that reading code has become more important than writing it. AI 
 
 Whenever I get output from AI, I go through it carefully. I read the logic, check assumptions, and make sure everything makes sense. If something breaks, it is not the AI’s problem. **It is mine.**
 
-![[image.png]]
+![[Pasted image 20260927162352.png]]
 
 Another thing AI has changed is how I approach side projects.
 
@@ -43,51 +43,18 @@ Side projects are no longer just about building something small. They have becom
 AI does not just make me faster. **It makes me more curious.**
 
 ---
-## As a Student
+## Beyond Coding
 
-Outside of development, AI has become a big part of how I study.
+Outside of coding, I use AI as a thinking partner.
 
-But I follow a simple rule. **I do not keep anything I do not understand.**
+When I have an idea for a project, I use it to brainstorm from different angles. It helps me ask better questions, explore possible directions, and notice things I may have missed on my own.
 
-When I start learning a new topic, I often use AI to get a high-level overview. This helps reduce the initial friction, especially when something feels overwhelming.
+I also use it when I want to learn something new. It can give me a starting point, explain unfamiliar concepts, and help me connect them to what I already know.
 
-![[Pasted image 20260415164500.png]]
+![[Pasted image 20260927164117.png]]
 
-After that, I try to work through the material on my own. I break it down, think through it step by step, and make sure I actually understand what is going on.
+For research, AI helps me narrow down a broad idea and decide what is worth exploring further. It does not replace doing the research, but it makes the first step feel less overwhelming.
 
-Only then do I use AI again to help structure my notes.
+The value is not just getting answers quickly. It is having a space to think out loud, challenge my assumptions, and turn vague ideas into something clearer.
 
-This step matters to me because I am not trying to store AI-generated information. **I am trying to capture my own understanding.**
-
-Without AI, I sometimes get stuck trying to make everything perfect from the beginning. With AI, I can focus on what actually matters.
-
-**Understanding first. Structuring later.**
-
----
-## Personal Use
-
-Even outside of coding and studying, AI has quietly become part of how I think and communicate.
-
-Writing is a good example.
-
-I usually start by dumping everything from my head. It is messy, unstructured, and full of mistakes. That is just how my thoughts come out at first.
-
-Then I use AI to refine it.
-
-Not to change the meaning, but to make it clearer and easier to read. In that sense, it feels less like a generator and more like **a tool for clarity**.
-
-Over time, this has also helped me improve my English. I get to see how ideas can be expressed more naturally, how sentences flow, and how small changes can make things easier to understand.
-
-![[Pasted image 20260415164603.png]]
-
-It feels like having **a writing coach that is always available.**
-
-At the same time, using AI has made me more aware of how easily context can be lost.
-
-When a lot of content is generated quickly, it becomes harder to remember why certain decisions were made. I have come back to my own work and realized that while everything still functions, the reasoning behind it is no longer clear.
-
-That is why I started documenting more.
-
-Not just what was built, but why it was built that way. The trade-offs, the assumptions, and the decisions that shaped the final result.
-
-Because in the long run, **understanding matters more than output.**
+**AI helps me explore, but the understanding still has to be mine.**

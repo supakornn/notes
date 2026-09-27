@@ -42,7 +42,7 @@ Each `/data/<id>` page returned a downloadable PCAP file. For example:
 http://10.129.40.90/data/0
 ```
 
-This returned a different capture that I could download. The application accepted the supplied numeric ID without verifying whether I was authorized to access that record. This is an insecure direct object reference ([[IDOR]]).
+This returned a different capture that I could download. The application accepted the supplied numeric ID without verifying whether I was authorized to access that record. This is an insecure direct object reference ([[Insecure Direct Object Reference (IDOR)|IDOR]]).
 
 ![[Pasted image 20260905212050.png]]
 

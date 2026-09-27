@@ -49,7 +49,7 @@ Software provides two kinds of value:
 - Structured programming improves reasoning about correctness.
 
 ### Chapter 5 - Object-Oriented Programming
-- [[OOP|OOP]] is based on:
+- [[Object Oriented Programming (OOP)|OOP]] is based on:
 	- encapsulation
 	- inheritance
 	- polymorphism
@@ -97,7 +97,7 @@ Software provides two kinds of value:
 - Concrete implementations should be replaceable.
 - Dependencies should point toward abstractions, not details.
 
-see also: [[SOLID]]
+see also: [[SOLID Principles]]
 
 ---
 
