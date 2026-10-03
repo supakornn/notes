@@ -1,6 +1,6 @@
 ---
 created: 2026-04-07
-title: "Clean Architecture: A Craftsman's Guide to Software Structure and Design"
+title: "Clean Architecture"
 tags:
   - seed
   - book
