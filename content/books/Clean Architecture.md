@@ -13,7 +13,7 @@ Book, written by **Robert C. Martin (Uncle Bob)**
 
 Clean Architecture says the business rules are the real application. The database, web framework, UI, and APIs are just ways to deliver them. Keep those details at the edge, so changing one does not force a rewrite of the core.
 
-Dependencies should point inward. The business layer should not know about the framework or database. Use boundaries only when they are worth the extra code—clean architecture is meant to reduce the cost of change, not to add layers for their own sake.
+Dependencies should point inward. The business layer should not know about the framework or database. Do not add boundaries just to follow the pattern. Add them when they make future changes easier.
 
 ---
 
