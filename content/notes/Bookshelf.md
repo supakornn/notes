@@ -8,7 +8,7 @@ title: Bookshelf
 > Some books may later link to notes or ideas that came out of reading them.
 
 ## To Read
-- **Domain-Driven Design** by Eric Evans
+
 - **Crafting Interpreters** by Robert Nystrom
 - **Foundations of Large Language Models** by Tong Xiao, Jingbo Zhu
 - **Natural Language Processing with Transformers** by Lewis Tunstall, Leandro von Werra, Thomas Wolf
@@ -16,6 +16,7 @@ title: Bookshelf
 ## Past
 
 ### 2026
+- [[Domain Driven Design]] by Eric Evans (Reading)
 - [[Eat That Frog!]] by Brian Tracy
 - [[Clean Architecture]] by Robert C. Martin
 ### 2024 – 2025
