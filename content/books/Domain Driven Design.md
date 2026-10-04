@@ -16,7 +16,7 @@ Book, written by **Eric Evans**
 - Make sure everyone means the same thing when they use an important word.
 - Talk through examples with domain experts to find unclear or missing ideas.
 - Name code clearly so it matches the words the business uses.
-see also [[Ubiquitous Language]]
+- see also: [[Ubiquitous Language]]
 ## Chapter 3 - Binding Model and Implementation
 
 ## Chapter 4 - Isolating the Domain
