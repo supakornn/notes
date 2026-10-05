@@ -2,8 +2,13 @@ import { pathToRoot } from "../util/path"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
+import Darkmode from "./Darkmode"
+import { concatenateResources } from "../util/resources"
 
-const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
+const ThemeToggle = Darkmode()
+
+const PageTitle: QuartzComponent = (props: QuartzComponentProps) => {
+  const { fileData, cfg, displayClass } = props
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
   const baseDir = pathToRoot(fileData.slug!)
   const path = fileData.slug === "index" ? "~" : `~/${fileData.slug}`
@@ -36,6 +41,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
               class="webring-dark"
             />
           </a>
+          <ThemeToggle {...props} />
         </div>
         <span class="current-path">{path}</span>
       </div>
@@ -51,7 +57,11 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   )
 }
 
-PageTitle.css = `
+PageTitle.beforeDOMLoaded = ThemeToggle.beforeDOMLoaded
+
+PageTitle.css = concatenateResources(
+  ThemeToggle.css,
+  `
 .site-header {
   width: 100%;
 }
@@ -120,6 +130,7 @@ PageTitle.css = `
 
 :root[saved-theme="dark"] .webring-light { display: none; }
 :root:not([saved-theme="dark"]) .webring-dark { display: none; }
-`
+`,
+)
 
 export default (() => PageTitle) satisfies QuartzComponentConstructor

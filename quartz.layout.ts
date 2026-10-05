@@ -12,7 +12,7 @@ const homeGraph = Component.ConditionalRender({
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.PageTitle(), Component.MobileOnly(Component.Search()), Component.Darkmode()],
+  header: [Component.PageTitle(), Component.MobileOnly(Component.Search())],
   afterBody: [Component.HomeSections(), Component.Backlinks()],
   footer: Component.Footer(),
 }
