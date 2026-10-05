@@ -11,7 +11,6 @@ const PageTitle: QuartzComponent = (props: QuartzComponentProps) => {
   const { fileData, cfg, displayClass } = props
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
   const baseDir = pathToRoot(fileData.slug!)
-  const path = fileData.slug === "index" ? "~" : `~/${fileData.slug}`
   return (
     <div class={classNames(displayClass, "site-header")}>
       <div class="site-header-top">
@@ -41,13 +40,11 @@ const PageTitle: QuartzComponent = (props: QuartzComponentProps) => {
               class="webring-dark"
             />
           </a>
-          <ThemeToggle {...props} />
         </div>
-        <span class="current-path">{path}</span>
+        <ThemeToggle {...props} />
       </div>
       <nav aria-label="Site links">
         <a href="https://github.com/supakornn">github</a>
-        <a href="https://twitter.com/supak0rnn">twitter</a>
         <a href="https://www.linkedin.com/in/supakornieamgomol/">linkedin</a>
         <a href="https://www.instagram.com/supakornigm/">instagram</a>
         <a href="https://www.facebook.com/supakornigm/">facebook</a>
@@ -85,7 +82,6 @@ PageTitle.css = concatenateResources(
   line-height: 1.25;
 }
 
-.current-path,
 .site-header nav {
   color: var(--gray);
   font-family: var(--codeFont);

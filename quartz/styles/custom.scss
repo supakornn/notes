@@ -66,10 +66,6 @@ body.animation-ready .darkmode svg {
   position: relative;
 }
 
-.current-path {
-  margin-right: 3rem;
-}
-
 .page > #quartz-body .center,
 .page > #quartz-body footer {
   min-width: 0;
@@ -377,10 +373,6 @@ body[data-slug="index"] > .page hr {
     align-items: stretch;
     gap: 0;
     margin: 0;
-  }
-
-  .current-path {
-    display: none;
   }
 
   li.section-li > .section .meta {
