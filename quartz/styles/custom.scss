@@ -94,6 +94,26 @@ body.animation-ready .darkmode svg {
   margin-top: 2.5rem;
 }
 
+.right.sidebar > .search {
+  max-width: none;
+  margin-top: 1rem;
+}
+
+.right.sidebar > .search::before {
+  content: "# search";
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.right.sidebar > .search > .search-button {
+  height: 2.25rem;
+  padding-right: 0.75rem;
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+}
+
 @media (min-width: 801px) {
   body[data-slug="index"] > .page > #quartz-body {
     grid-template-columns: minmax(0, 1fr) 16rem;

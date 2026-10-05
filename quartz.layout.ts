@@ -21,7 +21,7 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [Component.ArticleTitle(), Component.ContentMeta(), Component.TagList()],
   left: [],
-  right: [homeGraph],
+  right: [homeGraph, Component.Search()],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
