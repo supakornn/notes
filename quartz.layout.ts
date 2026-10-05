@@ -12,7 +12,7 @@ const homeGraph = Component.ConditionalRender({
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.PageTitle(), Component.Darkmode()],
+  header: [Component.PageTitle(), Component.MobileOnly(Component.Search()), Component.Darkmode()],
   afterBody: [Component.HomeSections(), Component.Backlinks()],
   footer: Component.Footer(),
 }
@@ -21,7 +21,7 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [Component.ArticleTitle(), Component.ContentMeta(), Component.TagList()],
   left: [],
-  right: [homeGraph, Component.Search()],
+  right: [homeGraph, Component.DesktopOnly(Component.Search())],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
