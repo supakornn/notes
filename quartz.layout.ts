@@ -9,10 +9,15 @@ const homeGraph = Component.ConditionalRender({
   condition: ({ fileData }) => fileData.slug === "index",
 })
 
+const homeSearch = Component.ConditionalRender({
+  component: Component.Search(),
+  condition: ({ fileData }) => fileData.slug === "index",
+})
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [Component.PageTitle(), Component.MobileOnly(Component.Search())],
+  header: [Component.PageTitle(), Component.MobileOnly(homeSearch)],
   afterBody: [Component.HomeSections(), Component.Backlinks()],
   footer: Component.Footer(),
 }
@@ -21,7 +26,7 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [Component.ArticleTitle(), Component.ContentMeta(), Component.TagList()],
   left: [],
-  right: [homeGraph, Component.DesktopOnly(Component.Search())],
+  right: [homeGraph, Component.DesktopOnly(homeSearch)],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
