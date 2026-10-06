@@ -39,7 +39,7 @@ Dependencies point inward: policy should not know about its database or framewor
 ## Part IV: Components
 
 - A component is a unit of deployment and reuse.
-- Keep code that changes together together.
+- Put code that changes for the same reason in the same component.
 - Avoid dependency cycles between components.
 
 ## Part V: Architecture
