@@ -46,7 +46,7 @@ Dependencies point inward: policy should not know about its database or framewor
 
 - Architecture should support development, deployment, operation, and change.
 - The package structure should show what the application does, not which framework it uses.
-- A boundary separates policy from a detail. It can be inside a monolith; it does not require a microservice.
+- A boundary separates policy from a detail. It can live inside a monolith. It does not require a microservice.
 - Entities hold enterprise-wide rules. Use cases coordinate application-specific rules.
 - The dependency rule: source-code dependencies point inward.
 - The `main` component is an outer detail. It wires implementations to policies.
