@@ -4,9 +4,9 @@ tags:
   - seed
 title: Limit
 ---
-A limit describes the behavior of a function as the input approaches a centain value, regradless of what happens at that exact point.
+A limit describes what a function approaches as its input approaches a value, regardless of what happens at that exact point.
 
-We say the limit of $f(x)$ a s $x$ approaches $c$ is $L$ if the values of $f(x)$ get closer and closer to $L$ as $x$ gets closer to $c$ 
+The limit of $f(x)$ as $x$ approaches $c$ is $L$ when the values of $f(x)$ get arbitrarily close to $L$ as $x$ gets close to $c$.
 
 
 $$

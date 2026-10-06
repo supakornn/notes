@@ -4,9 +4,9 @@ title: Euler’s number
 tags:
   - seed
 ---
-Euler's number, denoted by letter $e$ , is one of the most important constants in  mathematics. Approximately equal to 2.71828, it's an irrational number.
+Euler's number, written as $e$, is an irrational mathematical constant of approximately $2.71828$.
 
-The number $e$ is the **natural** base because it has a unique property in calculus: **the function $f(x) = e^x$ is its own [[Derivative|derivative]]**. This means that at any point on the curve of $e^x$ , the slope of the graph and the [[Integral| area under the graph ]]are both equal to the value of the function at that point.
+It is the natural base because $f(x) = e^x$ is its own [[Derivative|derivative]]. Its antiderivative is also $e^x$, so the accumulated area from a fixed starting point changes at the same rate as the function.
 
 ### Mathematical Definitions
 Mathematically, $e$ can be defined in two primary ways:

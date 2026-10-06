@@ -4,57 +4,22 @@ title: Software Development Life Cycle (SDLC)
 tags:
   - seed
 ---
-SDLC is a structured process that guides how software is planned, built, tested, and delivered. It gives development teams a clear roadmap to produce high-quality software on time and within budget.
+SDLC is the name for the work of planning, building, releasing, and maintaining software. In practice, the phases overlap and teams revisit them.
 
-![[Pasted image 20260509225257.png | 800]]
+## Typical phases
 
-## Phases of SDLC
+1. **Planning:** Define the problem, scope, constraints, cost, and whether the work is worth doing.
+2. **Requirements:** Write down what users and the business need. Check unclear assumptions early.
+3. **Design:** Decide the shape of the system: data, interfaces, architecture, and UI.
+4. **Implementation:** Build the agreed slice of the system.
+5. **Testing:** Check that it meets the requirements and that changes did not break existing behavior.
+6. **Deployment:** Release it to the environment where it will run.
+7. **Maintenance:** Fix defects, operate the system, and make later changes.
 
-### 1. Planning
+## Common models
 
-Define the project scope, goals, timeline, and cost. Decide if the project is feasible before writing a single line of code.
-
-**Example:** A company wants to build an e-commerce website. The team estimates it will take 6 months and $50,000 to build.
-
-### 2. Requirements Analysis
-
-Gather and document exactly what the software must do — from both business and user perspectives.
-
-**Example:** Users must be able to register, log in, browse products, add to cart, and checkout.
-
-### 3. System Design
-
-Translate requirements into a blueprint — database structure, architecture, UI mockups, and tech stack choices.
-
-**Example:** Use MySQL for the database, Spring Boot for the backend, and React for the frontend.
-
-### 4. Implementation (Coding)
-
-Developers write the actual code based on the design documents.
-
-**Example:** A developer builds the login feature using JWT authentication.
-
-### 5. Testing
-
-Verify the software works correctly, is bug-free, and meets the requirements.
-
-**Example:** QA team tests that users can't log in with a wrong password, and checkout calculates the correct total.
-
-### 6. Deployment
-
-Release the software to the real environment where users can access it.
-
-**Example:** The website goes live on AWS. Users can now visit and shop.
-
-### 7. Maintenance
-
-Fix bugs, improve performance, and add new features after release.
-
-**Example:** A bug is found where discount codes don't apply correctly — the team patches it in the next update.
-
-## SDLC Models
-1. **Waterfall** — One phase at a time, no going back. Best for fixed, clear requirements.
-2. **Agile** — Work in short sprints with continuous feedback. Best for changing requirements.
-3. **Scrum** — Agile framework with defined roles: Product Owner, Scrum Master, Dev Team.
-4. **Spiral** — Repeat cycles with risk analysis each round. Best for high-risk projects.
-5. **V-Model** — Every dev phase has a matching test phase. Best for safety-critical systems.
+- **Waterfall:** Sequential phases. Works best when requirements are stable.
+- **Agile:** Short feedback cycles and incremental delivery.
+- **Scrum:** A popular Agile framework with defined roles and sprints.
+- **Spiral:** Repeated cycles that emphasize risk analysis.
+- **V-Model:** Pairs each development activity with a corresponding test activity; common in safety-critical work.

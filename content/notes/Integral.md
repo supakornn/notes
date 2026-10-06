@@ -4,11 +4,11 @@ tags:
   - seed
 title: Integral
 ---
-An integral is essentially the mathematical process of **accumulation**. if a [[Derivative| derivative]] tells you how fast something is changing at a specific moment, an integral tell you how much of that **stuff** has built up over time.
+An integral measures **accumulation**. If a [[Derivative|derivative]] tells us how fast something changes at one moment, an integral tells us how much has accumulated over an interval.
 
-> Think of it as the **reverse** of a derivative.
+> An antiderivative reverses differentiation.
 
-The most common way to visualize an integral is as the **area** trapped between the graph of a function and the x-axis. While we can easily find the area of a rectangle or a triangle using simple formulas, curves are tricky. Integration allows us to find the exact area of irregular, curvy shapes by slicing them into an infinite number of ultra-thin rectangles and adding them all together.
+A definite integral is often visualized as the signed area between a graph and the x-axis. It adds up infinitely many thin pieces under the curve.
 
 
 ### The Definite Integral
@@ -18,19 +18,19 @@ $$
 \int_{a}^{b} f(x) \, dx
 $$
 
-- **$a$ and $b$:** The boundaries (where you start and stop measuring).
-- **$f(x)$:** The height of the function.
-- **$dx$:** An infinitely small width.
+- **$a$ and $b$:** The interval boundaries.
+- **$f(x)$:** The function being accumulated.
+- **$dx$:** The variable of integration.
 
 
 #### The Antiderivative
-This results in a **new function** rather than a number. It is the **undoing** of a derivative.
+This produces a **new function**, rather than a number.
 
 $$
 \int f(x) \, dx = F(x) + C
 $$
 
-- **$+ C$:** This is the **Constant of Integration.** Because the derivative of any constant (like 5 or 100) is zero, we add $+ C$ to acknowledge there might have been a constant in the original function that disappeared during differentiation.
+- **$+ C$:** The **constant of integration**. Differentiating a constant gives zero, so the original constant cannot be recovered otherwise.
 
 > [!notes]
 > The symbol for an integral ($\int$) is actually an elongated **"S"**, which stands for **Sum**.
