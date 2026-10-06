@@ -4,7 +4,7 @@ tags:
   - seed
 title: SOLID Principles
 ---
-SOLID is a set of five object-oriented design principles popularized by **Robert C. Martin (Uncle Bob)**. They are useful prompts, not rules to apply mechanically.
+SOLID is a set of five object-oriented design principles popularized by **Robert C. Martin (Uncle Bob)**. I treat them as questions to ask while designing, not rules to apply mechanically.
 
 ## S - Single Responsibility Principle (SRP)
 
@@ -17,7 +17,7 @@ class User { void getUserData() {} }
 class UserRepository { void save(User user) {} }
 ```
 
-**Quick check:** Ask yourself _"What would cause this class to change?"_ If you have more than one answer, it violates SRP.
+**Question I use:** What would make this class change? If there is more than one unrelated answer, it may be doing too much.
 
 ## O: Open-Closed Principle (OCP)
 
@@ -31,7 +31,7 @@ class Circle implements Shape { public double area() { return Math.PI * r * r; }
 class Square implements Shape { public double area() { return side * side; } }
 ```
 
-**Quick check:** If adding a new feature requires you to edit an existing class, OCP is likely being violated.
+**Question I use:** Is this stable code changing for every new variation? If so, there may be a useful extension point.
 
 ## L: Liskov Substitution Principle (LSP)
 
@@ -45,7 +45,7 @@ class Sparrow implements Bird { public void move() { System.out.println("Flying"
 class Penguin implements Bird { public void move() { System.out.println("Swimming"); } }
 ```
 
-**Quick check:** If swapping a parent for a child class breaks something, LSP is violated.
+**Question I use:** Can I replace the parent type with the child without breaking a caller's expectations?
 
 ## I: Interface Segregation Principle (ISP)
 
@@ -61,7 +61,7 @@ class Human implements Workable, Eatable { ... }
 class Robot implements Workable { ... } // Robot doesn't need eat()
 ```
 
-**Quick check:** If a class implements a method but leaves it empty or throws an error, ISP is likely violated.
+**Question I use:** Does this type have to implement a method it cannot honestly support?
 
 ## D: Dependency Inversion Principle (DIP)
 
@@ -79,6 +79,6 @@ class UserService {
 }
 ```
 
-**Quick check:** If changing a low-level detail (like a database) forces you to edit high-level business logic, DIP is violated.
+**Question I use:** Would changing the database force a change in business logic? If it would, the dependency is pointing the wrong way.
 
 see also: [[Clean Architecture]]

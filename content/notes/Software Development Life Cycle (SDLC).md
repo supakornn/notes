@@ -4,22 +4,56 @@ title: Software Development Life Cycle (SDLC)
 tags:
   - seed
 ---
-SDLC is the name for the work of planning, building, releasing, and maintaining software. In practice, the phases overlap and teams revisit them.
+SDLC is the usual name for planning, building, testing, releasing, and maintaining software. The phases are a map, not a strict sequence: real teams go back and forth between them.
 
-## Typical phases
+## Phases of SDLC
 
-1. **Planning:** Define the problem, scope, constraints, cost, and whether the work is worth doing.
-2. **Requirements:** Write down what users and the business need. Check unclear assumptions early.
-3. **Design:** Decide the shape of the system: data, interfaces, architecture, and UI.
-4. **Implementation:** Build the agreed slice of the system.
-5. **Testing:** Check that it meets the requirements and that changes did not break existing behavior.
-6. **Deployment:** Release it to the environment where it will run.
-7. **Maintenance:** Fix defects, operate the system, and make later changes.
+### 1. Planning
 
-## Common models
+Define the project scope, goals, timeline, and cost. Decide whether the project is feasible before writing code.
 
-- **Waterfall:** Sequential phases. Works best when requirements are stable.
-- **Agile:** Short feedback cycles and incremental delivery.
-- **Scrum:** A popular Agile framework with defined roles and sprints.
-- **Spiral:** Repeated cycles that emphasize risk analysis.
-- **V-Model:** Pairs each development activity with a corresponding test activity; common in safety-critical work.
+**Example:** A company wants to build an e-commerce website. The team estimates six months and $50,000.
+
+### 2. Requirements analysis
+
+Gather and document what the software must do, from business and user perspectives.
+
+**Example:** Users must be able to register, log in, browse products, add items to a cart, and check out.
+
+### 3. System design
+
+Turn requirements into a plan: database structure, architecture, UI mockups, and technology choices.
+
+**Example:** Use MySQL for the database, Spring Boot for the backend, and React for the frontend.
+
+### 4. Implementation (coding)
+
+Developers write the code from the design documents.
+
+**Example:** A developer builds the login feature with JWT authentication.
+
+### 5. Testing
+
+Check that the software works, meets the requirements, and does not contain known defects.
+
+**Example:** QA checks that users cannot log in with a wrong password and that checkout calculates the right total.
+
+### 6. Deployment
+
+Release the software to the environment where users can access it.
+
+**Example:** The website goes live on AWS.
+
+### 7. Maintenance
+
+Fix bugs, improve performance, and add features after release.
+
+**Example:** A discount-code bug is found and patched in the next update.
+
+## SDLC models
+
+1. **Waterfall:** One phase at a time. Best for fixed, clear requirements.
+2. **Agile:** Short sprints with continuous feedback. Best for changing requirements.
+3. **Scrum:** An Agile framework with defined roles: Product Owner, Scrum Master, and Development Team.
+4. **Spiral:** Repeated cycles with risk analysis in each round. Best for high-risk projects.
+5. **V-Model:** Each development phase has a matching test phase. Common in safety-critical systems.

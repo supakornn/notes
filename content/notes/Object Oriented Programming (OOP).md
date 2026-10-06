@@ -4,65 +4,30 @@ title: Object Oriented Programming (OOP)
 tags:
   - sapling
 ---
-OOP was founded by **Alan Kay**, but the OOP that most people learn today is quite different from the original idea.
-
-When learning OOP through languages like **Java** or **C++**, the focus is usually on organizing software through **classes** and **inheritance**. Classes act as blueprints while objects become instances created from those classes.
+When I first learned OOP through Java and C++, it mostly meant classes, inheritance, interfaces, and the four familiar terms: abstraction, encapsulation, inheritance, and polymorphism.
 
 ```java
 class Dog extends Animal
 ```
 
-Inheritance is then used to share behavior and structure code in a way that feels organized and reusable. A lot of OOP education revolves around **abstraction**, **encapsulation**, **inheritance**, and **polymorphism**. Most programming classes present these ideas as the core pillars of OOP.
+That model is practical. Classes describe objects, inheritance can share behavior, and interfaces help organize a large codebase. It is why this style became common in enterprise software.
 
-The overall goal is usually to make software easier to structure and maintain, especially when applications become large. This version of OOP became extremely popular because it works well for **enterprise software** and large development teams where maintainability and organization become important.
+But Alan Kay's original use of “object-oriented” was not mainly about class trees. His short version was:
 
-Over time, this became the mainstream understanding of OOP. When most developers hear the term **“object-oriented programming”**, they usually think about:
+> “The big idea is messaging.”
 
-- classes
-- inheritance
-- interfaces
-- software architecture patterns
-    
-However, the original idea of OOP seems to be much more centered around **communication between objects** rather than rigid class hierarchies.
+That is a more useful distinction for me. An object owns its state and talks to other objects through messages. The inspiration was partly biological: cells have their own internal state and interact without exposing every internal detail.
 
-Alan Kay once said:
+So there are two ways to picture OOP:
 
-> "The big idea is messaging."
+- **Class-oriented:** model things with types, inheritance, and interfaces.
+- **Message-oriented:** model a system as independent objects that communicate.
 
-which sounds quite different from how OOP is commonly taught today.
+**Smalltalk** strongly reflects the second view. Almost everything is an object, and objects interact through message passing. Behavior and communication matter more than a rigid static hierarchy.
 
-The idea was partly inspired by **biological systems**, especially how cells communicate with each other. A cell manages its own internal state, behaves independently, and communicates with other cells without exposing all of its internal complexity directly.
+C++ and Java moved the mainstream interpretation toward static typing, compile-time guarantees, interfaces, and architecture for large teams. That is useful, but it is not the whole history of the idea.
 
-Objects were imagined in a somewhat similar way. Instead of thinking about objects mainly as **instances created from classes**, the original idea feels closer to **independent systems communicating with one another through messages**.
-
-This makes OOP feel less like:
-
-> “organizing code into class trees”
-
-and more like:
-
-> “building systems from interacting entities”
-
-**Smalltalk** was heavily built around this concept. In Smalltalk, almost everything is treated as an object, and interaction between objects happens through **message passing**. The focus feels much more centered around **behavior** and **communication** between objects rather than strict static structure.
-
-As software engineering evolved, OOP also changed.
-
-Languages like **C++** and **Java** pushed OOP toward:
-
-- static typing
-- interfaces
-- compile-time guarantees
-- large-scale architecture design
-    
-As software became larger and more industrialized, developers needed systems that were easier to organize across large teams and massive codebases.
-
-Because of this, OOP slowly became associated more with **structure** and **architecture**. Classes, interfaces, inheritance hierarchies, and design patterns became the dominant interpretation of what OOP meant.
-
-This is probably why modern OOP often feels very different from the original **Smalltalk philosophy**. The earlier ideas seem much more dynamic and communication-oriented, while modern OOP tends to focus heavily on maintainability, structure, and organization.
-
-Interestingly, some modern systems feel closer to Alan Kay's original OOP ideas than traditional enterprise OOP.
-
-Things like:
+Some modern systems are closer to the messaging view than class-heavy OOP:
 
 - actor systems
 - Erlang processes
@@ -71,12 +36,4 @@ Things like:
 - event-driven systems
 - microservices
 
-all focus heavily on:
-
-- isolated state
-- independent behavior
-- communication through messages
-    
-These systems are usually built from many independent parts communicating with each other rather than from deep inheritance hierarchies.
-
-In a strange way, some modern distributed system ideas feel philosophically closer to the original OOP vision than the class-heavy style that became mainstream through Java and C++.
+They isolate state and make components communicate through messages. I do not think that makes them “more OOP” than Java. It is just a reminder that OOP is bigger than inheritance trees.
