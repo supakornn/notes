@@ -131,10 +131,11 @@ a:hover {
   color: var(--dark);
 }
 
-a.internal {
-  background: transparent;
-  border-radius: 0;
-  padding: 0;
+article a.internal,
+article a.external {
+  background: var(--highlight);
+  border-radius: 3px;
+  padding: 0 0.2em;
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
