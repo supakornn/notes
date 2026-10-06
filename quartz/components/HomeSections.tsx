@@ -24,15 +24,8 @@ const sections: Section[] = [
     title: "posts",
     path: "~/posts",
     link: "posts/" as SimpleSlug,
-    limit: 3,
+    limit: 5,
     matches: (file) => !!file.slug?.startsWith("posts/") && file.slug !== "posts/index",
-  },
-  {
-    title: "books",
-    path: "~/books",
-    link: "books/" as SimpleSlug,
-    limit: 3,
-    matches: (file) => !!file.slug?.startsWith("books/") && file.slug !== "books/index",
   },
 ]
 
