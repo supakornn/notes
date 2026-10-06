@@ -8,7 +8,7 @@ Book by **Robert C. Martin (Uncle Bob)**.
 
 > The goal of software architecture is to minimize the human resources required to build and maintain the required system. (Uncle Bob)
 
-## What I took from it
+### TL;DR
 
 The business rules are the application. The database, web framework, UI, and APIs deliver those rules. Keep those details at the edge so changing one does not force a rewrite of the core.
 
