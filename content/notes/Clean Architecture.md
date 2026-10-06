@@ -15,10 +15,6 @@ The business rules are the application. The database, web framework, UI, and API
 
 Dependencies point inward. The business layer should not know about the framework or database. I would not add boundaries only because this book has a diagram for them. Add one when it makes an expected change easier.
 
----
-
-## Part I: Introduction
-
 ### Chapter 1: Introduction
 
 - Architecture and design are the same discipline at different scales.
@@ -32,10 +28,6 @@ Software provides two kinds of value:
 
 1. **Behavior:** Feature delivery matters now.
 2. **Architecture:** Architecture preserves the ability to change later.
-
----
-
-## Part II: Programming Paradigms
 
 ### Chapter 3: Paradigm Overview
 
@@ -69,10 +61,6 @@ Software provides two kinds of value:
 - Avoid shared mutable state when possible.
 - Immutable data reduces concurrency and side-effect bugs.
 - Functions should minimize hidden state changes.
-
----
-
-## Part III: Design Principles
 
 ### Chapter 7: SRP (Single Responsibility Principle)
 
@@ -109,12 +97,6 @@ Software provides two kinds of value:
 - Concrete implementations should be replaceable.
 - Dependencies should point toward abstractions, not details.
 
-See also: [[SOLID Principles]]
-
----
-
-## Part IV: Component Principles
-
 ### Chapter 12: Components
 
 - Components are deployment and reuse units.
@@ -135,11 +117,7 @@ See also: [[SOLID Principles]]
 - Avoid cyclic dependencies.
 - Stable components should depend less on unstable ones.
 - Dependency direction affects architectural stability.
-
----
-
-## Part V: Architecture
-
+  
 ### Chapter 15: What Is Architecture?
 
 - Architecture supports development, deployment, operation, and maintenance.
@@ -258,10 +236,6 @@ See also: [[SOLID Principles]]
 - Business rules should remain testable without physical hardware.
 - Device-specific code should stay at the outer layers.
 - Good architecture improves portability and maintainability in embedded systems.
-
----
-
-## Part VI: Details
 
 ### Chapter 30: The Database Is a Detail
 
