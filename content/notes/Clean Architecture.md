@@ -1,9 +1,8 @@
 ---
 created: 2026-04-07
-title: "Clean Architecture"
+title: Clean Architecture
 tags:
   - seed
-  - book
 ---
 Book by **Robert C. Martin (Uncle Bob)**.
 
