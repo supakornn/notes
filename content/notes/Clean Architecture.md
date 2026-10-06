@@ -33,8 +33,8 @@ Dependencies point inward: policy should not know about its database or framewor
 - LSP: a subtype must keep the promises of its parent type.
 - ISP: do not make clients depend on methods they do not need.
 - DIP: high-level policy and low-level details depend on abstractions; the source-code dependency points toward policy.
-  
-  see also: [[SOLID Principles]]
+
+see also: [[SOLID Principles]]
 
 ## Part IV: Components
 
